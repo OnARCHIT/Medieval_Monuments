@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Howrah Bridge (Rabindra Setu) – Interactive Web Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f6f6f6; }
+    header { background: #1a237e; color: #fff; padding: 1.5em 1em; text-align: center; }
+    nav { background: #c5cae9; padding: 0.5em 1em; display: flex; gap: 1em; flex-wrap: wrap; }
+    nav button { color: #1a237e; background: none; border: none; font-weight: bold; font-size: 1em; cursor: pointer; padding: 0.5em 1em; }
+    nav button.active { text-decoration: underline; color: #fff; background: #1a237e; border-radius: 5px 5px 0 0; }
+    main { max-width: 950px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 10px; box-shadow: 0 2px 8px #ccc; }
+    h2 { color: #1a237e; }
+    .gallery { display: flex; gap: 1em; flex-wrap: wrap; margin-bottom: 2em; }
+    .gallery img { width: 100%; max-width: 420px; border-radius: 8px; box-shadow: 0 1px 4px #aaa; }
+    .tab-content { display: none; padding: 1em 0; border-top: 2px solid #1a237e; }
+    .tab-content.active { display: block; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { padding: 0.7em; border: 1px solid #c5cae9; text-align: left; }
+    th { background: #e8eaf6; }
+    footer { background: #1a237e; color: #fff; text-align: center; padding: 1em 0; margin-top: 2em; }
+    @media (max-width: 600px) {
+      main { padding: 1em; }
+      .gallery { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Howrah Bridge (Rabindra Setu) – Interactive Web Portal</h1>
+    <p>Kolkata, India &bull; Iconic Cantilever Bridge &bull; Opened 1943</p>
+  </header>
+  <nav id="tabs">
+    <button class="active" data-tab="overview">Overview</button>
+    <button data-tab="architecture">Architecture</button>
+    <button data-tab="materials">Materials</button>
+    <button data-tab="gallery">Gallery</button>
+    <button data-tab="timeline">Timeline</button>
+    <button data-tab="stats">Stats</button>
+  </nav>
+  <main>
+    <section id="overview" class="tab-content active">
+      <h2>Historical Background</h2>
+      <ul>
+        <li><strong>Location:</strong> Kolkata, West Bengal, India (22.5850° N, 88.3468° E)</li>
+        <li><strong>Opened:</strong> 1943 (replacing the 1874 pontoon bridge)</li>
+        <li><strong>Patronage:</strong> British Colonial Government, Indian Industry (Tata Steel)</li>
+        <li><strong>Type:</strong> Balanced Cantilever Suspension Bridge</li>
+        <li><strong>Significance:</strong> Symbol of modern Kolkata, engineering marvel, busiest cantilever bridge in the world</li>
+      </ul>
+      <blockquote>
+        “Howrah Bridge stands as a testament to India’s industrial prowess and engineering ingenuity, connecting Kolkata and Howrah across the Hooghly River.”
+      </blockquote>
+    </section>
+
+    <section id="architecture" class="tab-content">
+      <h2>Architecture & Design</h2>
+      <ul>
+        <li><strong>Main Span:</strong> 1,500 ft (460 m) between towers</li>
+        <li><strong>Deck Width:</strong> 71 ft (21.6 m), with 48 ft carriageway and two 7 ft footpaths</li>
+        <li><strong>Towers:</strong> 280 ft (85 m) high</li>
+        <li><strong>Construction:</strong> Riveted steel, no nuts or bolts</li>
+        <li><strong>Foundations:</strong> Caissons sunk up to 31.41 m below riverbed</li>
+      </ul>
+    </section>
+
+    <section id="materials" class="tab-content">
+      <h2>Materials & Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>High-Tensile Steel (Tiscrom)</td>
+          <td>Strength, flexibility, corrosion resistance</td>
+          <td>Main structure (26,500 tons)</td>
+        </tr>
+        <tr>
+          <td>Concrete</td>
+          <td>Compression strength, durability</td>
+          <td>Approaches, surfacing</td>
+        </tr>
+        <tr>
+          <td>Rivets</td>
+          <td>Durable, fatigue-resistant joints</td>
+          <td>All connections (no nuts/bolts)</td>
+        </tr>
+      </table>
+      <p><strong>Comparison with RCC:</strong> Steel allows longer spans and flexibility, RCC is bulkier and better for shorter spans. Howrah Bridge’s steel design enables its iconic length and resilience.</p>
+    </section>
+
+    <section id="gallery" class="tab-content">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Howrah_Bridge_at_night.jpg" alt="Howrah Bridge at Night">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Howrah_Bridge%2C_Kolkata%2C_India.jpg" alt="Howrah Bridge Day View">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Howrah_Bridge_close_up.jpg" alt="Howrah Bridge Close-up">
+      </div>
+      <p style="font-size:0.9em; color:#666;">Images: Wikimedia Commons (CCL/Public Domain)</p>
+    </section>
+
+    <section id="timeline" class="tab-content">
+      <h2>Construction Timeline</h2>
+      <ul>
+        <li><strong>1862:</strong> First proposal for a bridge across Hooghly River.</li>
+        <li><strong>1874:</strong> Pontoon bridge opened.</li>
+        <li><strong>1936:</strong> Construction of new bridge begins.</li>
+        <li><strong>1942:</strong> Main span completed.</li>
+        <li><strong>February 1943:</strong> Bridge opens to public.</li>
+        <li><strong>1965:</strong> Officially renamed Rabindra Setu.</li>
+      </ul>
+    </section>
+
+    <section id="stats" class="tab-content">
+      <h2>Key Stats</h2>
+      <ul>
+        <li><strong>Main Span:</strong> 1,500 ft</li>
+        <li><strong>Steel Used:</strong> 26,500 tons</li>
+        <li><strong>Tower Height:</strong> 280 ft</li>
+        <li><strong>Pedestrians Daily:</strong> 150,000+</li>
+        <li><strong>Vehicles Daily:</strong> 100,000+</li>
+        <li><strong>Year Opened:</strong> 1943</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Howrah Bridge Interactive Portal &bull; Images: Wikimedia Commons
+  </footer>
+  <script>
+    // Tab functionality
+    document.querySelectorAll('nav button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        // Remove active from all buttons
+        document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+        // Hide all tab contents
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        // Activate this button and corresponding tab
+        this.classList.add('active');
+        document.getElementById(this.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
