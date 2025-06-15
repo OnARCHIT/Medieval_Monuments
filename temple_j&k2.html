@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avantiswami Temple – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Avantiswami Temple</h1>
+    <div class="tags">
+      <span class="tag">#temple</span>
+      <span class="tag">#utpala</span>
+      <span class="tag">#vishnutemple</span>
+      <span class="tag">#kashmirarchitecture</span>
+      <span class="tag">#limestone</span>
+      <span class="tag">#ancientruins</span>
+    </div>
+    <div class="section">
+      <h2>Location & Dynasty</h2>
+      <p><strong>Location:</strong> Avantipur (Awantipora), Pulwama District, Jammu & Kashmir<br>
+      <strong>Dynasty:</strong> Utpala Dynasty (9th century CE)<br>
+      <strong>Deity:</strong> Vishnu (Avantiswami); nearby temple dedicated to Shiva (Avantishwara)</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Commissioned by King Avantivarman (c. 855–883 CE), founder of the Utpala dynasty.</li>
+        <li>Constructed as a Vishnu temple (Avantiswami) and a companion Shiva temple (Avantishwara).</li>
+        <li>Represents post-Gupta Kashmiri temple style, built during a period of peace and prosperity.</li>
+        <li>Later desecrated and left in ruins during the medieval Islamic conquests.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Nagara style with Kashmiri adaptation—rectangular enclosure, central sanctum, and pillared colonnades.</li>
+        <li>Sanctum sanctorum (garbhagriha) raised on a high plinth, surrounded by subsidiary shrines.</li>
+        <li>Intricately carved doorways, columns, floral and divine motifs.</li>
+        <li>Sculptural panels of Vishnu avatars and guardian figures (Dvarapalas).</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Constructed primarily using limestone and grey sandstone.</li>
+        <li>Stone blocks fitted using dry masonry without mortar.</li>
+        <li>Elevated platforms and wide stairs leading to the sanctum.</li>
+        <li>Drainage channels and layered stone foundations for durability in a high-moisture zone.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Limestone</td>
+          <td>Durable, carvable, excellent for detail, slightly porous</td>
+        </tr>
+        <tr>
+          <td>Sandstone</td>
+          <td>Easy to quarry and shape, weather-resistant, thermally stable</td>
+        </tr>
+        <tr>
+          <td>Stone Base</td>
+          <td>High compressive strength, supports load-bearing structures</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>Locally available limestone and sandstone were suited for both strength and aesthetics.</li>
+        <li>Ideal for detailed sculptural work and large-scale temple construction.</li>
+        <li>Resistant to cold winters and precipitation common in Kashmir.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>Temple elevated on a stone plinth for stability and visibility.</li>
+        <li>Pillared colonnades helped distribute roof weight evenly.</li>
+        <li>Stepped approach aids both symbolic ascent and water drainage.</li>
+        <li>Open courtyard designed for ritual circumambulation and gathering.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Stone interlocking without mortar enhances seismic resilience.</li>
+        <li>Raised base prevents flooding from nearby Jhelum River.</li>
+        <li>Symmetrical layout contributes to balance and visual harmony.</li>
+        <li>Repetitive column design adds both aesthetic rhythm and structural redundancy.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Conceptualized as twin temples representing cosmic balance—Shiva and Vishnu.</li>
+        <li>Emphasis on sacred geometry, cardinal alignment, and ritual functionality.</li>
+        <li>Integration of local traditions with pan-Indian temple styles.</li>
+        <li>Sought to elevate the spiritual landscape of Kashmir with monumental architecture.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Avantiswami Temple (Traditional)</th>
+          <th>RCC Structure (Modern)</th>
+        </tr>
+        <tr>
+          <td>Construction Method</td>
+          <td>Manual stone masonry</td>
+          <td>Steel-reinforced concrete casting</td>
+        </tr>
+        <tr>
+          <td>Aesthetic Detailing</td>
+          <td>Hand-carved ornamentation</td>
+          <td>Minimal or pre-fab design</td>
+        </tr>
+        <tr>
+          <td>Environmental Impact</td>
+          <td>Low</td>
+          <td>High due to cement and steel use</td>
+        </tr>
+        <tr>
+          <td>Longevity</td>
+          <td>Ruins still standing after 1000+ years</td>
+          <td>50–100 years with maintenance</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Twin temple concept—Avantiswami (Vishnu) and Avantishwara (Shiva).</li>
+        <li>Transitional Kashmiri architecture blending Gupta and Gandhara elements.</li>
+        <li>One of the last grand temples before Islamic influence altered the region's architecture.</li>
+        <li>Close resemblance in scale and layout to Martand Sun Temple.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Avantiswami_Temple_Kashmir.jpg" alt="Avantiswami Temple, Kashmir">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 3.0</p>
+  </div>
+</body>
+</html>

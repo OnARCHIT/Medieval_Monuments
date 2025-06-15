@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tripura Sundari Temple – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tripura Sundari Temple</h1>
+    <div class="tags">
+      <span class="tag">#shaktipeeth</span>
+      <span class="tag">#bengalstyle</span>
+      <span class="tag">#bricktemple</span>
+      <span class="tag">#limeplaster</span>
+      <span class="tag">#vernacular</span>
+      <span class="tag">#tripura</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Udaipur, Gomati District, Tripura<br>
+      <strong>Dynasty:</strong> Manikya Dynasty<br>
+      <strong>Era:</strong> Built in 1501 CE by Maharaja Dhanya Manikya</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Constructed in 1501 CE by Maharaja Dhanya Manikya, ruler of the Manikya dynasty.</li>
+        <li>Revered as one of the 51 Shakti Peethas—legend says the right foot of Goddess Sati fell here.</li>
+        <li>Continuously venerated and considered the spiritual heart of Tripura’s royal and cultural identity.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Built in the Bengali Ek-ratna style: a square sanctum with a pyramidal superstructure.</li>
+        <li>Features include curved cornices, lotus dome, and an elevated platform (plinth).</li>
+        <li>Temple plan includes garbhagriha (sanctum) and a small mandapa (porch).</li>
+        <li>Idol made of black stone—a 5-foot image of the goddess Tripura Sundari.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Burnt bricks used for main structure; locally fired and molded.</li>
+        <li>Lime mortar binds bricks and acts as water-resistant agent.</li>
+        <li>Lime plaster provides a smooth finish and thermal control.</li>
+        <li>Foundations may include laterite stone or compacted earth (inferred from regional context).</li>
+        <li>Wooden beams possibly used in roofing and internal support.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Blended ritual importance with climatic adaptability.</li>
+        <li>Chose a simple yet sacred form aligning with Shakti worship.</li>
+        <li>Opted for materials that supported longevity, ease of construction, and local traditions.</li>
+        <li>Spiritual symbolism embedded in layout, orientation, and sculptural design.</li>
+        <li>Harmonized aesthetics, theology, and vernacular engineering.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional Temple (Tripura Sundari)</th>
+          <th>RCC Structure</th>
+        </tr>
+        <tr>
+          <td>Construction Method</td>
+          <td>Manual, skill-based, no machinery</td>
+          <td>Mechanized, formal engineering</td>
+        </tr>
+        <tr>
+          <td>Breathability</td>
+          <td>High (lime and brick)</td>
+          <td>Low (impermeable concrete)</td>
+        </tr>
+        <tr>
+          <td>Climate Suitability</td>
+          <td>High (thermal comfort, reflective)</td>
+          <td>Requires AC or insulation layers</td>
+        </tr>
+        <tr>
+          <td>Earthquake Resistance</td>
+          <td>Moderate (flexible lime joints)</td>
+          <td>Depends on reinforcement design</td>
+        </tr>
+        <tr>
+          <td>Lifecycle & Repair</td>
+          <td>Easy maintenance with local materials</td>
+          <td>Difficult, requires industrial tools</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>One of the 51 Shakti Peethas, deeply embedded in Hindu cosmology.</li>
+        <li>Rare example of Ek-ratna Bengali temple style in North-East India.</li>
+        <li>Temple idol is self-manifested (Swayambhu) according to local belief.</li>
+        <li>Continuous ritual practice for over five centuries.</li>
+        <li>Integration of ritual geometry, sacred topography, and material pragmatism.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Tripura_Sundari_Temple.jpg/800px-Tripura_Sundari_Temple.jpg" alt="Tripura Sundari Temple, Tripura">
+    <p style="font-size:0.9rem; color:#888;">Image Credit: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

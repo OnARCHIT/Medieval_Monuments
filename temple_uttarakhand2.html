@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bagnath Temple – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bagnath Temple</h1>
+    <div class="tags">
+      <span class="tag">#temple</span>
+      <span class="tag">#shiva</span>
+      <span class="tag">#chanddynasty</span>
+      <span class="tag">#stonearchitecture</span>
+      <span class="tag">#uttarakhand</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Bageshwar, Uttarakhand<br>
+      <strong>Dynasty/Period:</strong> Chand Dynasty, built in 1450 CE (original shrine older)<br>
+      <strong>Deity:</strong> Lord Shiva (as Bagnath – “Tiger Lord”)</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>The current temple was built by Laxmi Chand of the Chand dynasty in 1450 CE.</li>
+        <li>Located at the confluence of rivers Sarayu and Gomti, a spiritually significant spot.</li>
+        <li>A shrine has existed here since ancient times, mentioned in Skanda Purana.</li>
+        <li>Major pilgrimage site during Shivratri Mela and other Hindu festivals.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Follows the Nagara style with a prominent shikhara (spire) and mandapa (pillared hall).</li>
+        <li>Constructed on a raised plinth, with intricate carvings on doorways and walls.</li>
+        <li>Multiple subsidiary shrines and lingams within the temple complex.</li>
+        <li>Use of north Indian traditional temple proportions based on Vastu principles.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Built using locally quarried stone blocks, likely granite or schist, with lime mortar.</li>
+        <li>Thick walls provide structural stability against temperature and seismic variations.</li>
+        <li>Roof designed with tiered stone slabs to allow runoff in heavy monsoon regions.</li>
+        <li>The temple base has water drains to protect the plinth from waterlogging.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Placement at a holy river confluence reflects spiritual geography of the Himalayas.</li>
+        <li>Materials chosen for availability, durability, and resistance to Himalayan weather.</li>
+        <li>Focused on ritual utility, symbolism, and community gathering.</li>
+        <li>Ornamentation was integrated without compromising structural integrity.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional (Bagnath)</th>
+          <th>Modern RCC Temples</th>
+        </tr>
+        <tr>
+          <td>Material</td>
+          <td>Stone masonry, lime mortar</td>
+          <td>RCC with steel, brickwork</td>
+        </tr>
+        <tr>
+          <td>Climate Resistance</td>
+          <td>High thermal mass, rain runoff design</td>
+          <td>Artificial insulation & HVAC</td>
+        </tr>
+        <tr>
+          <td>Seismic Strategy</td>
+          <td>Broad base, flexible stone joints</td>
+          <td>Ductile RCC with seismic zones compliance</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Mythological origin linked with Rishi Markandeya and Lord Shiva.</li>
+        <li>Important pilgrimage destination in Kumaon region.</li>
+        <li>Preserves the legacy of Chand rulers’ religious patronage.</li>
+        <li>Offers panoramic views and spiritual serenity at river confluence.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Bagnath_Temple_Bageshwar.jpg" alt="Bagnath Temple, Uttarakhand">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

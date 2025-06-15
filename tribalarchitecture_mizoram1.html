@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lalruanga Fortified Village – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lalruanga Fortified Village</h1>
+    <div class="tags">
+      <span class="tag">#mizoram</span>
+      <span class="tag">#mizo</span>
+      <span class="tag">#tribalarchitecture</span>
+      <span class="tag">#chieftainsettlement</span>
+      <span class="tag">#vernacular</span>
+      <span class="tag">#timberstone</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Aizawl District, Mizoram<br>
+      <strong>Tribe:</strong> Mizo (Lusei clan)<br>
+      <strong>Era:</strong> c. 17th–18th century CE</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Lalruanga was a prominent Mizo chieftain, and his settlement marks one of the earliest fortified chieftain villages.</li>
+        <li>Mizo society followed a chieftain system where each clan was led by a Lal (chief).</li>
+        <li>Settlements were established on hilltops for defense and visibility during headhunting periods.</li>
+        <li>Sites like Lalruanga Lung and Durtlang Hill still contain remnants of fortifications and stone platforms used by chiefs.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Villages had concentric rows of thatched bamboo houses, with the chief’s house (Lal In) at the top.</li>
+        <li>Central Zawlbuk (bachelor’s dormitory) near the chief’s house.</li>
+        <li>Stone platforms, boundary walls, and ritual monoliths used in the layout.</li>
+        <li>No mortar—structures were dry-stacked or pegged using bamboo and cane.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Bamboo, cane, wood (sal, teak) for houses.</li>
+        <li>Dry-laid stones for retaining walls, platforms, and tombs.</li>
+        <li>Thatch roofing, covered with palm leaves or banana bark.</li>
+        <li>Timber posts deeply embedded for cyclone resistance.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Settlements were planned around clan hierarchy and security.</li>
+        <li>Sacred groves, burial stones, and monoliths positioned ritually.</li>
+        <li>Emphasis on communal living, and Zawlbuk served for education and decision-making.</li>
+        <li>Built with mobility in mind, allowing rapid movement during conflict.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional Mizo House</th>
+          <th>Modern RCC Home</th>
+        </tr>
+        <tr>
+          <td>Material Source</td>
+          <td>Forest-sourced</td>
+          <td>Factory-made</td>
+        </tr>
+        <tr>
+          <td>Thermal Regulation</td>
+          <td>Natural ventilation</td>
+          <td>Requires HVAC</td>
+        </tr>
+        <tr>
+          <td>Earthquake Adaptation</td>
+          <td>High flexibility (bamboo)</td>
+          <td>Brittle unless engineered</td>
+        </tr>
+        <tr>
+          <td>Mobility</td>
+          <td>Dismantlable, lightweight</td>
+          <td>Permanent, heavy foundation</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Zawlbuk culture: social dormitory that shaped Mizo youth and community defense.</li>
+        <li>Chief’s house (Lal In) on the highest terrace—social and spiritual axis.</li>
+        <li>Use of ritual stones and monoliths integrated into everyday architecture.</li>
+        <li>Emphasis on vertical zoning in hilly terrain (animals below, humans above).</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Lalruanga_Fortified_Village.jpg/800px-Lalruanga_Fortified_Village.jpg" alt="Lalruanga Fortified Village, Mizoram">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

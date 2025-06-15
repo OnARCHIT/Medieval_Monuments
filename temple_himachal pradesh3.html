@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Triloknath Temple – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Triloknath Temple</h1>
+    <div class="tags">
+      <span class="tag">#triloknath</span>
+      <span class="tag">#himachal</span>
+      <span class="tag">#stonearchitecture</span>
+      <span class="tag">#buddhistHindu</span>
+      <span class="tag">#sharedheritage</span>
+      <span class="tag">#mountaintemple</span>
+    </div>
+    <div class="section">
+      <h2>Location & Patronage</h2>
+      <p><strong>Location:</strong> Udaipur, Lahaul and Spiti District, Himachal Pradesh<br>
+      <strong>Dynasty/Patronage:</strong> Kashmiri or early Tibetan influence, expanded under regional Buddhist and Hindu patrons<br>
+      <strong>Deity:</strong> Avalokiteshvara (Buddhism) / Shiva (Hinduism)</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Dates back to the 8th–10th century CE, one of the oldest spiritual sites in Lahaul.</li>
+        <li>Originally a Hindu temple dedicated to Shiva, later revered by Tibetan Buddhists as Avalokiteshvara’s abode.</li>
+        <li>Considered sacred by both Hindus and Buddhists—known as the “Kailash of Himachal.”</li>
+        <li>Continues as a joint worship site, symbolizing religious harmony.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Simple stone structure with wooden elements.</li>
+        <li>Square sanctum (garbhagriha), stone shikhara, and small mandapa.</li>
+        <li>Later additions: wooden balconies, prayer flags, Buddhist chortens.</li>
+        <li>Rare synthesis of Hindu and Tibetan Buddhist styles.</li>
+        <li>Intricate carvings: deities, floral patterns, Tibetan iconography.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Primary construction with local grey stone and timber for roof and joints.</li>
+        <li>Pitched wooden roofing for heavy snow.</li>
+        <li>Dry stone masonry with lime or mud mortar in earlier construction.</li>
+        <li>Elevated plinth protects from snow and rainwater.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Stone</td>
+          <td>High compressive strength, durable in cold climate</td>
+        </tr>
+        <tr>
+          <td>Timber</td>
+          <td>Elastic, good insulator, resistant to shock</td>
+        </tr>
+        <tr>
+          <td>Mud Mortar</td>
+          <td>Breathable, renewable, flexible with temperature changes</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>Locally available stone and timber ideal for mountainous conditions.</li>
+        <li>Stone ensures durability; timber adds insulation and flexibility.</li>
+        <li>Traditional techniques suited for manual construction in high-altitude terrain.</li>
+        <li>Sustainable, low-impact, and easily repairable materials.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>Thick stone walls retain heat and support snow loads.</li>
+        <li>Timber framing in roof prevents collapse during freeze-thaw cycles.</li>
+        <li>Sloped roofs and raised plinths drain snowmelt efficiently.</li>
+        <li>Earthquake-resilient due to timber-stone composite structure.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Sloped design counters snow accumulation.</li>
+        <li>Mortise-and-tenon joints in wood allow flexibility.</li>
+        <li>Compact layout reduces seismic stress.</li>
+        <li>Regular restoration by monks and locals ensures longevity.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Designed for both Hindu and Buddhist rituals—spiritual inclusivity.</li>
+        <li>Aligned with sacred landscape and mountain deities.</li>
+        <li>Harmonizes with environment, respects natural forms.</li>
+        <li>Emphasizes coexistence and shared heritage.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Triloknath Temple (Traditional)</th>
+          <th>RCC Structure (Modern)</th>
+        </tr>
+        <tr>
+          <td>Climate Adaptation</td>
+          <td>Sloped roofs, stone insulation</td>
+          <td
