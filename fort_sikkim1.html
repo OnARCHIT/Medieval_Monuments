@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rabdentse Ruins – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rabdentse Ruins</h1>
+    <div class="tags">
+      <span class="tag">#sikkim</span>
+      <span class="tag">#rabdentse</span>
+      <span class="tag">#stonearchitecture</span>
+      <span class="tag">#hillfort</span>
+      <span class="tag">#ruins</span>
+      <span class="tag">#heritage</span>
+    </div>
+    <div class="section">
+      <h2>Location & Dynasty</h2>
+      <p><strong>Location:</strong> West Sikkim, near Pelling<br>
+      <strong>Dynasty:</strong> Namgyal Dynasty (2nd Capital of Sikkim, 1670–1814 CE)</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Second capital of the Kingdom of Sikkim after Yuksom, established by Chogyal Tensung Namgyal.</li>
+        <li>Served as the royal seat for over a century until destroyed by Nepalese invasions in the early 19th century.</li>
+        <li>Strategically located on a ridge, offering panoramic views of the Khangchendzonga range.</li>
+        <li>Now a protected archaeological site under the ASI.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Fortified palace complex with residential quarters, assembly areas, and temple ruins.</li>
+        <li>Enclosed by thick stone walls; structures built on multi-tiered stone platforms.</li>
+        <li>Layout designed for defense, governance, and ritual practice.</li>
+        <li>Features the “Namphogang” stone throne used by judges and monks.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Dry stone masonry using locally available granite and schist.</li>
+        <li>Lime-plastered walls in some interior structures.</li>
+        <li>Terraced construction to adapt to hilltop contours.</li>
+        <li>Fortified walls up to several meters thick to resist sieges.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Granite</td>
+          <td>High compressive strength, weather-resistant</td>
+        </tr>
+        <tr>
+          <td>Schist</td>
+          <td>Layered, easy to split, good for dry stacking</td>
+        </tr>
+        <tr>
+          <td>Lime Plaster</td>
+          <td>Breathable, prevents dampness, antimicrobial</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>Local stone ensured cost-effectiveness and accessibility.</li>
+        <li>Dry stone masonry allowed flexibility in seismic zones.</li>
+        <li>Lime plaster used in sacred and royal areas for insulation and preservation.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>Structures laid in a linear pattern along the ridge for defense.</li>
+        <li>High elevation allowed for natural surveillance and protection.</li>
+        <li>Stone steps and retaining walls integrated with the hill terrain.</li>
+        <li>Minimal timber used due to risk of decay and fire.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Terraced base reduces sliding risk and stabilizes walls.</li>
+        <li>Thick stone walls resistant to wind and erosion.</li>
+        <li>Dry masonry allowed minor seismic movements without collapse.</li>
+        <li>Elevated layout kept structures above moisture-prone soil.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Blended defensive needs with spiritual symbolism (altars, shrines).</li>
+        <li>Harmony with topography ensured sustainability and camouflage.</li>
+        <li>Reflected centralised authority yet openness to monastic life.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Rabdentse Ruins (Traditional)</th>
+          <th>RCC Building (Modern)</th>
+        </tr>
+        <tr>
+          <td>Construction Method</td>
+          <td>Manual stone stacking, no cement</td>
+          <td>Concrete mix, steel reinforcement</td>
+        </tr>
+        <tr>
+          <td>Climate Resilience</td>
+          <td>Adapted to rainfall & erosion</td>
+          <td>Requires engineered waterproofing</td>
+        </tr>
+        <tr>
+          <td>Earthquake Safety</td>
+          <td>Flexible dry-stone system</td>
+          <td>Varies by code & detailing</td>
+        </tr>
+        <tr>
+          <td>Cultural Integration</td>
+          <td>Symbolic, site-oriented</td>
+          <td>Functional, often detached</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Namphogang stone seats for spiritual and civic decision-making.</li>
+        <li>Part of Buddhist pilgrimage circuit with Pemayangtse Monastery nearby.</li>
+        <li>Stunning views of Mt. Kanchenjunga, enhancing spiritual aura.</li>
+        <li>Showcases the transition from wooden Yuksom capital to fortified hill citadel.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Rabdentse_Ruins_Sikkim.jpg" alt="Rabdentse Ruins, Sikkim">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 3.0</p>
+  </div>
+</body>
+</html>

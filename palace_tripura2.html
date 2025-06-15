@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neermahal – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Neermahal</h1>
+    <div class="tags">
+      <span class="tag">#waterpalace</span>
+      <span class="tag">#indoislamic</span>
+      <span class="tag">#tripura</span>
+      <span class="tag">#lakearchitecture</span>
+      <span class="tag">#royalresidence</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Rudrasagar Lake, Melaghar, Tripura<br>
+      <strong>Dynasty:</strong> Manikya Dynasty<br>
+      <strong>Era:</strong> Built between 1930–1938 CE</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Commissioned by Maharaja Bir Bikram Kishore Manikya in 1930, completed in 1938.</li>
+        <li>Designed as a summer palace, inspired by Mughal water palaces like Jal Mahal in Rajasthan.</li>
+        <li>Symbol of royal leisure, artistic elegance, and engineering vision amidst nature.</li>
+        <li>It is the only water palace in Eastern India and one of two such in India.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Blends Hindu and Mughal architectural styles: domes, arches, chhatris, and jharokhas.</li>
+        <li>Built in the middle of Rudrasagar Lake with a causeway and boat access.</li>
+        <li>Divided into Andar Mahal (private quarters) and Baahar Mahal (public and cultural space).</li>
+        <li>Includes open-air theatres, gardens, reception halls, and royal bedrooms.</li>
+        <li>Strategic spatial zoning for climate comfort, aesthetics, and ritual use.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Constructed with red sandstone, brick masonry, and lime plaster.</li>
+        <li>Foundations stabilized in lakebed using stone, gravel, and baked bricks.</li>
+        <li>Lightweight iron and wood used in roofing, flooring, and decorative elements.</li>
+        <li>Ventilation ducts, arched colonnades, and natural cooling elements embedded.</li>
+        <li>Integrated lake-edge retaining walls to prevent erosion and water damage.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Designed to reflect Tripura’s royal elegance blended with natural surroundings.</li>
+        <li>Created as a palace in communion with water, emphasizing harmony and leisure.</li>
+        <li>Integrated Mughal inspiration with local environmental adaptation.</li>
+        <li>Focus on comfort during summer, aesthetic pleasure, and cultural hosting.</li>
+        <li>Architecture demonstrates status, identity, and ecological sensitivity.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Neermahal (Traditional)</th>
+          <th>RCC Structure (Modern)</th>
+        </tr>
+        <tr>
+          <td>Foundation</td>
+          <td>Distributed lakebed load, modular</td>
+          <td>Pile/raft-based, concrete-intensive</td>
+        </tr>
+        <tr>
+          <td>Cooling Mechanism</td>
+          <td>Passive (lake breeze, open halls)</td>
+          <td>Mechanical HVAC</td>
+        </tr>
+        <tr>
+          <td>Water Resilience</td>
+          <td>High (lime, sandstone)</td>
+          <td>Moderate (needs damp-proofing)</td>
+        </tr>
+        <tr>
+          <td>Aesthetic Appeal</td>
+          <td>High (artistic domes, lake reflection)</td>
+          <td>Variable, often functional</td>
+        </tr>
+        <tr>
+          <td>Maintenance</td>
+          <td>Needs heritage care</td>
+          <td>Less frequent, but more technical</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Only lake palace in Eastern India, one of two in India (other: Jal Mahal, Jaipur).</li>
+        <li>Fusion of royal leisure architecture with lake ecology and cooling design.</li>
+        <li>Boating access only, reinforcing its seclusion and luxury status.</li>
+        <li>Symbol of Tripura’s modernization drive during late princely rule.</li>
+        <li>Hosts light and sound shows, cultural events, and royal exhibitions today.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Neermahal.jpg/800px-Neermahal.jpg" alt="Neermahal, Tripura">
+    <p style="font-size:0.9rem; color:#888;">Image Credit: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

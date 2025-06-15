@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hari Parbat Fort – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hari Parbat Fort</h1>
+    <div class="tags">
+      <span class="tag">#fort</span>
+      <span class="tag">#mughalarchitecture</span>
+      <span class="tag">#afghanarchitecture</span>
+      <span class="tag">#hillfort</span>
+      <span class="tag">#stoneconstruction</span>
+    </div>
+    <div class="section">
+      <h2>Location & Patron</h2>
+      <p><strong>Location:</strong> Srinagar, Jammu & Kashmir<br>
+      <strong>Patron/Dynasty:</strong> Mughal (Akbar’s reign, 1590s); expanded by Afghan Governor Atta Muhammad Khan (early 19th c.)<br>
+      <strong>Function:</strong> Military Fortification</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Originally conceptualized by Emperor Akbar in 1590 as part of his plan to establish Nagar Nagari, a new capital in Kashmir.</li>
+        <li>The fort's construction was incomplete under Akbar; completed and fortified later by Afghan Governor Atta Muhammad Khan in the 18th–19th centuries.</li>
+        <li>Strategically located atop Hari Parbat hill, offering panoramic surveillance of Srinagar city and Dal Lake.</li>
+        <li>Besides military use, the fort is surrounded by religious sites sacred to Hindus, Muslims, and Sikhs.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Built as a hilltop fort with high defensive walls, bastions, and angular watch towers.</li>
+        <li>Features Mughal-style arched gates and Afghan-style massive masonry walls.</li>
+        <li>Rectangular plan with multi-layered stone battlements and sentry posts.</li>
+        <li>Incorporates the terrain as a natural defense element.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Rubble masonry with lime mortar used extensively.</li>
+        <li>Constructed directly over the rocky hill base, anchoring into the natural terrain.</li>
+        <li>Fortified walls with embrasures for cannons and small arms fire.</li>
+        <li>Rainwater channels and stone drainage built into the ramparts.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Rubble Stone</td>
+          <td>High compressive strength, abundant locally</td>
+        </tr>
+        <tr>
+          <td>Lime Mortar</td>
+          <td>Breathable, enhances stone bonding, ages well</td>
+        </tr>
+        <tr>
+          <td>Hill Rock Base</td>
+          <td>Stable, no need for artificial foundations</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>Abundant local stone suitable for defense structures.</li>
+        <li>Lime mortar allowed for long-term durability and maintenance flexibility.</li>
+        <li>Fort location demanded materials that blended with rocky terrain.</li>
+        <li>Thick walls provided insulation and resistance to cannon fire.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>Defensive fort architecture: high walls, angular bastions, parapets, and barbicans.</li>
+        <li>Designed for both passive surveillance and active defense using artillery.</li>
+        <li>Terraced hill form allowed for tiered defense lines.</li>
+        <li>Fort orientation took advantage of prevailing winds and slope runoff for drainage.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Built atop a solid hill—natural elevation gives inherent stability.</li>
+        <li>Wide base walls with tapering upper sections reduce lateral force stress.</li>
+        <li>High perimeter walls protected from erosion through stone base trenching.</li>
+        <li>Stormwater drainage engineered to protect internal pathways and courtyards.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Strategic defense architecture: visibility, control, and inaccessibility were key.</li>
+        <li>Terrain-first approach—fort was embedded into the hill, not imposed on it.</li>
+        <li>Utilized locally sourced stone for cost-efficiency and harmony with landscape.</li>
+        <li>Design reflects the transition from Mughal ceremonial structures to Afghan military pragmatism.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional Fort (Hari Parbat)</th>
+          <th>Modern RCC Fortification</th>
+        </tr>
+        <tr>
+          <td>Foundation</td>
+          <td>Natural rocky base</td>
+          <td>Concrete and steel foundation</td>
+        </tr>
+        <tr>
+          <td>Wall System</td>
+          <td>Thick stone walls with lime mortar</td>
+          <td>Thin RCC walls with rebar</td>
+        </tr>
+        <tr>
+          <td>Adaptation to Terrain</td>
+          <td>Built into hillside</td>
+          <td>Leveled land and grading needed</td>
+        </tr>
+        <tr>
+          <td>Sustainability</td>
+          <td>Locally sourced, low carbon</td>
+          <td>High carbon footprint materials</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>A confluence of religious and military heritage—nearby shrines include Sharika Devi Temple, Durrani Mosque, and Sikh Gurdwara.</li>
+        <li>One of the few Mughal forts built in Kashmir, later modified under Afghan rule.</li>
+        <li>Offers 360-degree view of Srinagar—defensive and symbolic dominance.</li>
+        <li>Fort’s positioning and construction strategy display pre-modern strategic urban planning.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Hari_Parbat_Fort_Srinagar.jpg" alt="Hari Parbat Fort, Srinagar">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

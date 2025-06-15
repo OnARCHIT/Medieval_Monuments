@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leh Palace – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Leh Palace</h1>
+    <div class="tags">
+      <span class="tag">#leh</span>
+      <span class="tag">#ladakh</span>
+      <span class="tag">#namgyaldynasty</span>
+      <span class="tag">#mudbrick</span>
+      <span class="tag">#tibetanarchitecture</span>
+      <span class="tag">#mountainfort</span>
+    </div>
+    <div class="section">
+      <h2>Location & Dynasty</h2>
+      <p><strong>Location:</strong> Leh, Ladakh (UT of Ladakh)<br>
+      <strong>Dynasty:</strong> Namgyal Dynasty (17th century CE)<br>
+      <strong>Function:</strong> Royal Palace and Strategic Fort</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Built in the early 17th century by King Sengge Namgyal as the royal residence.</li>
+        <li>Modeled after the Potala Palace in Lhasa (Tibet).</li>
+        <li>Served as the seat of power for the Namgyal kings until the Dogra invasion in the mid-19th century.</li>
+        <li>Now managed by the Archaeological Survey of India (ASI) as a protected monument.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Nine-storey structure built into the slope of the mountain, with palace rooms on upper floors and stables/storage below.</li>
+        <li>Reflects Tibetan Buddhist architecture with wooden beams, small windows, and mud walls.</li>
+        <li>Includes temples (Gompas) within the palace complex and ornate wall paintings, prayer halls, and a throne room.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Primary materials: sun-dried mud bricks, timber (poplar & willow), and stone.</li>
+        <li>Timber used for roofing, floor support, and structural lintels.</li>
+        <li>Flat roofs plastered with mud and clay, supported by wooden rafters.</li>
+        <li>Foundation laid directly on rock outcrops for stability.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Mud Brick</td>
+          <td>Excellent insulation, breathable, eco-friendly, easily repairable</td>
+        </tr>
+        <tr>
+          <td>Timber (Poplar)</td>
+          <td>Lightweight, locally available, high seismic flexibility</td>
+        </tr>
+        <tr>
+          <td>Stone (Rubble)</td>
+          <td>High compressive strength, erosion-resistant in base areas</td>
+        </tr>
+        <tr>
+          <td>Mud Plaster</td>
+          <td>Regulates humidity, biodegradable, low thermal conductivity</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>All materials were locally sourced, aiding in cost and labor efficiency.</li>
+        <li>Mud and timber suited to the cold, dry climate of Ladakh, offering insulation.</li>
+        <li>Construction needed to be earthquake-resistant in a seismically active zone.</li>
+        <li>Built to blend with natural terrain, both visually and structurally.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>Terraced, vertical design provided defense and thermal control.</li>
+        <li>Thick mud brick walls regulate internal temperature and support upper stories.</li>
+        <li>Timber reinforcement ensures flexibility during seismic activity.</li>
+        <li>Compact layout minimizes exposure to harsh winds and snow.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Low center of gravity, stepped design for seismic resilience.</li>
+        <li>Use of rock base minimizes foundation shift.</li>
+        <li>Overhanging roofs drain snow melt, protecting walls from water damage.</li>
+        <li>Regular plastering with mud preserves wall integrity.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Inspired by Tibetan-Buddhist traditions, designed for ritual and governance.</li>
+        <li>Integrated with terrain for defense and insulation.</li>
+        <li>Constructed using community labor and hereditary artisans.</li>
+        <li>Emphasis on sustainable living in high-altitude environment.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Leh Palace (Traditional)</th>
+          <th>RCC Structure (Modern)</th>
+        </tr>
+        <tr>
+          <td>Thermal Comfort</td>
+          <td>Passive insulation with mud brick</td>
+          <td>Requires mechanical heating/cooling</td>
+        </tr>
+        <tr>
+          <td>Earthquake Resistance</td>
+          <td>High (flexible timber + mud)</td>
+          <td>Variable without seismic retrofitting</td>
+        </tr>
+        <tr>
+          <td>Construction Time</td>
+          <td>Slower, labor-intensive</td>
+          <td>Faster, machine-based</td>
+        </tr>
+        <tr>
+          <td>Environmental Impact</td>
+          <td>Low (biodegradable)</td>
+          <td>High (cement, steel)</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Nine stories—rare for traditional Himalayan architecture.</li>
+        <li>Fusion of residential, religious, and administrative spaces.</li>
+        <li>Interior mural paintings depict Buddhist iconography and Ladakhi heritage.</li>
+        <li>Scenic overlook of the Indus Valley and the Himalayan range.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Leh_Palace_Ladakh.jpg" alt="Leh Palace, Ladakh">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

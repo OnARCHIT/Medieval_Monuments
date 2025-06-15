@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fatehgarh Sahib – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f5f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #19647e;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #4d7c8a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Fatehgarh Sahib</h1>
+    <div class="tags">
+      <span class="tag">#gurdwara</span>
+      <span class="tag">#sikharchitecture</span>
+      <span class="tag">#marble</span>
+      <span class="tag">#memorial</span>
+      <span class="tag">#civilengineering</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Fatehgarh Sahib District, Punjab<br>
+      <strong>Dynasty/Period:</strong> Built and expanded post-1700s; current Gurudwara constructed in the 19th–20th century</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Memorial shrine built at the site where Sahibzadas Zorawar Singh and Fateh Singh, sons of Guru Gobind Singh, were martyred in 1705 by the Mughals.</li>
+        <li>The site became sacred in Sikh memory and was developed over time into a major Gurdwara complex.</li>
+        <li>The main Gurdwara building was completed in the 19th century, with further renovations by Sikh rulers and modern SGPC.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Multi-domed Gurdwara featuring traditional Sikh-style domes, arches, and chattris.</li>
+        <li>Includes the main shrine (Gurudwara Fatehgarh Sahib), Bhora Sahib (underground cell), and adjacent commemorative structures.</li>
+        <li>Surrounded by fort-like walls with prominent white marble cladding.</li>
+        <li>Interior has gold and fresco decoration, and the shrine faces east.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Built with brick masonry core and marble cladding for durability and sanctity.</li>
+        <li>Lime mortar used traditionally; later sections use cement mortar.</li>
+        <li>Domes constructed using reinforced traditional techniques.</li>
+        <li>Features raised platform, drainage systems, and arched supports for structural integrity.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Marble chosen for purity and longevity, a common practice in Sikh sacred architecture.</li>
+        <li>Structure elevated for flood protection and prominence.</li>
+        <li>Architecture meant to reflect devotional sacrifice, with features that inspire reverence.</li>
+        <li>Blend of memorial symbolism and spiritual function.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional (Fatehgarh Sahib)</th>
+          <th>Modern RCC Religious Structures</th>
+        </tr>
+        <tr>
+          <td>Dome Structure</td>
+          <td>Built with bricks/mortar & stone ribs</td>
+          <td>Cast in RCC molds with reinforcement</td>
+        </tr>
+        <tr>
+          <td>Wall Finish</td>
+          <td>Marble cladding, frescoes</td>
+          <td>Painted concrete walls</td>
+        </tr>
+        <tr>
+          <td>Symbolic Form</td>
+          <td>Reflects martyrdom and sacrifice</td>
+          <td>Often standardized or minimalistic design</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Built directly on the site of martyrdom of the Sahibzadas.</li>
+        <li>Houses Bhora Sahib, an underground section where they were imprisoned.</li>
+        <li>A rare example of memorial merging with sacred space in Sikh architecture.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Fatehgarh_Sahib_Gurudwara.jpg" alt="Fatehgarh Sahib Gurdwara, Punjab">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tashiding Monastery – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tashiding Monastery</h1>
+    <div class="tags">
+      <span class="tag">#buddhistmonastery</span>
+      <span class="tag">#sikkimheritage</span>
+      <span class="tag">#stonebrick</span>
+      <span class="tag">#vernaculararchitecture</span>
+      <span class="tag">#nyingma</span>
+      <span class="tag">#spiritualarchitecture</span>
+    </div>
+    <div class="section">
+      <h2>Location & Era</h2>
+      <p><strong>Location:</strong> Tashiding, West Sikkim, India<br>
+      <strong>Tribe/Dynasty:</strong> Nyingma Sect of Tibetan Buddhism (est. 17th century)<br>
+      <strong>Era:</strong> 1641 CE, during the reign of Chogyal Phuntsog Namgyal</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Founded in 1641 CE by Ngadak Sempa Chempo Phunshok Rigzing, a follower of Guru Padmasambhava.</li>
+        <li>Considered one of the holiest monasteries in Sikkim, attracting pilgrims for the Bhumchu Festival.</li>
+        <li>Believed to be built at a site blessed by Guru Rinpoche, the legendary tantric master.</li>
+        <li>Part of Sikkim’s sacred Buddhist circuit; symbolizes purity and spiritual power.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Traditional Tibetan–Sikkimese style, harmonized with the mountainous terrain.</li>
+        <li>Main shrine consists of prayer halls, chorten (stupas), and mani walls.</li>
+        <li>Walls adorned with colorful frescoes and sacred inscriptions.</li>
+        <li>Set atop a ridge, overlooking the confluence of Rathong and Rangit Rivers—considered auspicious.</li>
+        <li>Features the "Thong-Wa-Rang-Dol" chorten, believed to cleanse all sins by sight alone.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Constructed using local stone masonry, timber frameworks, and clay-lime plaster.</li>
+        <li>Sloped roofs made of wooden shingles or corrugated metal in later restorations.</li>
+        <li>Stone walls provide thermal mass and structural stability in mountainous terrain.</li>
+        <li>Buildings laid out on terraces with retaining walls made of dry stone and rubble.</li>
+        <li>Natural pigments and mineral-based paints used for murals and frescoes.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Stone Masonry</td>
+          <td>Strong, thermally stable, locally available</td>
+        </tr>
+        <tr>
+          <td>Timber</td>
+          <td>Flexible, good for seismic zones, easy to work with</td>
+        </tr>
+        <tr>
+          <td>Lime Plaster</td>
+          <td>Breathable, prevents moisture buildup, durable in cold climates</td>
+        </tr>
+        <tr>
+          <td>Mineral Paints</td>
+          <td>Weather-resistant, derived from natural minerals, long-lasting coloration</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>Abundant natural materials (stone and wood) available in the Himalayan foothills.</li>
+        <li>Stone and lime are ideal for the cold and wet environment—resistant to freeze-thaw cycles.</li>
+        <li>Timber allows structural flexibility, important in a seismically active region.</li>
+        <li>Use of natural pigments aligns with Buddhist environmental ethics.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>Stepped terraces created using retaining stone walls—prevents soil erosion.</li>
+        <li>Monastery layout aligned along a north–south axis, according to Buddhist geomancy.</li>
+        <li>Roofs steeply sloped to allow snow and rain runoff.</li>
+        <li>Use of timber-laced stone walls to enhance seismic resilience.</li>
+        <li>Prayer halls designed with central columns and raised altars, respecting Buddhist ritual design.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Flexible timber framing within stone walls absorbs seismic vibrations.</li>
+        <li>Deep stone foundations anchored into hillside prevent slippage.</li>
+        <li>Elevated plinths protect buildings from rain and groundwater.</li>
+        <li>Regular maintenance by monks and locals reinforces structural longevity.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Emphasis on sacred orientation—structure aligned for energy harmony (feng shui-like principles).</li>
+        <li>Architectural elements reflect spiritual symbolism—colors, shapes, and murals have doctrinal meaning.</li>
+        <li>Built as spiritual retreat, so emphasis placed on isolation, serenity, and symbolism.</li>
+        <li>Focused on community spiritual function, not just architecture.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Tashiding Monastery (Traditional)</th>
+          <th>RCC Building (Modern)</th>
+        </tr>
+        <tr>
+          <td>Climate Response</td>
+          <td>High (stone thermal mass, sloped roofs)</td>
+          <td>Moderate, requires insulation</td>
+        </tr>
+        <tr>
+          <td>Earthquake Safety</td>
+          <td>High (timber flexibility)</td>
+          <td>Depends on reinforcement</td>
+        </tr>
+        <tr>
+          <td>Environmental Impact</td>
+          <td>Low (natural materials)</td>
+          <td>High (cement, steel use)</td>
+        </tr>
+        <tr>
+          <td>Cultural Value</td>
+          <td>Deeply spiritual and symbolic</td>
+          <td>Functional, minimal symbolism</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Thong-Wa-Rang-Dol Chorten—a sacred stupa believed to cleanse all sins by sight.</li>
+        <li>Hosts the annual Bhumchu Festival, during which sacred water is revealed to predict future events.</li>
+        <li>Situated in an energetic vortex as per tantric Buddhist belief—sacred geomancy.</li>
+        <li>Considered the epicenter of spiritual purity in Sikkim.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Tashiding_Monastery_Sikkim.jpg" alt="Tashiding Monastery, Sikkim">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>
