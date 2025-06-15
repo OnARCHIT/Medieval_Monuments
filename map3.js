@@ -588,7 +588,7 @@ INJK:"Jammu\and\Kashmir"
       {
         label: "TOMB",
         sublist: [
-        { name: "Khusro Tomb", file: "Tomb_UP1.html" },
+        { name: "Khusro Tomb", file: "Mosque_UP1.html" },
         { name: "Vishnupad Temple", file: "vishnupad-temple.html" },
         { name: "Mundeshwari Temple", file: "mundeshwari-temple.html" }
         ]
@@ -720,42 +720,20 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function showPopup(regionId, event) {
-  clearTimeout(hideTimeout);
-  currentRegion = regionId;
-  renderPopup(regionId);
-  popup.classList.add('active');
-  const regionSVG = document.getElementById(regionId);
-  if (regionSVG) {
-    // Temporarily show popup to get dimensions
-    popup.style.visibility = 'hidden';
-    popup.style.display = 'block';
-
-    const rect = regionSVG.getBoundingClientRect();
-    const popupWidth = popup.offsetWidth || 320;
-    const popupHeight = popup.offsetHeight || 240;
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-
-    let left, top;
-    if (rect.left + rect.width / 2 < viewportWidth / 2) {
-  // Left half: show LEFT
-  left = rect.left - popupWidth - 16;
-} else {
-  // Right half: show RIGHT
-  left = rect.right + 16;
-}
-    
-    left = Math.max(8, Math.min(left, viewportWidth - popupWidth - 8));
-    top = Math.max(rect.top + (rect.height / 2) - (popupHeight / 2), 8);
-    top = Math.min(top, viewportHeight - popupHeight - 8);
-
-    popup.style.left = left + window.scrollX + "px";
-    popup.style.top = top + window.scrollY + "px";
-    popup.style.visibility = '';
-    popup.style.display = '';
+    clearTimeout(hideTimeout);
+    currentRegion = regionId;
+    renderPopup(regionId);
+    popup.classList.add('active');
+    const regionSVG = document.getElementById(regionId);
+    if (regionSVG) {
+      const rect = regionSVG.getBoundingClientRect();
+      const popupWidth = popup.offsetWidth || 320;
+      const left = Math.max(rect.left - popupWidth - 16, 8);
+      const top = Math.max(rect.top + (rect.height / 2) - (popup.offsetHeight / 2), 8);
+      popup.style.left = left + window.scrollX + "px";
+      popup.style.top = top + window.scrollY + "px";
+    }
   }
-}
-
 
   function hidePopup() {
     popup.classList.remove('active');
@@ -766,7 +744,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 400);
     currentRegion = null;
   }
-  
 
   // Attach hover events to regions
   Object.keys(regionData).forEach(regionId => {

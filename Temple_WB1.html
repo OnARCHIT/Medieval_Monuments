@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dakshineswar Kali Temple – Interactive Heritage Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f6f6f6; }
+    header { background: #2d3a4b; color: #fff; padding: 1.5em 1em; text-align: center; }
+    nav { background: #d1e0e0; padding: 0.5em 1em; display: flex; gap: 1em; flex-wrap: wrap; }
+    nav a { color: #2d3a4b; text-decoration: none; font-weight: bold; }
+    nav a.active { text-decoration: underline; }
+    main { max-width: 900px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 10px; box-shadow: 0 2px 8px #ccc; }
+    h2 { color: #2d3a4b; }
+    .gallery { display: flex; gap: 1em; flex-wrap: wrap; margin-bottom: 2em; }
+    .gallery img { width: 100%; max-width: 420px; border-radius: 8px; box-shadow: 0 1px 4px #aaa; }
+    .fact-list { list-style: none; padding: 0; }
+    .fact-list li { margin-bottom: 0.7em; }
+    .tabs { margin-bottom: 1.5em; }
+    .tab-btn { background: #eee; border: none; padding: 0.7em 1.2em; margin-right: 0.5em; cursor: pointer; border-radius: 5px 5px 0 0; }
+    .tab-btn.active { background: #2d3a4b; color: #fff; }
+    .tab-content { display: none; padding: 1em 0; border-top: 2px solid #2d3a4b; }
+    .tab-content.active { display: block; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { padding: 0.7em; border: 1px solid #d1e0e0; text-align: left; }
+    th { background: #f0f4f8; }
+    .svg-map { width: 100%; max-width: 500px; margin: 1em auto; display: block; }
+    .svg-map:hover .hover-highlight { fill: #ffdf91; }
+    .svg-map .hover-highlight { transition: fill 0.2s; }
+    footer { background: #2d3a4b; color: #fff; text-align: center; padding: 1em 0; margin-top: 2em; }
+    @media (max-width: 600px) {
+      main { padding: 1em; }
+      .gallery { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dakshineswar Kali Temple – Interactive Heritage Portal</h1>
+    <p>Kolkata, West Bengal, India &bull; Navaratna Architecture &bull; Built by Rani Rasmoni</p>
+  </header>
+  <nav>
+    <a href="#overview" class="active" onclick="showTab('overview')">Overview</a>
+    <a href="#architecture" onclick="showTab('architecture')">Architecture</a>
+    <a href="#materials" onclick="showTab('materials')">Materials</a>
+    <a href="#gallery" onclick="showTab('gallery')">Gallery</a>
+    <a href="#map" onclick="showTab('map')">Temple Map</a>
+  </nav>
+  <main>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('overview')">Overview</button>
+      <button class="tab-btn" onclick="showTab('architecture')">Architecture</button>
+      <button class="tab-btn" onclick="showTab('materials')">Materials</button>
+      <button class="tab-btn" onclick="showTab('gallery')">Gallery</button>
+      <button class="tab-btn" onclick="showTab('map')">Temple Map</button>
+    </div>
+
+    <section id="overview" class="tab-content active">
+      <h2>Historical Background</h2>
+      <ul class="fact-list">
+        <li><strong>Location:</strong> Kolkata, West Bengal, India</li>
+        <li><strong>Founded:</strong> 1855 by Rani Rasmoni</li>
+        <li><strong>Deity:</strong> Kali</li>
+        <li><strong>Style:</strong> Navaratna (nine spires), Bengali vernacular with colonial influences</li>
+      </ul>
+      <blockquote>
+        “Dakshineswar Kali Temple symbolizes Bengal’s spiritual and cultural resurgence during the colonial era.”
+      </blockquote>
+    </section>
+
+    <section id="architecture" class="tab-content">
+      <h2>Architecture</h2>
+      <ul class="fact-list">
+        <li><strong>Style:</strong> Navaratna (nine spires), three-storeyed</li>
+        <li><strong>Platform:</strong> High, flood-resistant base</li>
+        <li><strong>Sanctum:</strong> Square plan with vaulted roof</li>
+        <li><strong>Arches:</strong> Multifoiled, for load distribution</li>
+        <li><strong>Shiva Temples:</strong> 12 subsidiary shrines</li>
+        <li><strong>Climatic Adaptation:</strong> Designed for monsoon conditions</li>
+      </ul>
+    </section>
+
+    <section id="materials" class="tab-content">
+      <h2>Materials & Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>Brick</td>
+          <td>High compressive strength, thermal mass</td>
+          <td>Main structural element</td>
+        </tr>
+        <tr>
+          <td>Lime Mortar</td>
+          <td>Flexible, resists humidity</td>
+          <td>Binding, moisture control</td>
+        </tr>
+        <tr>
+          <td>Terracotta</td>
+          <td>Decorative, weather-resistant</td>
+          <td>Limited use in ornamentation</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="gallery" class="tab-content">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Dakshineswar_Kali_Temple%2C_Kolkata.jpg" alt="Dakshineswar Kali Temple, Kolkata">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Dakshineswar_Temple_Side_View.jpg" alt="Dakshineswar Temple Side View">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Dakshineswar_Shiba_Temple_Complex.jpg" alt="Shiva Temples at Dakshineswar">
+      </div>
+      <p style="font-size:0.9em; color:#666;">Images: Wikimedia Commons (CCL)</p>
+    </section>
+
+    <section id="map" class="tab-content">
+      <h2>Interactive Temple Map</h2>
+      <!-- Simple SVG map for demonstration; you can expand with more interactivity -->
+      <svg class="svg-map" viewBox="0 0 400 300">
+        <!-- Main temple -->
+        <rect x="150" y="80" width="100" height="100" fill="#ffe082" stroke="#b8860b" stroke-width="3" class="hover-highlight"/>
+        <text x="200" y="140" font-size="18" fill="#2d3a4b" text-anchor="middle" alignment-baseline="middle">Main Shrine</text>
+        <!-- Shiva temples -->
+        <circle cx="100" cy="130" r="18" fill="#e0e0e0" stroke="#b8860b" stroke-width="2" class="hover-highlight"/>
+        <circle cx="300" cy="130" r="18" fill="#e0e0e0" stroke="#b8860b" stroke-width="2" class="hover-highlight"/>
+        <circle cx="200" cy="50" r="18" fill="#e0e0e0" stroke="#b8860b" stroke-width="2" class="hover-highlight"/>
+        <circle cx="200" cy="230" r="18" fill="#e0e0e0" stroke="#b8860b" stroke-width="2" class="hover-highlight"/>
+        <!-- Labels -->
+        <text x="100" y="130" font-size="12" fill="#2d3a4b" text-anchor="middle" alignment-baseline="middle">Shiva</text>
+        <text x="300" y="130" font-size="12" fill="#2d3a4b" text-anchor="middle" alignment-baseline="middle">Shiva</text>
+        <text x="200" y="50" font-size="12" fill="#2d3a4b" text-anchor="middle" alignment-baseline="middle">Shiva</text>
+        <text x="200" y="230" font-size="12" fill="#2d3a4b" text-anchor="middle" alignment-baseline="middle">Shiva</text>
+      </svg>
+      <p style="font-size:0.9em; color:#666;">(Hover over the map for highlights. Expand with more SVG/JS interactivity as needed.)</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Dakshineswar Kali Temple Portal &bull; Images: Wikimedia Commons CCL
+  </footer>
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+      let tabOrder = ['overview','architecture','materials','gallery','map'];
+      document.getElementById(tabId).classList.add('active');
+      let btns = document.querySelectorAll('.tab-btn');
+      let navLinks = document.querySelectorAll('nav a');
+      let idx = tabOrder.indexOf(tabId);
+      if (btns[idx]) btns[idx].classList.add('active');
+      if (navLinks[idx]) navLinks[idx].classList.add('active');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      showTab('overview');
+    });
+  </script>
+</body>
+</html>

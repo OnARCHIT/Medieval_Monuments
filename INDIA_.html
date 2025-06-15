@@ -11,8 +11,18 @@
 <!--********* Copyright (c) 2024 Pareto Softare, LLC DBA Simplemaps.com ***************************************
 ************* Free for Commercial Use, full terms at  https://simplemaps.com/resources/svg-license ************
 ************* Attribution is appreciated! https://simplemaps.com *******************************************-->
+<div id="map-container" style="position: relative;"></div>
 
-<svg baseprofile="tiny" fill="#6f9c76" height="1000" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" version="1.2" viewbox="0 0 1000 1000" width="1000" xmlns="http://www.w3.org/2000/svg">
+
+<svg baseprofile="tiny" fill="#6f9c76"  stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" version="1.2" 
+  width="100vw" 
+  height="100vh"
+ 
+   viewBox="0 0 1000 1000"
+  preserveAspectRatio="xMidYMid meet"
+    
+    style="position: absolute;width: 100vw; height: 100vh;margin-top: 105px; margin-left: 350px; display: block;"
+    xmlns="http://www.w3.org/2000/svg">
  <g id="features">
     
 
@@ -258,10 +268,14 @@
   </circle>
  </g>
 </svg>
+
+
+</div>
+
 <div id="popup-menu">Hello! I am a popup.
   
 </div>
-<button onclick="document.getElementById('popup-menu').classList.toggle('active')">Toggle Popup</button>
+
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script src="INDIA_.js"></script>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Konark Sun Temple: Interactive Heritage Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #232526 0%, #414345 100%);
+      color: #f4f4f4;
+    }
+    header {
+      background: rgba(34, 40, 49, 0.95);
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.3em;
+      color: #ffd700;
+      letter-spacing: 1.5px;
+      text-shadow: 0 2px 8px #0008;
+    }
+    .subtitle {
+      color: #bbf7d0;
+      font-size: 1.08rem;
+      margin-top: 0;
+    }
+    main {
+      max-width: 950px;
+      margin: 2rem auto;
+      background: rgba(30, 30, 40, 0.88);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+      padding: 2rem;
+    }
+    .embed-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+      margin-bottom: 2em;
+    }
+    .embed-container iframe {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px #0006;
+      background: #222;
+    }
+    .sketchfab-embed {
+      width: 500px;
+      height: 350px;
+      max-width: 100vw;
+    }
+    .hero-img {
+      max-width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.15);
+      display: block;
+      margin: 0 auto 1em auto;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      color: #ffd700;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      border-left: 5px solid #ffd700;
+      padding-left: 0.6em;
+    }
+    ul {
+      padding-left: 1.2em;
+      margin-top: 0.5em;
+    }
+    li {
+      margin-bottom: 0.5em;
+      font-size: 1.08em;
+    }
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5em;
+    }
+    .info-table th, .info-table td {
+      padding: 0.5em 1em;
+      border-bottom: 1px solid #444;
+      text-align: left;
+    }
+    .info-table th {
+      color: #ffd700;
+      background: rgba(40,40,50,0.5);
+    }
+    .info-table td {
+      color: #bbf7d0;
+    }
+    .gallery-grid {
+      display: flex;
+      gap: 1.2em;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery-grid img {
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px #0006;
+      background: #fff;
+    }
+    @media (max-width: 1100px) {
+      main { padding: 1rem; }
+      .embed-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .sketchfab-embed {
+        width: 98vw;
+        max-width: 98vw;
+        height: 300px;
+      }
+      .gallery-grid img { width: 100%; max-width: 320px; }
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      color: #bbf7d0;
+      font-size: 1rem;
+      background: rgba(0,0,0,0.12);
+      margin-top: 2rem;
+    }
+    a {
+      color: #ffd700;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Konark Sun Temple</h1>
+    <p class="subtitle">Konark, Puri District, Odisha, India &mdash; Eastern Ganga Dynasty (13th century CE)</p>
+  </header>
+  <main>
+    <section class="embed-container">
+      <!-- 3D Model via Sketchfab (public, non-copyrighted) -->
+      <iframe title="Konark Sun Temple 3D Model" class="sketchfab-embed"
+        src="https://sketchfab.com/models/6cc905be2ae34e8091eb1eaa84a17738/embed?autostart=1&ui_theme=dark"
+        allow="autoplay; fullscreen; vr"></iframe>
+    </section>
+    <section>
+      <img src="https://www.odishatourism.gov.in/images/monuments/konark-sun-temple.jpg" alt="Konark Sun Temple" class="hero-img">
+      <p style="color:#bbf7d0;font-size:0.95em;text-align:center;">
+        Image: Odisha Tourism (public domain)
+      </p>
+    </section>
+    <section>
+      <table class="info-table">
+        <tr>
+          <th>Location</th>
+          <td>Konark, Puri District, Odisha, India<br>
+              <span style="font-size:0.95em;color:#ffd700;">19.8876° N, 86.0945° E</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Dynasty</th>
+          <td>Eastern Ganga Dynasty (13th century CE)</td>
+        </tr>
+        <tr>
+          <th>Deity</th>
+          <td>Surya (Sun God)</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>Historical Background</h2>
+      <p>
+        Built in the mid-13th century by King Narasimhadeva I of the Eastern Ganga Dynasty, the Konark Sun Temple is a UNESCO World Heritage Site renowned for its Kalinga architectural style. Designed as a colossal stone chariot for Surya, it reflects Odisha’s maritime trade and artistic patronage.<br>
+        <span style="font-size:0.95em;color:#bbf7d0;">
+          References: <a href="https://en.wikipedia.org/wiki/Konark_Sun_Temple" target="_blank">Wikipedia</a>, <a href="https://www.odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments.html" target="_blank">Odisha Tourism</a>
+        </span>
+      </p>
+    </section>
+    <section>
+      <h2>Architecture</h2>
+      <ul>
+        <li>Temple shaped like a chariot with 24 carved wheels (each nearly 12 feet in diameter) and seven horses.</li>
+        <li>Features a towering rekha deula (curvilinear spire) and jagamohan (audience hall).</li>
+        <li>Intricate khondalite stone carvings depict mythological scenes, celestial beings, and daily life.</li>
+        <li>Adheres to Kalinga and Manasara architectural principles.</li>
+      </ul>
+      <div class="gallery-grid">
+        <img src="https://whc.unesco.org/uploads/thumbs/site_0246_0001-800-600-20151104164524.jpg" alt="Konark Sun Temple Wheel">
+      </div>
+      <p style="font-size:0.95em;color:#bbf7d0;">
+        Reference: <a href="https://whc.unesco.org/en/list/246/" target="_blank">UNESCO</a>
+      </p>
+    </section>
+    <section>
+      <h2>Building Material Use & Properties</h2>
+      <ul>
+        <li><b>Khondalite Stone:</b> Locally sourced, ~50–70 MPa compressive strength, ideal for intricate carvings.</li>
+        <li><b>Chlorite Stone:</b> Used for doorframes, ~60–80 MPa strength, low porosity.</li>
+        <li><b>Lime Mortar:</b> Non-hydraulic, binder:aggregate ~1:3, with organic additives (jaggery, rice husk).</li>
+        <li><b>Properties:</b> Khondalite is durable and weather-resistant, lime mortar is breathable and flexible.</li>
+      </ul>
+      <p style="font-size:0.95em;color:#bbf7d0;">
+        Reference: <a href="https://doi.org/10.1016/j.qref.2017.01.001" target="_blank">Ngoma, 2009</a>
+      </p>
+    </section>
+    <section>
+      <h2>Builder Thought Process</h2>
+      <p>
+        King Narasimhadeva I aimed to symbolize divine movement and royal grandeur, using khondalite for its carvability and lime mortar for durability in Odisha’s humid coastal climate. The chariot design reflects Surya’s cosmic journey and aligns with Manasara for spiritual and aesthetic harmony.
+      </p>
+    </section>
+    <section>
+      <h2>Structural Design & Current Condition</h2>
+      <ul>
+        <li>Load-bearing khondalite masonry with corbelled arches and a deep foundation to counter coastal erosion.</li>
+        <li>Main deula (tower) collapsed in the 19th century; remaining structures stabilized by ASI using lime-based repairs.</li>
+        <li>Salt efflorescence and weathering remain ongoing conservation challenges.</li>
+      </ul>
+      <p style="font-size:0.95em;color:#bbf7d0;">
+        Reference: <a href="http://architecturalheritage.intach.org/" target="_blank">INTACH Heritage at Risk Register</a>
+      </p>
+    </section>
+    <section>
+      <h2>Comparison with RCC Structures</h2>
+      <ul>
+        <li><b>Konark Temple (Lime-Masonry):</b> Flexible, breathable, suited to humid coastal conditions.</li>
+        <li><b>RCC Structures:</b> Higher strength but rigid and prone to salt-induced corrosion in coastal areas.</li>
+        <li><b>Advantage:</b> Lime mortar’s porosity prevents moisture retention, unlike RCC.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Unique Features</h2>
+      <ul>
+        <li><b>Chariot Design:</b> 24 wheels and seven horses symbolize time and Surya’s journey.</li>
+        <li><b>Sundial Effect:</b> Wheel shadows mark time, reflecting astronomical knowledge.</li>
+      </ul>
+      <div class="gallery-grid">
+        <img src="https://whc.unesco.org/uploads/thumbs/site_0246_0001-800-600-20151104164524.jpg" alt="Konark Wheel Sundial">
+      </div>
+    </section>
+    <section>
+      <h2>Explore More</h2>
+      <ul>
+        <li>
+          <a href="https://sketchfab.com/3d-models/sun-temple-konark-6cc905be2ae34e8091eb1eaa84a17738" target="_blank">View 3D Model on Sketchfab</a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Konark_Sun_Temple" target="_blank">Wikipedia: Konark Sun Temple</a>
+        </li>
+        <li>
+          <a href="https://www.odishatourism.gov.in/content/tourism/en/discover/attractions/temples-monuments.html" target="_blank">Odisha Tourism: Konark Sun Temple</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Konark Sun Temple Portal | Open Data & Images | Designed for Indian Heritage Explorer</p>
+  </footer>
+</body>
+</html>

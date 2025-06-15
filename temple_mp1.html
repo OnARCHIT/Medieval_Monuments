@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khajuraho Temples – Interactive Heritage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f6f6f6; }
+    header { background: #2d3a4b; color: #fff; padding: 1.5em 1em; text-align: center; }
+    nav { background: #d1e0e0; padding: 0.5em 1em; display: flex; gap: 1em; flex-wrap: wrap; }
+    nav a { color: #2d3a4b; text-decoration: none; font-weight: bold; }
+    nav a.active { text-decoration: underline; }
+    main { max-width: 900px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 10px; box-shadow: 0 2px 8px #ccc; }
+    h2 { color: #2d3a4b; }
+    .gallery { display: flex; gap: 1em; flex-wrap: wrap; margin-bottom: 2em; }
+    .gallery img { width: 100%; max-width: 420px; border-radius: 8px; box-shadow: 0 1px 4px #aaa; }
+    .fact-list { list-style: none; padding: 0; }
+    .fact-list li { margin-bottom: 0.7em; }
+    .tabs { margin-bottom: 1.5em; }
+    .tab-btn { background: #eee; border: none; padding: 0.7em 1.2em; margin-right: 0.5em; cursor: pointer; border-radius: 5px 5px 0 0; }
+    .tab-btn.active { background: #2d3a4b; color: #fff; }
+    .tab-content { display: none; padding: 1em 0; border-top: 2px solid #2d3a4b; }
+    .tab-content.active { display: block; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { padding: 0.7em; border: 1px solid #d1e0e0; text-align: left; }
+    th { background: #f0f4f8; }
+    footer { background: #2d3a4b; color: #fff; text-align: center; padding: 1em 0; margin-top: 2em; }
+    @media (max-width: 600px) {
+      main { padding: 1em; }
+      .gallery { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Khajuraho Temples – Interactive Heritage</h1>
+    <p>Chhatarpur, Madhya Pradesh, India &bull; UNESCO World Heritage Site</p>
+  </header>
+  <nav>
+    <a href="#overview" class="active" onclick="showTab('overview')">Overview</a>
+    <a href="#architecture" onclick="showTab('architecture')">Architecture</a>
+    <a href="#materials" onclick="showTab('materials')">Materials</a>
+    <a href="#gallery" onclick="showTab('gallery')">Gallery</a>
+  </nav>
+  <main>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('overview')">Overview</button>
+      <button class="tab-btn" onclick="showTab('architecture')">Architecture</button>
+      <button class="tab-btn" onclick="showTab('materials')">Materials</button>
+      <button class="tab-btn" onclick="showTab('gallery')">Gallery</button>
+    </div>
+
+    <section id="overview" class="tab-content active">
+      <h2>Historical Background</h2>
+      <ul class="fact-list">
+        <li><strong>Location:</strong> Khajuraho, Chhatarpur, Madhya Pradesh, India (24.8520° N, 79.9210° E)</li>
+        <li><strong>Dynasty:</strong> Chandela (9th–11th century CE)</li>
+        <li><strong>Deity:</strong> Hindu and Jain (Shiva, Vishnu, Tirthankaras)</li>
+        <li><strong>UNESCO World Heritage Site:</strong> Since 1986</li>
+      </ul>
+      <blockquote>
+        “Khajuraho Temples are masterpieces of Nagara-style architecture, famous for their intricate sculptures and cosmic symbolism.”<br>
+        <small>– UNESCO</small>
+      </blockquote>
+    </section>
+
+    <section id="architecture" class="tab-content">
+      <h2>Architecture</h2>
+      <ul class="fact-list">
+        <li><strong>Style:</strong> Nagara (North Indian), with curvilinear shikhara spires</li>
+        <li><strong>Key Temples:</strong> Kandariya Mahadeva (Shiva), Lakshmana Temple (Vishnu)</li>
+        <li><strong>Features:</strong> Elevated platforms, intricate sandstone carvings, spatial harmony per <em>Manasara</em></li>
+        <li><strong>Unique:</strong> Erotic sculptures (~10% of carvings), apsaras, deities, daily life scenes</li>
+      </ul>
+    </section>
+
+    <section id="materials" class="tab-content">
+      <h2>Building Materials & Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+          <th>Reason for Use</th>
+        </tr>
+        <tr>
+          <td>Sandstone (Panna)</td>
+          <td>Compressive strength 40–60 MPa, 5–8% porosity, carvable, durable</td>
+          <td>Ideal for intricate sculptures and humid climate</td>
+        </tr>
+        <tr>
+          <td>Lime Mortar</td>
+          <td>Non-hydraulic, breathable, binder:aggregate ~1:3, organic additives</td>
+          <td>Flexibility, moisture regulation, longevity</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="gallery" class="tab-content">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Kandariya_Mahadeva_Temple%2C_Khajuraho.jpg" alt="Kandariya Mahadeva Temple, Khajuraho">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Khajuraho_Temple_Complex.jpg" alt="Khajuraho Temple Complex">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Khajuraho_India_Sculpture.jpg" alt="Khajuraho Sculpture">
+      </div>
+      <p style="font-size:0.9em; color:#666;">Images: Wikimedia Commons, CCL</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Khajuraho Temples Interactive &bull; Images: Wikimedia Commons CCL
+  </footer>
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+      let tabOrder = ['overview','architecture','materials','gallery'];
+      document.getElementById(tabId).classList.add('active');
+      let btns = document.querySelectorAll('.tab-btn');
+      let navLinks = document.querySelectorAll('nav a');
+      let idx = tabOrder.indexOf(tabId);
+      if (btns[idx]) btns[idx].classList.add('active');
+      if (navLinks[idx]) navLinks[idx].classList.add('active');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      showTab('overview');
+    });
+  </script>
+</body>
+</html>

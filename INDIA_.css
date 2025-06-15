@@ -3,13 +3,47 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
 }
+#map-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden; /* Hides scrollbars for SVG map only */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map-container svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+/* Optional: Hide scrollbars visually in all browsers */
+#map-container {
+  scrollbar-width: none; /* Firefox */
+}
+#map-container::-webkit-scrollbar {
+  display: none;         /* Chrome, Safari, Opera */
+}
+
+
 
 #popup-menu {
   position: fixed;
   background: rgba(255, 255, 255, 0.15); /* translucent white */
   border-radius: 20px;
   padding: 24px 32px;
-  color: #fff;
+  color: #1a202c; /* Dark text for light background */
+  /* ...other styles... */
+
+
+
   min-width: 280px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(12px) saturate(180%);
@@ -23,6 +57,13 @@ body {
   top: 0;
   left: 0;
   transform: translate(0, 0);
+}
+@media (prefers-color-scheme: dark) {
+  #popup-menu {
+    background: rgba(28,32,36,0.98); /* Dark mode background */
+    color: #f3f4f6; /* Light text for dark background */
+    border: 1px solid rgba(255,255,255,0.18); /* Optional: lighter border in dark */
+  }
 }
 
 #popup-menu.active {
@@ -56,7 +97,9 @@ body {
   transform: scale(1.05) translateX(6px);
 }
 
-/* Sublist styles */
+
+
+
 .sublist {
   margin-left: 18px;
   overflow: hidden;
@@ -65,8 +108,8 @@ body {
   transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
   transform: translateY(10px);
   pointer-events: none;
-  color: #bbf7d0;
   font-size: 1em;
+  color: var(--sublist-color);
 }
 
 .sublist.active {
@@ -79,15 +122,19 @@ body {
 
 .sublist li {
   font-size: 1em;
-  color: #bbf7d0;
+
   margin: 6px 0;
   transition: color 0.2s, transform 0.3s;
 }
 
 .sublist li:hover {
-  color: #fff;
+  color: #ffbe78; /* Orange for hover, also high contrast */
   transform: scale(1.05) translateX(6px);
+   color: var(--sublist-hover);
 }
+ 
+
+
 
 
 /* 3D effect on map region hover (Tamil Nadu, Bihar, etc.) */
@@ -166,7 +213,7 @@ body {
 
 
 {
-  transition: filter 0.3s, transform 0.3s;
+ transition: filter 0.3s, transform 0.3s;
   cursor: pointer;
 }
 
@@ -242,6 +289,6 @@ body {
 #INLA.Ladakh:hover,
 #INJK.state:hover,
 #INJK.Jammu\and\Kashmir:hover {
-  filter: drop-shadow(0 0 16px #5a0006) brightness(1.2);
+  filter: drop-shadow(0 0 16px #dc6300) brightness(1.2);
   transform: scale(1.03) perspective(600px) rotateX(4deg) rotateZ(-2deg);
 }
