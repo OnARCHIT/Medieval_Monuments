@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barabar Caves – Mauryan Rock-Cut Marvel</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --parchment: #f9f6e7;
+      --granite: #7c7a7a;
+      --accent: #b08d57;
+      --border: #bca87e;
+      --shadow: 0 4px 24px 0 rgba(60, 45, 15, 0.13);
+      --font: 'EB Garamond', serif;
+      --text: #3b2f15;
+      --heading: #7b5b20;
+      --echo: #eaeaea;
+    }
+    body {
+      background: var(--parchment);
+      font-family: var(--font);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .barabar-section {
+      max-width: 950px;
+      margin: 2rem auto;
+      background: var(--parchment);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--border);
+      overflow: hidden;
+      padding: 0;
+    }
+    .barabar-header {
+      background: linear-gradient(90deg, var(--echo) 60%, var(--granite) 100%);
+      padding: 1.5rem 2rem 1rem 2rem;
+      text-align: center;
+    }
+    .barabar-header h1 {
+      font-size: 2.2rem;
+      color: var(--granite);
+      margin: 0 0 0.5rem 0;
+      letter-spacing: 0.04em;
+    }
+    .barabar-header p {
+      margin: 0;
+      font-size: 1.15rem;
+      color: var(--heading);
+      font-weight: 600;
+    }
+    .barabar-image-main {
+      width: 100%;
+      max-height: 370px;
+      object-fit: cover;
+      border-bottom: 2px solid var(--border);
+      display: block;
+    }
+    .barabar-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      background: var(--parchment);
+    }
+    .barabar-info {
+      flex: 2 1 320px;
+      min-width: 260px;
+    }
+    .barabar-info h2 {
+      color: var(--granite);
+      font-size: 1.2rem;
+      margin-top: 0.7em;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .barabar-info ul {
+      padding-left: 1.2em;
+      margin: 0.2em 0 1em 0;
+    }
+    .barabar-info li {
+      margin-bottom: 0.25em;
+      font-size: 1.05rem;
+    }
+    .barabar-materials, .barabar-compare {
+      background: var(--echo);
+      border-radius: 12px;
+      border: 1.5px solid var(--granite);
+      padding: 1rem 1.2rem;
+      margin-top: 1.2rem;
+      box-shadow: 0 2px 10px 0 rgba(176, 141, 87, 0.09);
+    }
+    .barabar-materials h3, .barabar-compare h3 {
+      color: var(--granite);
+      font-size: 1.1rem;
+      margin: 0 0 0.4rem 0;
+    }
+    .barabar-materials ul, .barabar-compare ul {
+      margin: 0.4em 0 0 0;
+      padding-left: 1.1em;
+    }
+    .barabar-feature {
+      flex: 1 1 220px;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .barabar-feature img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 10px;
+      border: 2px solid var(--granite);
+      box-shadow: 0 2px 14px 0 rgba(176, 141, 87, 0.12);
+      margin-bottom: 0.7rem;
+    }
+    .barabar-feature figcaption {
+      font-size: 1rem;
+      color: var(--granite);
+      text-align: center;
+      font-style: italic;
+    }
+    .barabar-unique {
+      margin-top: 1.2rem;
+      background: var(--parchment);
+      border-left: 4px solid var(--granite);
+      padding: 1rem 1.2rem;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+    .barabar-footer {
+      background: var(--echo);
+      color: var(--granite);
+      text-align: center;
+      font-size: 0.95rem;
+      padding: 0.8rem 0;
+      border-top: 2px solid var(--border);
+      letter-spacing: 0.01em;
+    }
+    @media (max-width: 900px) {
+      .barabar-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem;
+      }
+      .barabar-feature img {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 500px) {
+      .barabar-header {
+        padding: 1rem 0.5rem 0.7rem 0.5rem;
+      }
+      .barabar-content {
+        padding: 0.7rem;
+      }
+      .barabar-materials, .barabar-compare {
+        padding: 0.7rem 0.5rem;
+      }
+      .barabar-unique {
+        padding: 0.6rem 0.5rem;
+      }
+    }
+    a {
+      color: var(--granite);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <section class="barabar-section">
+    <div class="barabar-header">
+      <h1>Barabar Caves</h1>
+      <p>Mauryan Rock-Cut Meditation Caves, Jehanabad, Bihar, India</p>
+    </div>
+    <img class="barabar-image-main" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Lomas_Rishi_Cave_Barabar.jpg/800px-Lomas_Rishi_Cave_Barabar.jpg" alt="Lomas Rishi Cave, Barabar (Wikimedia Commons)">
+    <div class="barabar-content">
+      <div class="barabar-info">
+        <h2>Location</h2>
+        <ul>
+          <li><strong>City:</strong> Jehanabad, Jehanabad District, Bihar, India</li>
+          <li><strong>Coordinates:</strong> 25.0050° N, 85.0630° E</li>
+        </ul>
+        <h2>Dynasty</h2>
+        <ul>
+          <li>Mauryan Empire (323–185 BCE)</li>
+        </ul>
+        <h2>Deity</h2>
+        <ul>
+          <li>Ajivika/Buddhist (Meditation caves)</li>
+        </ul>
+        <h2>Historical Background</h2>
+        <p>
+          Carved during the Mauryan period (3rd century BCE), the Barabar Caves are India’s oldest surviving rock-cut caves, used by Ajivika and Buddhist monks. Their polished interiors reflect Mauryan engineering.<br>
+          <a href="https://en.wikipedia.org/wiki/Barabar_Caves" target="_blank" rel="noopener">Source: Wikipedia</a>
+        </p>
+        <div class="barabar-materials">
+          <h3>Building Materials & Properties</h3>
+          <ul>
+            <li><strong>Granite:</strong> Locally sourced (~100–150 MPa strength, &lt;1% porosity)</li>
+            <li><strong>No Mortar:</strong> Rock-cut monolithic structure</li>
+            <li><strong>Properties:</strong> Granite is extremely durable, low porosity, ideal for polishing</li>
+          </ul>
+        </div>
+        <div class="barabar-compare">
+          <h3>Comparison: Rock-Cut vs RCC</h3>
+          <ul>
+            <li><strong>Barabar Caves:</strong> Permanent, no mortar-related issues</li>
+            <li><strong>RCC Structures:</strong> Strong but susceptible to weathering</li>
+            <li><strong>Advantage:</strong> Granite’s monolithic nature ensures longevity</li>
+          </ul>
+        </div>
+        <div class="barabar-unique">
+          <strong>Unique Features:</strong>
+          <ul>
+            <li>Polished interiors: Mirror-like finish, rare for 3rd century BCE</li>
+            <li>Acoustic echo: Caves amplify sound, aiding meditation</li>
+            <li>Lomas Rishi Cave: Chaitya arch entrance, precursor to later Buddhist architecture</li>
+            <li>Inscriptions: Ashokan and later, reflecting dynamic religious use</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="barabar-feature">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Barabar_Cave_Interior.jpg/800px-Barabar_Cave_Interior.jpg" alt="Barabar Cave Interior, Wikimedia Commons">
+        <figcaption>Polished granite interior, Barabar Caves (Wikimedia Commons)</figcaption>
+      </figure>
+    </div>
+    <div class="barabar-footer">
+      Data &copy; Open sources | Images: Wikimedia Commons (Public Domain) | 
+      <a href="https://en.wikipedia.org/wiki/Barabar_Caves" target="_blank" rel="noopener">Learn more</a>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhimbetka Rock Shelters – Prehistoric Art of India</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --parchment: #f9f6e7;
+      --sandstone: #c2b280;
+      --ochre: #d7a86e;
+      --hematite: #b04a19;
+      --border: #bca87e;
+      --shadow: 0 4px 24px 0 rgba(60, 45, 15, 0.13);
+      --font: 'EB Garamond', serif;
+      --text: #3b2f15;
+      --heading: #7b5b20;
+      --accent: #b04a19;
+    }
+    body {
+      background: var(--parchment);
+      font-family: var(--font);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .bhimbetka-section {
+      max-width: 950px;
+      margin: 2rem auto;
+      background: var(--parchment);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--border);
+      overflow: hidden;
+      padding: 0;
+    }
+    .bhimbetka-header {
+      background: linear-gradient(90deg, var(--sandstone) 60%, var(--parchment) 100%);
+      padding: 1.5rem 2rem 1rem 2rem;
+      text-align: center;
+    }
+    .bhimbetka-header h1 {
+      font-size: 2.2rem;
+      color: var(--accent);
+      margin: 0 0 0.5rem 0;
+      letter-spacing: 0.04em;
+    }
+    .bhimbetka-header p {
+      margin: 0;
+      font-size: 1.15rem;
+      color: var(--heading);
+      font-weight: 600;
+    }
+    .bhimbetka-image-main {
+      width: 100%;
+      max-height: 370px;
+      object-fit: cover;
+      border-bottom: 2px solid var(--border);
+      display: block;
+    }
+    .bhimbetka-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      background: var(--parchment);
+    }
+    .bhimbetka-info {
+      flex: 2 1 320px;
+      min-width: 260px;
+    }
+    .bhimbetka-info h2 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-top: 0.7em;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .bhimbetka-info ul {
+      padding-left: 1.2em;
+      margin: 0.2em 0 1em 0;
+    }
+    .bhimbetka-info li {
+      margin-bottom: 0.25em;
+      font-size: 1.05rem;
+    }
+    .bhimbetka-materials, .bhimbetka-compare {
+      background: var(--sandstone);
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      padding: 1rem 1.2rem;
+      margin-top: 1.2rem;
+      box-shadow: 0 2px 10px 0 rgba(176, 141, 87, 0.09);
+    }
+    .bhimbetka-materials h3, .bhimbetka-compare h3 {
+      color: var(--accent);
+      font-size: 1.1rem;
+      margin: 0 0 0.4rem 0;
+    }
+    .bhimbetka-materials ul, .bhimbetka-compare ul {
+      margin: 0.4em 0 0 0;
+      padding-left: 1.1em;
+    }
+    .bhimbetka-feature {
+      flex: 1 1 220px;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .bhimbetka-feature img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 10px;
+      border: 2px solid var(--hematite);
+      box-shadow: 0 2px 14px 0 rgba(176, 141, 87, 0.12);
+      margin-bottom: 0.7rem;
+    }
+    .bhimbetka-feature figcaption {
+      font-size: 1rem;
+      color: var(--hematite);
+      text-align: center;
+      font-style: italic;
+    }
+    .bhimbetka-unique {
+      margin-top: 1.2rem;
+      background: var(--parchment);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.2rem;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+    .bhimbetka-footer {
+      background: var(--sandstone);
+      color: var(--accent);
+      text-align: center;
+      font-size: 0.95rem;
+      padding: 0.8rem 0;
+      border-top: 2px solid var(--border);
+      letter-spacing: 0.01em;
+    }
+    @media (max-width: 900px) {
+      .bhimbetka-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem;
+      }
+      .bhimbetka-feature img {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 500px) {
+      .bhimbetka-header {
+        padding: 1rem 0.5rem 0.7rem 0.5rem;
+      }
+      .bhimbetka-content {
+        padding: 0.7rem;
+      }
+      .bhimbetka-materials, .bhimbetka-compare {
+        padding: 0.7rem 0.5rem;
+      }
+      .bhimbetka-unique {
+        padding: 0.6rem 0.5rem;
+      }
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--heading);
+    }
+  </style>
+</head>
+<body>
+  <section class="bhimbetka-section">
+    <div class="bhimbetka-header">
+      <h1>Bhimbetka Rock Shelters</h1>
+      <p>Prehistoric Rock Art, Raisen District, Madhya Pradesh, India</p>
+    </div>
+    <img class="bhimbetka-image-main" src="https://whc.unesco.org/uploads/thumbs/site_0944_0001-800-600-20151104164524.jpg" alt="Bhimbetka Rock Paintings, UNESCO (Public Domain)">
+    <div class="bhimbetka-content">
+      <div class="bhimbetka-info">
+        <h2>Location</h2>
+        <ul>
+          <li><strong>City:</strong> Bhimbetka, Raisen District, Madhya Pradesh, India</li>
+          <li><strong>Coordinates:</strong> 22.9380° N, 77.6120° E</li>
+        </ul>
+        <h2>Dynasty</h2>
+        <ul>
+          <li>Prehistoric (Paleolithic to Mesolithic, ~30,000–10,000 BCE)</li>
+        </ul>
+        <h2>Deity</h2>
+        <ul>
+          <li>None (Prehistoric rock art shelters)</li>
+        </ul>
+        <h2>Historical Background</h2>
+        <p>
+          The Bhimbetka Rock Shelters, dating to ~30,000 BCE, provide evidence of early human habitation in India. Discovered in 1957, they feature prehistoric rock paintings and were declared a UNESCO World Heritage Site in 2003.<br>
+          <a href="https://whc.unesco.org/en/list/925/" target="_blank" rel="noopener">Source: UNESCO</a>
+        </p>
+        <div class="bhimbetka-materials">
+          <h3>Building Materials & Properties</h3>
+          <ul>
+            <li><strong>Sandstone:</strong> Natural rock formations (~40–60 MPa strength, ~5–8% porosity)</li>
+            <li><strong>No Mortar:</strong> Natural shelters, no constructed elements</li>
+            <li><strong>Pigments:</strong> Ochre, hematite, charcoal for paintings, applied directly to rock surfaces</li>
+            <li><strong>Properties:</strong> Sandstone is durable and weather-resistant; pigments are mineral-based and fade-resistant</li>
+          </ul>
+        </div>
+        <div class="bhimbetka-compare">
+          <h3>Comparison: Natural Rock vs RCC</h3>
+          <ul>
+            <li><strong>Bhimbetka Shelters:</strong> No mortar, inherently stable due to geological formation</li>
+            <li><strong>RCC Structures:</strong> Strong but artificial, requiring maintenance against weathering</li>
+            <li><strong>Advantage:</strong> Natural sandstone’s permanence outlasts RCC’s lifespan</li>
+          </ul>
+        </div>
+        <div class="bhimbetka-unique">
+          <strong>Unique Features:</strong>
+          <ul>
+            <li>Rock paintings depicting prehistoric life, dating back to ~30,000 BCE</li>
+            <li>Natural shelters: Early human dwellings without structural modifications</li>
+            <li>Boar Rock: Large mythical animal painting in deep red</li>
+            <li>Auditorium Cave: Cathedral-like natural shelter</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="bhimbetka-feature">
+        <img src="https://www.asi.nic.in/images/bhimbetka-cave.jpg" alt="Bhimbetka Cave, ASI (Public Domain)">
+        <figcaption>Bhimbetka Cave (ASI, Public Domain)</figcaption>
+      </figure>
+    </div>
+    <div class="bhimbetka-footer">
+      Data &copy; Open sources | Images: UNESCO, ASI (Public Domain) | 
+      <a href="https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters" target="_blank" rel="noopener">Learn more</a>
+    </div>
+  </section>
+</body>
+</html>

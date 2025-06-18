@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Great Mosque of Dhanbad – Indo-Islamic Heritage of Jharkhand</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --parchment: #f9f6e7;
+      --sandstone: #d2b48c;
+      --marble: #eaeaea;
+      --red: #b25a2c;
+      --lime: #ede3c6;
+      --border: #bca87e;
+      --shadow: 0 4px 24px 0 rgba(60, 45, 15, 0.13);
+      --font: 'EB Garamond', serif;
+      --text: #3b2f15;
+      --heading: #7b5b20;
+      --accent: #b25a2c;
+      --blue: #5a8fd7;
+      --green: #5a9f7d;
+    }
+    body {
+      background: var(--parchment);
+      font-family: var(--font);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .dhanbad-section {
+      max-width: 1050px;
+      margin: 2rem auto;
+      background: var(--parchment);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--border);
+      overflow: hidden;
+      padding: 0;
+      animation: fadeInPage 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .dhanbad-header {
+      background: linear-gradient(90deg, var(--lime) 60%, var(--sandstone) 100%);
+      padding: 1.5rem 2rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .dhanbad-header h1 {
+      font-size: 2.2rem;
+      color: var(--accent);
+      margin: 0 0 0.5rem 0;
+      letter-spacing: 0.04em;
+      position: relative;
+      z-index: 2;
+      animation: fadeInTitle 1.1s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes fadeInTitle {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .dhanbad-header p {
+      margin: 0;
+      font-size: 1.15rem;
+      color: var(--heading);
+      font-weight: 600;
+      z-index: 2;
+      position: relative;
+      animation: fadeInTitle 1.3s cubic-bezier(.22,1,.36,1);
+    }
+    .dhanbad-image-main {
+      width: 100%;
+      max-height: 370px;
+      object-fit: cover;
+      border-bottom: 2px solid var(--border);
+      display: block;
+      animation: imgPopIn 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes imgPopIn {
+      from { opacity: 0; transform: scale(1.08);}
+      to { opacity: 1; transform: scale(1);}
+    }
+    .dhanbad-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      background: var(--parchment);
+    }
+    .dhanbad-info {
+      flex: 2 1 340px;
+      min-width: 260px;
+      animation: fadeInBlock 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    .dhanbad-info h2 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-top: 0.7em;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .dhanbad-info ul {
+      padding-left: 1.2em;
+      margin: 0.2em 0 1em 0;
+    }
+    .dhanbad-info li {
+      margin-bottom: 0.25em;
+      font-size: 1.05rem;
+    }
+    .dhanbad-materials, .dhanbad-compare {
+      background: var(--lime);
+      border-radius: 12px;
+      border: 1.5px solid var(--sandstone);
+      padding: 1rem 1.2rem;
+      margin-top: 1.2rem;
+      box-shadow: 0 2px 10px 0 rgba(176, 141, 87, 0.09);
+      animation: fadeInBlock 1.3s cubic-bezier(.22,1,.36,1);
+    }
+    .dhanbad-materials h3, .dhanbad-compare h3 {
+      color: var(--accent);
+      font-size: 1.1rem;
+      margin: 0 0 0.4rem 0;
+    }
+    .dhanbad-materials ul, .dhanbad-compare ul {
+      margin: 0.4em 0 0 0;
+      padding-left: 1.1em;
+    }
+    .dhanbad-feature {
+      flex: 1 1 240px;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+      animation: fadeInBlock 1.3s cubic-bezier(.22,1,.36,1);
+    }
+    .dhanbad-feature img {
+      width: 100%;
+      max-width: 270px;
+      border-radius: 10px;
+      border: 2px solid var(--blue);
+      box-shadow: 0 2px 14px 0 rgba(90, 143, 215, 0.12);
+      margin-bottom: 0.7rem;
+      background: #fff;
+      animation: imgPopIn 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    .dhanbad-feature figcaption {
+      font-size: 1rem;
+      color: var(--blue);
+      text-align: center;
+      font-style: italic;
+    }
+    .dhanbad-unique {
+      margin-top: 1.2rem;
+      background: var(--parchment);
+      border-left: 4px solid var(--blue);
+      padding: 1rem 1.2rem;
+      font-size: 1.05rem;
+      color: var(--text);
+      animation: fadeInBlock 1.4s cubic-bezier(.22,1,.36,1);
+    }
+    .dhanbad-footer {
+      background: var(--lime);
+      color: var(--blue);
+      text-align: center;
+      font-size: 0.95rem;
+      padding: 0.8rem 0;
+      border-top: 2px solid var(--border);
+      letter-spacing: 0.01em;
+      animation: fadeInBlock 1.4s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes fadeInBlock {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 900px) {
+      .dhanbad-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem;
+      }
+      .dhanbad-feature img {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 500px) {
+      .dhanbad-header {
+        padding: 1rem 0.5rem 0.7rem 0.5rem;
+      }
+      .dhanbad-content {
+        padding: 0.7rem;
+      }
+      .dhanbad-materials, .dhanbad-compare {
+        padding: 0.7rem 0.5rem;
+      }
+      .dhanbad-unique {
+        padding: 0.6rem 0.5rem;
+      }
+    }
+    a {
+      color: var(--blue);
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <section class="dhanbad-section">
+    <div class="dhanbad-header">
+      <h1>Great Mosque of Dhanbad</h1>
+      <p>Indo-Islamic Heritage of Jharkhand</p>
+    </div>
+    <img class="dhanbad-image-main" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Mosque_generic_india.jpg" alt="Great Mosque of Dhanbad (Representative Image, Wikimedia Commons)">
+    <div class="dhanbad-content">
+      <div class="dhanbad-info">
+        <h2>Historical Background</h2>
+        <ul>
+          <li>Built during the Mughal period, likely in the 17th century, as Islam spread in the region.</li>
+          <li>Reflects Indo-Islamic architectural influence in Jharkhand’s urban centers.</li>
+          <li>Serves as a religious and community center for Dhanbad’s Muslim population.</li>
+        </ul>
+        <h2>Architecture</h2>
+        <ul>
+          <li>Indo-Islamic style with a large rectangular courtyard, prayer hall, and single dome.</li>
+          <li>Minarets at corners, mihrab (prayer niche) oriented toward Mecca.</li>
+          <li>Ornate calligraphy and geometric patterns inside and outside.</li>
+        </ul>
+        <h2>Structural Design</h2>
+        <ul>
+          <li>Prayer hall with a series of arches supported by slender pillars for a spacious interior.</li>
+          <li>Double-shell dome: inner brick shell, outer stone layer.</li>
+          <li>Slender, tapering minarets designed to withstand wind loads.</li>
+        </ul>
+        <div class="dhanbad-materials">
+          <h3>Materials Used & Properties</h3>
+          <ul>
+            <li><strong>Red Sandstone:</strong> Facade and minarets, durable and aesthetically pleasing.</li>
+            <li><strong>White Marble:</strong> Decorative inlays and calligraphy, weather-resistant.</li>
+            <li><strong>Brick:</strong> Core for dome and arches, lightweight and cost-effective.</li>
+          </ul>
+        </div>
+        <div class="dhanbad-compare">
+          <h3>RCC Comparison</h3>
+          <ul>
+            <li>RCC domes can span larger areas with less material.</li>
+            <li>Traditional materials are less resistant to seismic activity than RCC.</li>
+            <li>RCC allows faster construction, but traditional materials offer cultural authenticity.</li>
+          </ul>
+        </div>
+        <div class="dhanbad-unique">
+          <strong>Stability Features:</strong>
+          <ul>
+            <li>Double-shell dome distributes weight for stability.</li>
+            <li>Arches transfer loads to pillars, reducing wall stress.</li>
+            <li>Courtyard design minimizes wind resistance.</li>
+          </ul>
+          <strong>Unique Features:</strong>
+          <ul>
+            <li>Calligraphy as a decorative hallmark of Indo-Islamic architecture.</li>
+            <li>Orientation toward Mecca integrates religious symbolism.</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="dhanbad-feature">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Indo-Islamic_Arches_Mosque_India.jpg" alt="Indo-Islamic Arches, Mosque (Wikimedia Commons, CCL)">
+        <figcaption>Indo-Islamic Arches, Representative Mosque (Wikimedia Commons, CCL)</figcaption>
+      </figure>
+    </div>
+    <div class="dhanbad-footer">
+      Data &copy; Open sources | Images: Wikimedia Commons (CCL/Representative) | 
+      <a href="https://en.wikipedia.org/wiki/Mosques_in_India" target="_blank" rel="noopener">Learn more</a>
+    </div>
+  </section>
+</body>
+</html>

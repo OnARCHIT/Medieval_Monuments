@@ -94,7 +94,7 @@
                     <span class="title-line line-2">Architectural</span>
                     <span class="title-line line-3 gradient-text">Revolution</span>
                 </h1>
-                <p class="hero-subtitle">Journey through time and space with cutting-edge 3D technology</p>
+                <p class="hero-subtitle">This map comes alive — hover over states to discover hidden monuments!</p>
                 <div class="hero-actions">
                     <button class="btn btn--primary hero-btn" id="start-journey">
                         <span>Begin Your Journey</span>
@@ -121,6 +121,72 @@
             <div class="scroll-text">Scroll to explore</div>
         </div>
     </section>
+<!-- Explore More Section -->
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+
+<section class="medieval-modal-section">
+  <button class="modal-header" type="button" aria-expanded="false" aria-controls="materialModal">
+    <span class="header-icon scroll-icon"></span>
+    <span>Explore the Material across India</span>
+    <span class="header-icon chevron-icon"></span>
+  </button>
+  <div class="modal-content" id="materialModal" aria-hidden="true">
+    <div class="materials-table">
+      <!-- Row 1 -->
+      <div class="material-row">
+        <div class="material-icon hammer-icon"></div>
+        <div class="material-info">
+          <div class="material-name">Limestone</div>
+          <div class="material-thumb">
+            <img src="https://sketchfab.com/3d-models/chalk-c6f032e3a7ac4eb7833eff16f7b0c54b" alt="3D Model of Limestone" />
+          </div>
+          <div class="material-def">
+            Widely used in Indian temples and forts for its durability and fine carving.
+          </div>
+          <button class="details-btn">Detailed View</button>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="material-row">
+        <div class="material-icon hammer-icon"></div>
+        <div class="material-info">
+          <div class="material-name">Bronze</div>
+          <div class="material-thumb">
+            <img src="" alt="3D Model of Bronze" />
+          </div>
+          <div class="material-def">
+            Used for sculptures, coins, and ritual objects, especially in South India.
+          </div>
+          <button class="details-btn">Detailed View</button>
+        </div>
+      </div>
+      <!-- Row 3 -->
+      <div class="material-row">
+        <div class="material-icon hammer-icon"></div>
+        <div class="material-info">
+          <div class="material-name">Granite</div>
+          <div class="material-thumb">
+            <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+<model-viewer
+  src="https://sketchfab.com/3d-models/weinsberg-granite-7a8ceade9d12446eba0b3c0c290551b6"
+  alt="3D Model"
+  shadow-intensity="1"
+  camera-controls
+  style="width: 200px; height: 200px; background: #ede3c6; border-radius: 8px;">
+</model-viewer>
+          </div>
+          <div class="material-def">
+            Favored for temple pillars and sculptures, especially in Tamil Nadu.
+          </div>
+          <button class="details-btn">Detailed View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Monument Explorer -->
     <section id="monuments" class="monuments-section">
@@ -649,6 +715,33 @@
                             </ul>
                         </div>
                     </div>
+                   <div class="dynasty-info" data-dynasty="medieval">
+                    <h3>Medieval Indian Architecture (600-1200 CE)</h3>
+                    <div class="dynasty-features">
+                        <div class="feature-item">• Regional temple styles flourished</div>
+                        <div class="feature-item">• Monumental stone temple complexes</div>
+                        <div class="feature-item">• Distinctive Nagara, Dravida, and Vesara styles</div>
+                        <div class="feature-item">• Advanced sculptural ornamentation</div>
+                    </div>
+                    <div class="architectural-evolution">
+                        <h4>Key Innovations</h4>
+                        <ul>
+                            <li>Development of towering shikharas and vimanas</li>
+                            <li>Elaborate mandapa (pillared hall) construction</li>
+                            <li>Sophisticated drainage and ventilation systems</li>
+                            <li>Integration of astronomy in temple orientation</li>
+                        </ul>
+                    </div>
+                    <div class="floating-monument medieval-temple" data-monument="medieval-temple">
+                        <div class="monument-model temple-model">
+                            <div class="temple-base"></div>
+                            <div class="temple-shikhara"></div>
+                            <div class="temple-mandapa"></div>
+                        </div>
+                        <div class="monument-glow"></div>
+                        <div class="monument-label">Medieval Temple</div>
+                   </div>
+             
                 </div>
             </div>
         </div>
@@ -747,6 +840,211 @@
             </div>
         </div>
     </div>
+<!-- Newsletter Subscription Section -->
+<section id="newsletter" class="newsletter-section">
+    <div class="newsletter-background">
+        <div class="newsletter-particles"></div>
+        <div class="gradient-orb newsletter-orb-1"></div>
+        <div class="gradient-orb newsletter-orb-2"></div>
+        <div class="gradient-orb newsletter-orb-3"></div>
+    </div>
+    
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title gradient-text" data-lang="newsletter_title">
+                <span class="title-line line-1">Join the Heritage</span>
+                <span class="title-line line-2">Explorer Community</span>
+            </h2>
+            <p class="section-subtitle" data-lang="newsletter_subtitle">
+                Subscribe to receive exclusive updates on new monuments, virtual tours, and archaeological discoveries from across India's rich cultural heritage.
+            </p>
+        </div>
+        
+        <div class="newsletter-container">
+            <div class="newsletter-form-wrapper">
+                <div class="form-monument-scene">
+                    <div class="subscription-monument">
+                        <div class="monument-3d subscription-taj">
+                            <div class="dome-main subscription-dome"></div>
+                            <div class="dome-base-3d subscription-base"></div>
+                            <div class="minarets subscription-minarets">
+                                <div class="minaret minaret-1"></div>
+                                <div class="minaret minaret-2"></div>
+                                <div class="minaret minaret-3"></div>
+                                <div class="minaret minaret-4"></div>
+                            </div>
+                            <div class="monument-glow subscription-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="form-group newsletter-input-group">
+                        <div class="input-container">
+                            <input 
+                                type="email" 
+                                id="subscriber-email" 
+                                class="newsletter-input" 
+                                placeholder=" " 
+                                required
+                                data-lang-placeholder="email_placeholder"
+                            />
+                            <label for="subscriber-email" class="newsletter-label" data-lang="email_label">
+                                Your Email Address
+                            </label>
+                            <div class="input-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group newsletter-preferences">
+                        <h4 data-lang="preferences_title">Subscription Preferences</h4>
+                        <div class="preference-options">
+                            <label class="preference-option">
+                                <input type="checkbox" value="monuments" checked>
+                                <span class="checkmark"></span>
+                                <span data-lang="pref_monuments">New Monument Discoveries</span>
+                            </label>
+                            <label class="preference-option">
+                                <input type="checkbox" value="tours">
+                                <span class="checkmark"></span>
+                                <span data-lang="pref_tours">Virtual Tours & Events</span>
+                            </label>
+                            <label class="preference-option">
+                                <input type="checkbox" value="archaeology">
+                                <span class="checkmark"></span>
+                                <span data-lang="pref_archaeology">Archaeological Updates</span>
+                            </label>
+                            <label class="preference-option">
+                                <input type="checkbox" value="cultural">
+                                <span class="checkmark"></span>
+                                <span data-lang="pref_cultural">Cultural Heritage News</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Replace your existing newsletter button with this enhanced version -->
+<button type="submit" class="newsletter-btn btn--primary enhanced-heritage-btn">
+    <div class="btn-icon-container">
+        <div class="heritage-newsletter-icon">
+            <div class="monument-outline"></div>
+            <div class="scroll-element"></div>
+            <div class="notification-dot"></div>
+        </div>
+    </div>
+    <span class="btn-text" data-lang="subscribe_btn">Subscribe to Heritage Updates</span>
+    <div class="btn-particles"></div>
+    <div class="btn-shimmer"></div>
+</button>
+<svg class="heritage-newsletter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <!-- Monument base -->
+    <path d="M3 18h18v2H3v-2z" fill="currentColor"/>
+    <!-- Monument pillars -->
+    <path d="M5 16h2v-8H5v8zm4 0h2v-8H9v8zm4 0h2v-8h-2v8zm4 0h2v-8h-2v8z" fill="currentColor"/>
+    <!-- Monument roof -->
+    <path d="M2 8l10-4 10 4v2H2V8z" fill="currentColor"/>
+    <!-- Newsletter scroll -->
+    <path d="M14 12h8v8h-8v-8z" stroke="currentColor" stroke-width="1.5" fill="none" rx="1"/>
+    <path d="M16 14h4m-4 2h4m-4 2h2" stroke="currentColor" stroke-width="1"/>
+    <!-- Notification indicator -->
+    <circle cx="21" cy="13" r="2" fill="#FFD700" stroke="currentColor"/>
+</svg>
+        
+                    <p class="newsletter-privacy" data-lang="privacy_note">
+                        We respect your privacy. Unsubscribe at any time. No spam, just heritage.
+                    </p>
+                </form>
+            </div>
+            
+            <div class="newsletter-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="15000">0</div>
+                    <div class="stat-label" data-lang="stat_subscribers">Heritage Explorers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="250">0</div>
+                    <div class="stat-label" data-lang="stat_monuments">Monuments Covered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label" data-lang="stat_tours">Virtual Tours</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="success-modal" id="subscription-success">
+            <div class="success-content">
+                <div class="success-monument">
+                    <div class="success-taj-3d">
+                        <div class="success-dome"></div>
+                        <div class="success-base"></div>
+                    </div>
+                </div>
+                <h3 data-lang="success_title">Welcome to the Heritage Family!</h3>
+                <p data-lang="success_message">
+                    Thank you for subscribing! You'll receive your first heritage update within 24 hours.
+                </p>
+                <button class="success-close" data-lang="success_close">Explore More Monuments</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Team Credits Section - Add this to your existing HTML file -->
+<section id="credits" class="credits-section">
+    <div class="section-header">
+        <h2 class="section-title">Our Team</h2>
+        <p class="section-subtitle">This Monument Explorer website was created by a dedicated team of Civil Engineering students under the guidance of Prof. Mahendra Gattu.</p>
+    </div>
+    
+    <div class="team-container">
+        <div class="team-member">
+            <div class="image-container">
+                <img src="rahul_tm1.jpg" alt="Geddam Rahul">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Geddam Rahul</h3>
+                <p class="member-role">B.Tech in Civil Engineering</p>
+                <p class="member-institute">NIT Calicut</p>
+            </div>
+        </div>
+        
+        <div class="team-member">
+            <div class="image-container">
+                <img src="Archit_tm.jpg" alt="Archit Kumar">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Archit Kumar</h3>
+                <p class="member-role">B.Tech in Civil Engineering</p>
+                <p class="member-institute">CUJ</p>
+            </div>
+        </div>
+        
+        <div class="team-member">
+            <div class="image-container">
+                <img src="Lokesh_tm.jpg" alt="Lokesh Varma">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Lokesh Varma</h3>
+                <p class="member-role">B.Tech in Civil Engineering</p>
+                <p class="member-institute">NIT Andhra</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="professor-section">
+        <h3 class="professor-title">Guided and Supervised by</h3>
+        <div class="professor-card">
+            <div class="professor-image">
+                <a href="https://www.nitrkl.ac.in/FacultyStaff/FacultyProfile/gattum">
+                <img src="https://www.nitrkl.ac.in/docs/Faculty/Photo/1151245.jpg" alt="Prof. Mahendra Gattu">
+                </a>
+            </div>
+            <div class="professor-details">
+                <h3 class="professor-name">Prof. Mahendra Gattu</h3>
+                <p class="professor-role">Guide & Supervisor</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <script src="app3.js"></script>
     <script src="INDIA_.js"></script>

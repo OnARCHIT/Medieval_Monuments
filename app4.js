@@ -532,6 +532,37 @@ function initHeroSection() {
     createParticles('.hero-background', 30);
 }
 
+// Explore More Section Expand/Collapse
+// Accessibility and Animation for Details Panel and Confetti Burst
+document.querySelectorAll('.expand-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const panel = btn.parentElement.nextElementSibling;
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', !expanded);
+    panel.setAttribute('aria-hidden', expanded);
+
+    // Toggle panel visibility
+    if (!expanded) {
+      panel.style.display = 'block';
+      // Confetti burst
+      const confetti = panel.querySelector('.confetti');
+      confetti.innerHTML = '';
+      for (let i = 0; i < 18; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        piece.style.background = ['#d4af37', '#b08d57', '#ede3c6', '#a89f91'][i % 4];
+        piece.style.left = `${Math.random() * 80 - 40}px`;
+        piece.style.animationDelay = `${Math.random() * 0.2}s`;
+        confetti.appendChild(piece);
+      }
+      setTimeout(() => confetti.innerHTML = '', 900);
+    } else {
+      panel.style.display = 'none';
+    }
+  });
+});
+
+
 // ===== MONUMENTS SECTION =====
 function initMonumentsSection() {
     const sunSlider = document.getElementById('sun-time');

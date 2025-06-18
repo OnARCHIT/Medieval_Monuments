@@ -151,7 +151,7 @@ INJK:"Jammu\and\Kashmir"
          label: "Palace",
         sublist: [{ name: " Tamukkam Palace", file: "tamilnadu_palace1.html" },
           
-  { name: "Thanjavur Maratha Palace (Aranmanai)", file: "tamilnadu_palace2.html" },
+  { name: "Thanjavur Maratha Palace ", file: "tamilnadu_palace2.html" },
   { name: "Chepauk Palace, Chennai", file: "tamilnadu_palace3.html" },
   { name: "Chettinad Mansions (Kanadukathan/Karaikudi)", file: "tamilnadu_palace4.html" },
   { name: "Ettaiyapuram Palace", file: "tamilnadu_palace5.html" },
@@ -171,28 +171,30 @@ INJK:"Jammu\and\Kashmir"
         label: "Temple",
         sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
         { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+       ]
       },
       {
          label: "Building",
         sublist: [{ name: "NALANDA UNIVERSITY", file: "Building_BR1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_BR2.html" },
-        { name: "Allahabad Library", file: "Building_BR3.html" },
-      { name: "Anand Bhawan", file: "Building_BR4.html" }]
+       ]
       },
       {label: "Tomb",
         sublist: [
         { name: "Sher Sah Suri", file: "TOMB_BR1.html" },
-        { name: "Vishnupad Temple", file: "TOMB_BR2.html" },
-        { name: "Mundeshwari Temple", file: "TOMB_BR3.html" }
+        
         ]},
       {
         label: "fort",
         sublist: [{ name: "Rohtasgarh Fort", file: "Fort_BR1.html" },
-        { name: "Vishnupad Temple", file: "Fort_BR1.html" },
-        { name: "Mundeshwari Temple", file: "Fort_BR1.html" }]
+        ]
       },
+      {
+        label: "cave/shelter/arc",
+        sublist: [{ name: "Barbar Caves", file: "Caves_BR1.html" },
+        { name: "Viswa Shanti Stupa", file: "Caves_BR2.html" },
+        ]
+      },
+
     ],
     INAN: [
       {
@@ -257,11 +259,12 @@ INJK:"Jammu\and\Kashmir"
         { name: "", file: "Temple_BR3.html" },
       { name: "", file: "Temple_BR4.html" }]
       },
-      { label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+      {
+         label: "Fort",
+        sublist: [{ name: "Muir College", file:"fort_Arunachal pradesh1.html" },
+        { name: "All Saints Cathedral Church", file: "fort_Arunachal pradesh2.html" },
+        { name: "Allahabad Library", file: "fort_Arunachal pradesh3.html" },
+    ]
       }
     ],
     INAS: [
@@ -368,15 +371,27 @@ INJK:"Jammu\and\Kashmir"
     INGJ: [
       {
         label: "Temple",
-        sublist:[{ name: "Rani Ka Vav", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
+        sublist:[{ name: "Rani Ka Vav", file: "Temple_Gj1.html" },
+        { name: "", file: "Temple_Gj2.html" },
+        { name: "Dwarkadhish Temple", file: "Temple_Gj3.html" },
       { name: "", file: "Temple_BR4.html" }]
       },
       {
-         label: "Building",
+         label: "Building/Palace",
         sublist: [{ name: "Rani Ka Vav", file: "Building_gj1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
+        { name: "Laxmi Vilas Palace", file: "Palace_Gj1.html" },
+        { name: "Allahabad Library", file: "Building_Up3.html" },
+      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+      },
+      {
+         label: "Mosque",
+        sublist: [{ name: "Rani Ka Vav", file: "Mosque_Gj1.html" },
+       ]
+      },
+      {
+         label: "Park/Arc",
+        sublist: [{ name: "Champaner-Pavagadh", file: "Paark_Gj1.html" },
+        { name: "All Saints Cathedral Church", file: "Palace_Gj1.html" },
         { name: "Allahabad Library", file: "Building_Up3.html" },
       { name: "Anand Bhawan", file: "Building_Up4.html" }]
       }
@@ -390,11 +405,17 @@ INJK:"Jammu\and\Kashmir"
       { name: "", file: "Temple_BR4.html" }]
       },
       {
-         label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+         label: "Tomb",
+        sublist: [{ name: "Muir College", file: "tomb_haryana1.html" },
+        {name: "Muir College", file: "tomb_haryana2.html" },
+        {name: "Muir College", file: "tomb_haryana3.html" },
+    ]
+      },
+         {
+         label: "ways/shelter/park",
+        sublist: [{ name: "h1", file: "highwayarchitecture_haryana1.html" },
+       
+    ]
       }
     ],
     INHP: [
@@ -406,9 +427,9 @@ INJK:"Jammu\and\Kashmir"
       { name: "", file: "Temple_BR4.html" }]
       },
       {
-         label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
+         label: "Fort",
+        sublist: [{ name: "Muir College", file:"fort_himachal pradesh1.html" },
+        { name: "All Saints Cathedral Church", file: "fort_himachal pradesh2.html" },
         { name: "Allahabad Library", file: "Building_Up3.html" },
       { name: "Anand Bhawan", file: "Building_Up4.html" }]
       }
@@ -416,17 +437,26 @@ INJK:"Jammu\and\Kashmir"
     INJH: [
       {
         label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        sublist: [{ name: "Jaganath Temple", file: "Temple_JH1.html" },
+        { name: "Maluti Temple ", file: "Temple_JH2.html" },
+        { name: "", file: "Temple_JH3.html" },
+      ]
       },
       {
-         label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+         label: "Fort/Palace",
+        sublist: [{ name: "Palamu Fort", file: "Fort_JH1.html" },
+          { name: "Palamu Fort", file: "Fort_JH2.html" },
+       ]
+      },
+       {
+         label: "Mosque",
+        sublist: [{ name: "Palamu Fort", file: "Mosque_JH1.html" },
+       ]
+      },
+      {
+         label: "Bridge/Dam",
+        sublist: [{ name: "Subarnarekha River Bridge", file: "Bridge_JH1.html" },
+       ]
       }
     ],
     INKA: [
@@ -579,47 +609,46 @@ INJK:"Jammu\and\Kashmir"
       {
         label: "Temple",
         sublist: [{ name: "Khajuraho Temples", file: "temple_mp1.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        ]
       },
-      { label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+      { label: "Forts",
+        sublist: [{ name: "Muir College", file: "fort_mp1.html" },
+        ]
+      },
+       { label: "Cave/Shelter",
+        sublist: [{ name: "Bhimbetka", file: "cave_mp1.html" },
+        ]
       }
     ],
     INMH: [
       {
-        label: "Temple",
-        sublist:[{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        label: "Tomb",
+        sublist:[{ name: "Bibi Ka Maqbara", file: "Tomb_MR1.html" },
+        ]
       },
       {
-        label: "Caves",
+        label: "Architecture/Monestary",
         sublist:[{ name: "Ajanta", file: "caves_MR1.html" },
         { name: "Ellora ", file: "caves_MR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        { name: "Elephanta", file: "caves_MR33.html" },
+     ]
       },
       {
-         label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+         label: "Building/Arc",
+        sublist: [{ name: "Shaniwar Wada", file: "Arc_MR1.html" },
+        ]
+      },
+      {
+         label: "Way/Park",
+        sublist: [{ name: "Chhatrapati Shivaji Terminus", file: "Way_MR1.html" },
+        ]
       }
     ],
     INMN: [
       {
         label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        sublist: [{ name: "Mahabodhi Temple", file: "temple_manipur1.html" },
+        ]
       },
       {
          label: "Building",
@@ -630,22 +659,13 @@ INJK:"Jammu\and\Kashmir"
       }
     ],
     INML: [
-      {
-        label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
-      },
+      
       {
          label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
-
-
-      }
+        sublist: [{ name: "Muir College", file: "tribalarchitecture_meghalaya1.html" },
+          { name: "Muir College", file: "architecture_meghalaya2.html" },
+        ]
+      },
     ],
     INMZ: [
       {
@@ -657,26 +677,17 @@ INJK:"Jammu\and\Kashmir"
       },
       {
          label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+        sublist: [{ name: "Muir College", file: "tribalarchitecture_mizoram1.html" },
+       ]
       }
     ],
     INNL: [
+      
       {
-        label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
-      },
-      {
-        label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+        label: "Building/Arc",
+        sublist: [{ name: "Muir College", file: "tribalarchitecture_nagaland2.html" },
+        { name: "All Saints Cathedral Church", file: "stonearchitectue_nagaland1.html" },
+      ]
       }
     ],
     INOR: [
@@ -684,15 +695,15 @@ INJK:"Jammu\and\Kashmir"
         label: "Temple",
         sublist: [{ name: "Konkan Sun Temple", file: "temple_or1.html" },
         { name: "Jaganath Temple ", file: "temple_or2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        { name: "Lingaraj Temple", file: "temple_or3.html" },
+        { name: "Mukteshwar Temple", file: "temple_or4.html" },
+      ]
       },
       {
-         label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+         label: "Caves/Arc",
+        sublist: [{ name: "Udayagiri and Khandagiri Caves", file: "caves_or1.html1.html" },
+        { name: "Dhauli Shanti Stupa", file: "caves_or2.html.html" },
+        ]
       }
     ],
     INPY: [
@@ -714,75 +725,76 @@ INJK:"Jammu\and\Kashmir"
     INPB: [
       {
         label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        sublist: [{ name: "Mahabodhi Temple", file: "Gurdwara_Punjab1.html" },
+        { name: "Mundeshwari Temple ", file: "Gurdwara_Punjab2.html" },
+      ]
       },
       {
-         label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
+         label: "Building/Fort",
+        sublist: [{ name: "Muir College", file: "fort_punjab1.html" },
+        { name: "All Saints Cathedral Church", file: "fort_punjab2.html" },
         { name: "Allahabad Library", file: "Building_Up3.html" },
       { name: "Anand Bhawan", file: "Building_Up4.html" }]
       }
     ],
     INRJ: [
       {
-        label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        label: "Forts",
+        sublist: [{ name: "Amber Fort", file: "Fort_Rj1.html" },
+          { name: "Meharangarh Fort", file: "Fort_Rj2.html" },
+           { name: "Chittorgarh Fort", file: "Fort_Rj3.html" },
+       ]
       },
       {
-         label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+         label: "Palace",
+        sublist: [{ name: "Hawa Mahal", file: "Palace_Rj1.html" },
+          { name: "City Palace", file: "Palace_Rj2.html" },
+
+
+        ]
+      },
+      {
+         label: "Scientific Arc",
+        sublist: [{ name: "Jantar Mantar", file: "Arc_Rj1.html" },
+          
+
+
+        ]
       }
     ],
     INSK: [
       {
-        label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        label: "Monastery",
+        sublist: [{ name: "Mahabodhi Temple", file: "Monastery_sikkim1.html" },
+        { name: "Mundeshwari Temple ", file: "Monastery_sikkim2.html" },
+        { name: "", file: "Monastery_sikkim3.html" },
+      ]
       },
       {
-        label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+        label: "Forts",
+        sublist: [{ name: "Muir College", file: "fort_sikkim1.html" },
+     ]
       }
     ],
     INTR: [
       {
         label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        sublist: [x,y
+       ]
       },
       {
-         label: "Building",
-        sublist: [{ name: "Muir College", file: "Building_UP1.html" },
-        { name: "All Saints Cathedral Church", file: "Building_Up2.html" },
-        { name: "Allahabad Library", file: "Building_Up3.html" },
-      { name: "Anand Bhawan", file: "Building_Up4.html" }]
+         label: "Building/Palace",
+        sublist: [{ name: "Muir College", file: "palace_tripura1.html" },
+          { name: "Muir College", file: "palace_tripura2.html" },
+          { name: "Muir College", file: "tribalheritage_tripura.html" },
+          
+
+      
+        ]
       }
     ],
     INUP: [
-      {
-        label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
-      },
+      
       {
         label: "Building/Structure/Palace",
         sublist: [{ name: "Muir College", file: "Building_UP1.html" },
@@ -812,10 +824,10 @@ INJK:"Jammu\and\Kashmir"
     INUT: [
       {
         label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        sublist: [{ name: "Mahabodhi Temple", file: "temple_uttarakhand1.html" },
+        { name: "Mundeshwari Temple ", file: "temple_uttarakhand2.html" },
+        { name: "", file: "temple_uttarakhand3.html" },
+      ]
       },
       {
         label: "Building",
@@ -829,22 +841,26 @@ INJK:"Jammu\and\Kashmir"
     INWB: [
       {
         label: "Temple",
-        sublist:[{name: "Dakshineswar Kali", file: "Temple1_WB1.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        sublist:[{name: "Dakshineswar Kali", file: "Temple_WB1.html" },
+       {name: "Somapura_Mahavihara", file: "Temple_WB1.html" },
+       {name: "Jor Bangla Temple", file: "Temple_WB1.html" },
+     ]
+      },
+      {
+        label: "Mosque",
+        sublist:[{name: "Adina Mosque", file: "Mosque_WB1.html" },
+       
+     ]
       },
       {
         label: "Bridges & Highway",
         sublist:[{name: "Howrah Bridge", file: "Bridge_WB1.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+       ]
       },
       
       {
-        label: "Building",
-        sublist: ["Golghar", "Patna Secretariat", "Barabar Caves"]
+        label: "Building/Palace",
+        sublist: [{name: "Hazarduari Palace", file: "Palace_WB1.html" },]
       }
     ]
     ,
@@ -863,30 +879,32 @@ INJK:"Jammu\and\Kashmir"
     ]
     ,
     INJK: [
+      
       {
-        label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        label: "Fort",
+        sublist: [{ name: "Mahabodhi Temple", file: "fort_j&k1.html" },
+        { name: "Mundeshwari Temple ", file: "fort_j&k2.html" },
+      ]
       },
       {
-        label: "Building",
-        sublist: ["Golghar", "Patna Secretariat", "Barabar Caves"]
+        label: "Mosque",
+        sublist: [{ name: "M", file: "mosque_j&k1.html" },
+        { name: "M", file: "mosque_j&k1.html" },
+      ]
       }
     ]
     ,
     INLA: [
       {
-        label: "Temple",
-        sublist: [{ name: "Mahabodhi Temple", file: "Temple1_BR2.html" },
-        { name: "Mundeshwari Temple ", file: "Temple_BR2.html" },
-        { name: "", file: "Temple_BR3.html" },
-      { name: "", file: "Temple_BR4.html" }]
+        label: "Monastery",
+        sublist: [{ name: "Mahabodhi Temple", file: "monastery_ladakh1.html" },
+          { name: "Mahabodhi Temple", file: "monastery_ladakh2.html" },
+        ]
       },
       {
-        label: "Building",
-        sublist: ["Golghar", "Patna Secretariat", "Barabar Caves"]
+        label: "Forts",
+        sublist: [{ name: "Mahabodhi Temple", file: "fort_ladakh1.html" },
+        ]
       }
     ]
     
@@ -895,7 +913,6 @@ INJK:"Jammu\and\Kashmir"
     // Add more regions as needed
   };
  
-
 document.addEventListener('DOMContentLoaded', function () {
   const popup = document.getElementById('popup-menu');
   let hideTimeout = null;
@@ -931,6 +948,8 @@ document.addEventListener('DOMContentLoaded', function () {
     currentRegion = regionId;
     renderPopup(regionId);
     popup.classList.add('active');
+
+    // Always show popup far to the left of the SVG map, not covering it
     const regionSVG = document.getElementById(regionId);
     if (regionSVG) {
       // Temporarily show popup to get dimensions
@@ -943,11 +962,18 @@ document.addEventListener('DOMContentLoaded', function () {
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
 
-      // Always show to the LEFT of the region
-      let left = rect.left - popupWidth - 16;
-      left = Math.max(8, Math.min(left, viewportWidth - popupWidth - 8));
-      let top = Math.max(rect.top + (rect.height / 2) - (popupHeight / 2), 8);
-      top = Math.min(top, viewportHeight - popupHeight - 8);
+      // Find the map container (assumed to be parent of SVG)
+      let mapContainer = regionSVG.closest('#map-container');
+      if (!mapContainer) mapContainer = document.body;
+      const containerRect = mapContainer.getBoundingClientRect();
+
+      // Place the popup far left of the map container (not just the region)
+      let left = containerRect.left - popupWidth - 24; // 24px gap from the map container
+      left = Math.max(8, left);
+
+      // Vertically center popup to the region, but keep within viewport
+      let top = rect.top + (rect.height / 2) - (popupHeight / 2);
+      top = Math.max(8, Math.min(top, viewportHeight - popupHeight - 8));
 
       popup.style.left = left + window.scrollX + "px";
       popup.style.top = top + window.scrollY + "px";

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidi Saiyyed Mosque – Jali Marvel of Ahmedabad</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --parchment: #f9f6e7;
+      --sandstone: #c2b280;
+      --marble: #eaeaea;
+      --lime: #ede3c6;
+      --border: #bca87e;
+      --shadow: 0 4px 24px 0 rgba(60, 45, 15, 0.13);
+      --font: 'EB Garamond', serif;
+      --text: #3b2f15;
+      --heading: #7b5b20;
+      --accent: #b08d57;
+      --blue: #5a8fd7;
+    }
+    body {
+      background: var(--parchment);
+      font-family: var(--font);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .sidi-section {
+      max-width: 950px;
+      margin: 2rem auto;
+      background: var(--parchment);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--border);
+      overflow: hidden;
+      padding: 0;
+      animation: fadeInPage 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .sidi-header {
+      background: linear-gradient(90deg, var(--lime) 60%, var(--sandstone) 100%);
+      padding: 1.5rem 2rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .sidi-header h1 {
+      font-size: 2.2rem;
+      color: var(--accent);
+      margin: 0 0 0.5rem 0;
+      letter-spacing: 0.04em;
+      position: relative;
+      z-index: 2;
+      animation: fadeInTitle 1.1s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes fadeInTitle {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .sidi-header p {
+      margin: 0;
+      font-size: 1.15rem;
+      color: var(--heading);
+      font-weight: 600;
+      z-index: 2;
+      position: relative;
+      animation: fadeInTitle 1.3s cubic-bezier(.22,1,.36,1);
+    }
+    .sidi-image-main {
+      width: 100%;
+      max-height: 370px;
+      object-fit: cover;
+      border-bottom: 2px solid var(--border);
+      display: block;
+      animation: imgPopIn 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes imgPopIn {
+      from { opacity: 0; transform: scale(1.08);}
+      to { opacity: 1; transform: scale(1);}
+    }
+    .sidi-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      background: var(--parchment);
+    }
+    .sidi-info {
+      flex: 2 1 320px;
+      min-width: 260px;
+      animation: fadeInBlock 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    .sidi-info h2 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-top: 0.7em;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .sidi-info ul {
+      padding-left: 1.2em;
+      margin: 0.2em 0 1em 0;
+    }
+    .sidi-info li {
+      margin-bottom: 0.25em;
+      font-size: 1.05rem;
+    }
+    .sidi-materials, .sidi-compare {
+      background: var(--lime);
+      border-radius: 12px;
+      border: 1.5px solid var(--sandstone);
+      padding: 1rem 1.2rem;
+      margin-top: 1.2rem;
+      box-shadow: 0 2px 10px 0 rgba(176, 141, 87, 0.09);
+      animation: fadeInBlock 1.3s cubic-bezier(.22,1,.36,1);
+    }
+    .sidi-materials h3, .sidi-compare h3 {
+      color: var(--accent);
+      font-size: 1.1rem;
+      margin: 0 0 0.4rem 0;
+    }
+    .sidi-materials ul, .sidi-compare ul {
+      margin: 0.4em 0 0 0;
+      padding-left: 1.1em;
+    }
+    .sidi-feature {
+      flex: 1 1 220px;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+      animation: fadeInBlock 1.3s cubic-bezier(.22,1,.36,1);
+    }
+    .sidi-feature img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 10px;
+      border: 2px solid var(--blue);
+      box-shadow: 0 2px 14px 0 rgba(90, 143, 215, 0.12);
+      margin-bottom: 0.7rem;
+      background: #fff;
+      animation: imgPopIn 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    .sidi-feature figcaption {
+      font-size: 1rem;
+      color: var(--blue);
+      text-align: center;
+      font-style: italic;
+    }
+    .sidi-unique {
+      margin-top: 1.2rem;
+      background: var(--parchment);
+      border-left: 4px solid var(--blue);
+      padding: 1rem 1.2rem;
+      font-size: 1.05rem;
+      color: var(--text);
+      animation: fadeInBlock 1.4s cubic-bezier(.22,1,.36,1);
+    }
+    .sidi-footer {
+      background: var(--lime);
+      color: var(--blue);
+      text-align: center;
+      font-size: 0.95rem;
+      padding: 0.8rem 0;
+      border-top: 2px solid var(--border);
+      letter-spacing: 0.01em;
+      animation: fadeInBlock 1.4s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes fadeInBlock {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 900px) {
+      .sidi-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem;
+      }
+      .sidi-feature img {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 500px) {
+      .sidi-header {
+        padding: 1rem 0.5rem 0.7rem 0.5rem;
+      }
+      .sidi-content {
+        padding: 0.7rem;
+      }
+      .sidi-materials, .sidi-compare {
+        padding: 0.7rem 0.5rem;
+      }
+      .sidi-unique {
+        padding: 0.6rem 0.5rem;
+      }
+    }
+    a {
+      color: var(--blue);
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <section class="sidi-section">
+    <div class="sidi-header">
+      <h1>Sidi Saiyyed Mosque</h1>
+      <p>Jali Marvel, Ahmedabad, Gujarat, India</p>
+    </div>
+    <img class="sidi-image-main" src="https://www.gujarattourism.com/images/sidi-saiyyed-jali.jpg" alt="Sidi Saiyyed Jali, Gujarat Tourism (Public Domain)">
+    <div class="sidi-content">
+      <div class="sidi-info">
+        <h2>Location</h2>
+        <ul>
+          <li><strong>City:</strong> Ahmedabad, Ahmedabad District, Gujarat, India</li>
+          <li><strong>Coordinates:</strong> 23.0276° N, 72.5807° E</li>
+        </ul>
+        <h2>Dynasty</h2>
+        <ul>
+          <li>Gujarat Sultanate (16th century CE)</li>
+        </ul>
+        <h2>Deity</h2>
+        <ul>
+          <li>None (Islamic mosque)</li>
+        </ul>
+        <h2>Historical Background</h2>
+        <p>
+          Built in 1573 by Sidi Saiyyed, a noble under the Gujarat Sultanate, the mosque is famous for its jali screens, reflecting Indo-Islamic architectural synthesis. It is part of Ahmedabad’s UNESCO World Heritage City (2017).<br>
+          <a href="https://whc.unesco.org/en/list/1551" target="_blank" rel="noopener">Source: UNESCO</a>
+        </p>
+        <div class="sidi-materials">
+          <h3>Building Materials & Properties</h3>
+          <ul>
+            <li><strong>Sandstone:</strong> ~40–60 MPa strength, ~5–8% porosity</li>
+            <li><strong>Marble:</strong> Decorative elements (~60–80 MPa)</li>
+            <li><strong>Lime-Surkhi Mortar:</strong> Binder:aggregate ratio ~1:2</li>
+            <li><strong>Properties:</strong> Sandstone is durable, ideal for jali work; lime-surkhi mortar is breathable, suited for semi-arid climates</li>
+          </ul>
+        </div>
+        <div class="sidi-compare">
+          <h3>Comparison: Lime Masonry vs RCC</h3>
+          <ul>
+            <li><strong>Sidi Saiyyed Mosque:</strong> Flexible, breathable, ideal for jali designs</li>
+            <li><strong>RCC Structures:</strong> Stronger but less suited for intricate latticework</li>
+            <li><strong>Advantage:</strong> Lime mortar’s porosity prevents cracking</li>
+          </ul>
+        </div>
+        <div class="sidi-unique">
+          <strong>Unique Features:</strong>
+          <ul>
+            <li>Tree of Life Jali: Iconic latticework, a human-crafted symbol of Ahmedabad</li>
+            <li>Indo-Islamic Synthesis: Blends Persian and Gujarati styles</li>
+            <li>Ten semi-circular jali screens, central prayer hall, and minarets</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="sidi-feature">
+        <img src="https://www.asi.nic.in/images/sidi-saiyyed-hall.jpg" alt="Sidi Saiyyed Prayer Hall, ASI (Public Domain)">
+        <figcaption>Prayer Hall of Sidi Saiyyed Mosque (ASI, Public Domain)</figcaption>
+      </figure>
+    </div>
+    <div class="sidi-footer">
+      Data &copy; Open sources | Images: Gujarat Tourism, ASI (Public Domain) | 
+      <a href="https://en.wikipedia.org/wiki/Sidi_Saiyyed_Mosque" target="_blank" rel="noopener">Learn more</a>
+    </div>
+  </section>
+</body>
+</html>

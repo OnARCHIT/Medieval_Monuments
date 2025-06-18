@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orchha Fort – Bundela Rajput Heritage</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --parchment: #f9f6e7;
+      --limestone: #a89f91;
+      --bronze: #b08d57;
+      --scroll: #ede3c6;
+      --border: #bca87e;
+      --shadow: 0 4px 24px 0 rgba(60, 45, 15, 0.13);
+      --font: 'EB Garamond', serif;
+      --text: #3b2f15;
+      --heading: #7b5b20;
+    }
+    body {
+      background: var(--parchment);
+      font-family: var(--font);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .orchha-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: var(--parchment);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--border);
+      overflow: hidden;
+      padding: 0;
+    }
+    .orchha-header {
+      background: linear-gradient(90deg, var(--scroll) 70%, var(--limestone) 100%);
+      padding: 1.5rem 2rem 1rem 2rem;
+      text-align: center;
+    }
+    .orchha-header h1 {
+      font-size: 2.2rem;
+      color: var(--heading);
+      margin: 0 0 0.5rem 0;
+      letter-spacing: 0.04em;
+    }
+    .orchha-header p {
+      margin: 0;
+      font-size: 1.15rem;
+      color: var(--bronze);
+      font-weight: 600;
+    }
+    .orchha-image-main {
+      width: 100%;
+      max-height: 370px;
+      object-fit: cover;
+      border-bottom: 2px solid var(--border);
+      display: block;
+    }
+    .orchha-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      background: var(--parchment);
+    }
+    .orchha-info {
+      flex: 2 1 320px;
+      min-width: 260px;
+    }
+    .orchha-info h2 {
+      color: var(--bronze);
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .orchha-info ul {
+      padding-left: 1.2em;
+      margin: 0.2em 0 1em 0;
+    }
+    .orchha-info li {
+      margin-bottom: 0.25em;
+      font-size: 1.05rem;
+    }
+    .orchha-materials, .orchha-compare {
+      background: var(--scroll);
+      border-radius: 12px;
+      border: 1.5px solid var(--limestone);
+      padding: 1rem 1.2rem;
+      margin-top: 1.2rem;
+      box-shadow: 0 2px 10px 0 rgba(176, 141, 87, 0.09);
+    }
+    .orchha-materials h3, .orchha-compare h3 {
+      color: var(--bronze);
+      font-size: 1.1rem;
+      margin: 0 0 0.4rem 0;
+    }
+    .orchha-materials ul, .orchha-compare ul {
+      margin: 0.4em 0 0 0;
+      padding-left: 1.1em;
+    }
+    .orchha-feature {
+      flex: 1 1 220px;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .orchha-feature img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 10px;
+      border: 2px solid var(--bronze);
+      box-shadow: 0 2px 14px 0 rgba(176, 141, 87, 0.12);
+      margin-bottom: 0.7rem;
+    }
+    .orchha-feature figcaption {
+      font-size: 1rem;
+      color: var(--bronze);
+      text-align: center;
+      font-style: italic;
+    }
+    .orchha-unique {
+      margin-top: 1.2rem;
+      background: var(--parchment);
+      border-left: 4px solid var(--bronze);
+      padding: 1rem 1.2rem;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+    .orchha-footer {
+      background: var(--scroll);
+      color: var(--bronze);
+      text-align: center;
+      font-size: 0.95rem;
+      padding: 0.8rem 0;
+      border-top: 2px solid var(--border);
+      letter-spacing: 0.01em;
+    }
+    @media (max-width: 800px) {
+      .orchha-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem;
+      }
+      .orchha-feature img {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 500px) {
+      .orchha-header {
+        padding: 1rem 0.5rem 0.7rem 0.5rem;
+      }
+      .orchha-content {
+        padding: 0.7rem;
+      }
+      .orchha-materials, .orchha-compare {
+        padding: 0.7rem 0.5rem;
+      }
+      .orchha-unique {
+        padding: 0.6rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="orchha-section">
+    <div class="orchha-header">
+      <h1>Orchha Fort</h1>
+      <p>Bundela Rajput Palace-Fortress, Madhya Pradesh, India</p>
+    </div>
+    <img class="orchha-image-main" src="https://www.mptourism.com/images/monuments/jahangir-mahal-orchha.jpg" alt="Jahangir Mahal, Orchha Fort (MPTourism, Public Domain)">
+    <div class="orchha-content">
+      <div class="orchha-info">
+        <h2>Location</h2>
+        <ul>
+          <li><strong>City:</strong> Orchha, Niwari District, Madhya Pradesh, India</li>
+          <li><strong>Coordinates:</strong> 25.3500° N, 78.6400° E</li>
+        </ul>
+        <h2>Dynasty</h2>
+        <ul>
+          <li>Bundela Rajputs (16th–17th century CE)</li>
+        </ul>
+        <h2>Deity</h2>
+        <ul>
+          <li>None (Palace-fortress complex)</li>
+        </ul>
+        <h2>Historical Background</h2>
+        <p>
+          Built by the Bundela Rajputs in the 16th century, Orchha Fort served as their capital, featuring palaces like Jahangir Mahal and Raja Mahal. It blends Rajput and Mughal architectural styles, reflecting cultural synthesis.<br>
+          <a href="https://www.mptourism.com/" target="_blank" rel="noopener">Source: Madhya Pradesh Tourism</a>
+        </p>
+        <div class="orchha-materials">
+          <h3>Building Materials & Properties</h3>
+          <ul>
+            <li><strong>Sandstone:</strong> Durable, locally sourced, detailed carvings (~40–60 MPa, 5–8% porosity)</li>
+            <li><strong>Lime-Surkhi Mortar:</strong> Hydraulic, breathable, organic additives for durability</li>
+            <li><strong>Brick:</strong> Used in secondary structures (~10–20 MPa)</li>
+          </ul>
+        </div>
+        <div class="orchha-compare">
+          <h3>Comparison: Lime Masonry vs RCC</h3>
+          <ul>
+            <li><strong>Lime Masonry:</strong> Flexible, breathable, ideal for humid climates</li>
+            <li><strong>RCC:</strong> Rigid, strong, but prone to moisture-related cracking</li>
+          </ul>
+        </div>
+        <div class="orchha-unique">
+          <strong>Unique Features:</strong>
+          <ul>
+            <li>Jahangir Mahal: Symmetrical design, Mughal-inspired chhatris and jali screens</li>
+            <li>Raja Mahal: Frescoes depicting Hindu mythology</li>
+            <li>Phool Bagh: Ingenious water-cooled summer retreat</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="orchha-feature">
+        <img src="https://www.asi.nic.in/images/orchha-frescoes.jpg" alt="Orchha Frescoes, ASI (Public Domain)">
+        <figcaption>Frescoes in Raja Mahal, Orchha Fort (ASI, Public Domain)</figcaption>
+      </figure>
+    </div>
+    <div class="orchha-footer">
+      Data &copy; Open sources | Images: Madhya Pradesh Tourism, ASI (Public Domain) | <a href="https://en.wikipedia.org/wiki/Orchha_Fort_complex" target="_blank" rel="noopener" style="color:var(--bronze);text-decoration:underline;">Learn more</a>
+    </div>
+  </section>
+</body>
+</html>

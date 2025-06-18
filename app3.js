@@ -83,7 +83,9 @@ function initializeComponents() {
         initTimelineSection,
         initAchievementsSection,
         initAudioControls,
-        initThemeToggle
+        initThemeToggle,
+        initNewsletterSection,
+        initCreditsSection
     ];
     
     components.forEach((initFunc, index) => {
@@ -422,9 +424,26 @@ function initScrollAnimations() {
 
 // ===== HERO SECTION =====
 function initHeroSection() {
-    const startJourneyBtn = document.getElementById('start-journey');
-    const vrExperienceBtn = document.getElementById('virtual-reality');
-    const floatingMonuments = document.querySelectorAll('.floating-monument');
+  const startJourneyBtn = document.getElementById('start-journey');
+  const vrExperienceBtn = document.getElementById('virtual-reality');
+  const floatingMonuments = document.querySelectorAll('.floating-monument');
+  const heroSubtitle = document.querySelector('.hero-subtitle');
+
+  // Staggered animation for each word in the hero subtitle
+  if (heroSubtitle) {
+    const words = heroSubtitle.querySelectorAll('span');
+    words.forEach((word, i) => {
+      setTimeout(() => {
+        word.classList.add('animated');
+      }, 120 * i);
+    });
+  }
+
+window.addEventListener('DOMContentLoaded', initHeroSection);
+
+
+
+
 
     // Start journey button
     if (startJourneyBtn) {
@@ -529,6 +548,65 @@ function initHeroSection() {
     // Add particle effects to hero background
     createParticles('.hero-background', 30);
 }
+document.querySelectorAll('.expand-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const panel = btn.parentElement.nextElementSibling;
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+    if (!expanded) {
+      // Expand panel
+      btn.setAttribute('aria-expanded', 'true');
+      panel.setAttribute('aria-hidden', 'false');
+      panel.classList.add('expanded');
+
+      // Animate max-height to scrollHeight for smooth expansion
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.opacity = '1';
+
+      // Confetti burst
+      const confetti = panel.querySelector('.confetti');
+      confetti.innerHTML = '';
+      for (let i = 0; i < 20; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        // Random colors from palette
+        const colors = ['#d4af37', '#b08d57', '#ede3c6', '#a89f91'];
+        piece.style.background = colors[i % colors.length];
+
+        // Random X/Y translations for burst effect
+        const x = (Math.random() - 0.5) * 160; // -80 to +80 px
+        const y = (Math.random() - 1) * 120;   // -120 to 0 px (upwards)
+        piece.style.setProperty('--x', `${x}px`);
+        piece.style.setProperty('--y', `${y}px`);
+
+        // Random animation delay for natural effect
+        piece.style.animationDelay = (Math.random() * 0.2) + 's';
+
+        confetti.appendChild(piece);
+      }
+
+      // Remove confetti after animation ends
+      setTimeout(() => {
+        confetti.innerHTML = '';
+      }, 1000);
+
+    } else {
+      // Collapse panel
+      btn.setAttribute('aria-expanded', 'false');
+      panel.setAttribute('aria-hidden', 'true');
+
+      // Animate collapse by setting max-height to 0
+      panel.style.maxHeight = '0';
+      panel.style.opacity = '0';
+
+      // Remove shiny animation class after transition
+      panel.addEventListener('transitionend', function handler() {
+        panel.classList.remove('expanded');
+        panel.removeEventListener('transitionend', handler);
+      });
+    }
+  });
+});
 
 // ===== MONUMENTS SECTION =====
 function initMonumentsSection() {
@@ -622,6 +700,40 @@ function initMonumentsSection() {
             });
         }
     });
+    // Smooth collapsible logic for modal section
+const headerBtn = document.querySelector('.modal-header');
+const modalContent = document.getElementById('materialModal');
+
+headerBtn.addEventListener('click', () => {
+  const expanded = headerBtn.getAttribute('aria-expanded') === 'true';
+  headerBtn.setAttribute('aria-expanded', String(!expanded));
+  modalContent.setAttribute('aria-hidden', String(expanded));
+
+  if (!expanded) {
+    modalContent.classList.add('open');
+    // Set max-height to scrollHeight for smooth expand
+    modalContent.style.maxHeight = modalContent.scrollHeight + 'px';
+    modalContent.style.opacity = '1';
+  } else {
+    // Collapse: set max-height to 0 for smooth collapse
+    modalContent.style.maxHeight = '0';
+    modalContent.style.opacity = '0';
+    // Remove .open after transition for accessibility
+    setTimeout(() => {
+      if (modalContent.style.maxHeight === '0px') {
+        modalContent.classList.remove('open');
+      }
+    }, 800); // match transition duration
+  }
+});
+
+// Optional: adjust max-height on window resize if open
+window.addEventListener('resize', () => {
+  if (modalContent.classList.contains('open')) {
+    modalContent.style.maxHeight = modalContent.scrollHeight + 'px';
+  }
+});
+
 
     // Enhanced lighting update function
     function updateLighting(time) {
@@ -1904,6 +2016,270 @@ function initAchievementsSection() {
         });
     });
 }
+
+// Newsletter Subscription JavaScript
+function initNewsletterSection() {
+    const newsletterForm = document.getElementById('newsletter-form');
+    const subscriberEmail = document.getElementById('subscriber-email');
+    const successModal = document.getElementById('subscription-success');
+    const successClose = document.querySelector('.success-close');
+    const newsletterContainer = document.querySelector('.newsletter-container');
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    // Initialize scroll animations
+    initNewsletterAnimations();
+    
+    // Initialize form functionality
+    initNewsletterForm();
+    
+    // Initialize success modal
+    initSuccessModal();
+    
+    // Add particles to newsletter background
+    createNewsletterParticles();
+    
+    function initNewsletterAnimations() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('newsletter-container')) {
+                        entry.target.classList.add('visible');
+                        setTimeout(() => {
+                            animateStatsCounters();
+                        }, 500);
+                    }
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '-50px'
+        });
+        
+        if (newsletterContainer) {
+            observer.observe(newsletterContainer);
+        }
+    }
+    
+    function initNewsletterForm() {
+        if (!newsletterForm) return;
+        
+        // Enhanced email validation
+        subscriberEmail.addEventListener('input', (e) => {
+            validateEmail(e.target);
+        });
+        
+        // Form submission
+        newsletterForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = subscriberEmail.value.trim();
+            const preferences = getSelectedPreferences();
+            
+            if (!validateEmail(subscriberEmail)) {
+                showNotification('Please enter a valid email address', 'error');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = newsletterForm.querySelector('.newsletter-btn');
+            const originalText = submitBtn.querySelector('.btn-text').textContent;
+            
+            submitBtn.disabled = true;
+            submitBtn.querySelector('.btn-text').textContent = 'Subscribing...';
+            submitBtn.style.opacity = '0.7';
+            
+            try {
+                // Replace with your actual subscription API
+                await subscribeUser(email, preferences);
+                
+                showSuccessModal();
+                resetForm();
+                showNotification('Successfully subscribed to heritage updates!', 'success');
+                
+            } catch (error) {
+                console.error('Subscription error:', error);
+                showNotification('Subscription failed. Please try again.', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.querySelector('.btn-text').textContent = originalText;
+                submitBtn.style.opacity = '1';
+            }
+        });
+    }
+    
+    function initSuccessModal() {
+        if (successClose) {
+            successClose.addEventListener('click', () => {
+                successModal.classList.remove('active');
+            });
+        }
+        
+        // Close modal on background click
+        if (successModal) {
+            successModal.addEventListener('click', (e) => {
+                if (e.target === successModal) {
+                    successModal.classList.remove('active');
+                }
+            });
+        }
+    }
+    
+    function validateEmail(emailInput) {
+        const email = emailInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const isValid = emailRegex.test(email);
+        
+        if (email.length > 0) {
+            if (isValid) {
+                emailInput.style.borderColor = 'var(--color-success)';
+                emailInput.style.boxShadow = '0 0 0 3px rgba(46, 204, 113, 0.2)';
+            } else {
+                emailInput.style.borderColor = 'var(--color-error)';
+                emailInput.style.boxShadow = '0 0 0 3px rgba(231, 76, 60, 0.2)';
+            }
+        } else {
+            emailInput.style.borderColor = '';
+            emailInput.style.boxShadow = '';
+        }
+        
+        return isValid;
+    }
+    
+    function getSelectedPreferences() {
+        const checkboxes = newsletterForm.querySelectorAll('input[type="checkbox"]:checked');
+        return Array.from(checkboxes).map(cb => cb.value);
+    }
+    
+    async function subscribeUser(email, preferences) {
+        // Replace this with your actual subscription endpoint
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                // Store subscription data in localStorage for now
+                const subscriptions = JSON.parse(localStorage.getItem('newsletter_subscriptions') || '[]');
+                subscriptions.push({
+                    email: email,
+                    preferences: preferences,
+                    subscribedAt: new Date().toISOString()
+                });
+                localStorage.setItem('newsletter_subscriptions', JSON.stringify(subscriptions));
+                resolve({ success: true, email, preferences });
+            }, 2000);
+        });
+    }
+    
+    function showSuccessModal() {
+        if (successModal) {
+            successModal.classList.add('active');
+        }
+    }
+    
+    function resetForm() {
+        if (newsletterForm) {
+            newsletterForm.reset();
+            subscriberEmail.style.borderColor = '';
+            subscriberEmail.style.boxShadow = '';
+        }
+    }
+    
+    function animateStatsCounters() {
+        statNumbers.forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-count'));
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                
+                stat.textContent = Math.floor(current).toLocaleString();
+            }, 16);
+            
+            stat.style.animation = 'counterBounce 0.6s ease-out';
+        });
+    }
+    
+    function createNewsletterParticles() {
+        const particleContainer = document.querySelector('.newsletter-particles');
+        if (!particleContainer) return;
+        
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'newsletter-particle';
+            
+            const size = Math.random() * 4 + 2;
+            const posX = Math.random() * 100;
+            const posY = Math.random() * 100;
+            const duration = Math.random() * 20 + 10;
+            const delay = Math.random() * 5;
+            
+            Object.assign(particle.style, {
+                position: 'absolute',
+                left: posX + '%',
+                top: posY + '%',
+                width: size + 'px',
+                height: size + 'px',
+                borderRadius: '50%',
+                backgroundColor: i % 3 === 0 ? 'rgba(33, 128, 141, 0.4)' :
+                                i % 3 === 1 ? 'rgba(255, 193, 133, 0.4)' :
+                                'rgba(255, 255, 255, 0.6)',
+                opacity: '0.7',
+                animation: `newsletterFloat ${duration}s infinite ease-in-out ${delay}s`,
+                pointerEvents: 'none'
+            });
+            
+            particleContainer.appendChild(particle);
+        }
+    }
+}
+// Add this to your existing JavaScript file to initialize animations
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize credits section animations
+    initCreditsSection();
+});
+
+function initCreditsSection() {
+    const creditsSection = document.querySelector('.credits-section');
+    const sectionHeader = document.querySelector('.section-header');
+    const teamMembers = document.querySelectorAll('.team-member');
+    const professorSection = document.querySelector('.professor-section');
+    
+    if (!creditsSection) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('section-header')) {
+                    entry.target.classList.add('visible');
+                }
+                
+                if (entry.target.classList.contains('professor-section')) {
+                    entry.target.classList.add('visible');
+                }
+                
+                if (entry.target.classList.contains('team-member')) {
+                    entry.target.classList.add('visible');
+                }
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '-50px'
+    });
+    
+    if (sectionHeader) observer.observe(sectionHeader);
+    if (professorSection) observer.observe(professorSection);
+    
+    // Add staggered animation to team members
+    teamMembers.forEach((member, index) => {
+        member.style.transitionDelay = `${0.1 * (index + 1)}s`;
+        observer.observe(member);
+    });
+}
+
 
 // ===== HELPER FUNCTIONS =====
 
