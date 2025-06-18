@@ -1,1053 +1,2040 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revolutionary Monument Explorer - Immersive 3D Experience</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="INDIA_.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Revolutionary Monument Explorer - Immersive 3D Experience</title>
+
+    <link rel="stylesheet" href="style3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
-    <!-- Immersive Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-container">
-            <div class="monument-builder">
-                <div class="stone-block block-1"></div>
-                <div class="stone-block block-2"></div>
-                <div class="stone-block block-3"></div>
-                <div class="stone-block block-4"></div>
-                <div class="stone-block block-5"></div>
-            </div>
-            <div class="loading-text">
-                <h2>Building Ancient Wonders...</h2>
-                <div class="progress-bar">
-                    <div class="progress-fill"></div>
-                </div>
-                <p class="loading-status">Initializing 3D Engine</p>
-            </div>
-        </div>
-        <div class="particle-system"></div>
-    </div>
 
-    <!-- Dynamic Navigation -->
-    <nav id="main-nav" class="floating-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-3d">MONUMENTS</span>
-                <div class="logo-shadow"></div>
-            </div>
-            <div class="nav-links">
-                <a href="#hero" data-section="hero" class="nav-link active">
-                    <span class="link-text">Explore</span>
-                    <div class="link-glow"></div>
-                </a>
-                <a href="#monuments" data-section="monuments" class="nav-link">
-                    <span class="link-text">3D Gallery</span>
-                    <div class="link-glow"></div>
-                </a>
-                <a href="#games" data-section="games" class="nav-link">
-                    <span class="link-text">Games</span>
-                    <div class="link-glow"></div>
-                </a>
-                <a href="#laboratory" data-section="laboratory" class="nav-link">
-                    <span class="link-text">Lab</span>
-                    <div class="link-glow"></div>
-                </a>
-                <a href="#timeline" data-section="timeline" class="nav-link">
-                    <span class="link-text">Time Portal</span>
-                    <div class="link-glow"></div>
-                </a>
-            </div>
-            <div class="nav-controls">
-                <button id="theme-toggle" class="control-btn">
-                    <div class="sun-moon-icon"></div>
-                </button>
-                <button id="audio-toggle" class="control-btn">
-                    <div class="audio-icon"></div>
-                </button>
-            </div>
-        </div>
-    </nav>
+    <!-- Immersive Loading Screen -->
 
-    <!-- Cursor Enhancement -->
-    <div id="custom-cursor">
-        <div class="cursor-trail"></div>
-        <div class="cursor-glow"></div>
-    </div>
+    <div id="loading-screen" class="loading-screen">
 
-    <!-- Hero Section - 3D India Map -->
-    <section id="hero" class="hero-section">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line line-1">Experience India's</span>
-                    <span class="title-line line-2">Architectural</span>
-                    <span class="title-line line-3 gradient-text">Revolution</span>
-                </h1>
-                <p class="hero-subtitle">This map comes alive — hover over states to discover hidden monuments!</p>
-                <div class="hero-actions">
-                    <button class="btn btn--primary hero-btn" id="start-journey">
-                        <span>Begin Your Journey</span>
-                        <div class="btn-particles"></div>
-                    </button>
-                    <button class="btn btn--outline hero-btn" id="virtual-reality">
-                        <span>VR Experience</span>
-                        <div class="btn-shimmer"></div>
-                    </button>
-                </div>
-            </div>
-            
-            <div class="hero-3d-scene">
-               <iframe 
-                src="INDIA_.html" 
-                title="Hero Section"
-                style="width:100%; min-height:600px; border:none; display:block;">
-                Your browser does not support iframes.
-                </iframe> 
-                </div>
-        
-        <div class="scroll-indicator">
-            <div class="scroll-line"></div>
-            <div class="scroll-text">Scroll to explore</div>
-        </div>
-    </section>
+        <div class="loading-container">
+
+            <div class="monument-builder">
+
+                <div class="stone-block block-1"></div>
+
+                <div class="stone-block block-2"></div>
+
+                <div class="stone-block block-3"></div>
+
+                <div class="stone-block block-4"></div>
+
+                <div class="stone-block block-5"></div>
+
+            </div>
+
+            <div class="loading-text">
+
+                <h2>Building Ancient Wonders...</h2>
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+                <p class="loading-status">Initializing 3D Engine</p>
+
+            </div>
+
+        </div>
+
+        <div class="particle-system"></div>
+
+    </div>
+
+  
+
+    <!-- Dynamic Navigation -->
+
+    <nav id="main-nav" class="floating-nav">
+
+        <div class="nav-container">
+
+            <div class="nav-logo">
+
+                <span class="logo-3d">MONUMENTS</span>
+
+                <div class="logo-shadow"></div>
+
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#hero" data-section="hero" class="nav-link active">
+
+                    <span class="link-text">Explore</span>
+
+                    <div class="link-glow"></div>
+
+                </a>
+
+                <a href="#monuments" data-section="monuments" class="nav-link">
+
+                    <span class="link-text">3D Gallery</span>
+
+                    <div class="link-glow"></div>
+
+                </a>
+
+                <a href="#games" data-section="games" class="nav-link">
+
+                    <span class="link-text">Games</span>
+
+                    <div class="link-glow"></div>
+
+                </a>
+
+                <a href="#laboratory" data-section="laboratory" class="nav-link">
+
+                    <span class="link-text">Lab</span>
+
+                    <div class="link-glow"></div>
+
+                </a>
+
+                <a href="#timeline" data-section="timeline" class="nav-link">
+
+                    <span class="link-text">Time Portal</span>
+
+                    <div class="link-glow"></div>
+
+                </a>
+
+            </div>
+
+            <div class="nav-controls">
+
+                <button id="theme-toggle" class="control-btn">
+
+                    <div class="sun-moon-icon"></div>
+
+                </button>
+
+                <button id="audio-toggle" class="control-btn">
+
+                    <div class="audio-icon"></div>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+  
+
+    <!-- Cursor Enhancement -->
+
+    <div id="custom-cursor">
+
+        <div class="cursor-trail"></div>
+
+        <div class="cursor-glow"></div>
+
+    </div>
+
+  
+
+    <!-- Hero Section - 3D India Map -->
+
+    <section id="hero" class="hero-section">
+
+        <div class="hero-background">
+
+            <div class="gradient-orb orb-1"></div>
+
+            <div class="gradient-orb orb-2"></div>
+
+            <div class="gradient-orb orb-3"></div>
+
+        </div>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h1 class="hero-title">
+
+                    <span class="title-line line-1">Experience India's</span>
+
+                    <span class="title-line line-2">Architectural</span>
+
+                    <span class="title-line line-3 gradient-text">Revolution</span>
+
+                </h1>
+
+                <p class="hero-subtitle">This map comes alive — hover over states to discover hidden monuments!</p>
+
+                <div class="hero-actions">
+
+                    <button class="btn btn--primary hero-btn" id="start-journey">
+
+                        <span>Begin Your Journey</span>
+
+                        <div class="btn-particles"></div>
+
+                    </button>
+
+                    <button class="btn btn--outline hero-btn" id="virtual-reality">
+
+                        <span>VR Experience</span>
+
+                        <div class="btn-shimmer"></div>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="hero-3d-scene">
+
+               <iframe
+
+                src="INDIA_.html"
+
+                title="Hero Section"
+
+                style="width:100%; min-height:600px; border:none; display:block;">
+
+                Your browser does not support iframes.
+
+                </iframe>
+
+                </div>
+
+        <div class="scroll-indicator">
+
+            <div class="scroll-line"></div>
+
+            <div class="scroll-text">Scroll to explore</div>
+
+        </div>
+
+    </section>
+
 <!-- Explore More Section -->
- <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+
+  
 
 <section class="medieval-modal-section">
-  <button class="modal-header" type="button" aria-expanded="false" aria-controls="materialModal">
-    <span class="header-icon scroll-icon"></span>
-    <span>Explore the Material across India</span>
-    <span class="header-icon chevron-icon"></span>
-  </button>
-  <div class="modal-content" id="materialModal" aria-hidden="true">
-    <div class="materials-table">
-      <!-- Row 1 -->
-      <div class="material-row">
-        <div class="material-icon hammer-icon"></div>
-        <div class="material-info">
-          <div class="material-name">Limestone</div>
-          <div class="material-thumb">
-            <img src="https://sketchfab.com/3d-models/chalk-c6f032e3a7ac4eb7833eff16f7b0c54b" alt="3D Model of Limestone" />
-          </div>
-          <div class="material-def">
-            Widely used in Indian temples and forts for its durability and fine carving.
-          </div>
-          <button class="details-btn">Detailed View</button>
-        </div>
-      </div>
-      <!-- Row 2 -->
-      <div class="material-row">
-        <div class="material-icon hammer-icon"></div>
-        <div class="material-info">
-          <div class="material-name">Bronze</div>
-          <div class="material-thumb">
-            <img src="" alt="3D Model of Bronze" />
-          </div>
-          <div class="material-def">
-            Used for sculptures, coins, and ritual objects, especially in South India.
-          </div>
-          <button class="details-btn">Detailed View</button>
-        </div>
-      </div>
-      <!-- Row 3 -->
-      <div class="material-row">
-        <div class="material-icon hammer-icon"></div>
-        <div class="material-info">
-          <div class="material-name">Granite</div>
-          <div class="material-thumb">
-            <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+  <button class="modal-header" type="button" aria-expanded="false" aria-controls="materialModal">
+
+    <span class="header-icon scroll-icon"></span>
+
+    <span>Explore the Material across India</span>
+
+    <span class="header-icon chevron-icon"></span>
+
+  </button>
+
+  <div class="modal-content" id="materialModal" aria-hidden="true">
+
+    <div class="materials-table">
+
+      <!-- Row 1 -->
+
+      <div class="material-row">
+
+        <div class="material-icon hammer-icon"></div>
+
+        <div class="material-info">
+
+          <div class="material-name">Limestone</div>
+
+          <div class="material-thumb">
+
+            <img src="https://sketchfab.com/3d-models/chalk-c6f032e3a7ac4eb7833eff16f7b0c54b" alt="3D Model of Limestone" />
+
+          </div>
+
+          <div class="material-def">
+
+            Widely used in Indian temples and forts for its durability and fine carving.
+
+          </div>
+
+          <button class="details-btn">Detailed View</button>
+
+        </div>
+
+      </div>
+
+      <!-- Row 2 -->
+
+      <div class="material-row">
+
+        <div class="material-icon hammer-icon"></div>
+
+        <div class="material-info">
+
+          <div class="material-name">Bronze</div>
+
+          <div class="material-thumb">
+
+            <img src="" alt="3D Model of Bronze" />
+
+          </div>
+
+          <div class="material-def">
+
+            Used for sculptures, coins, and ritual objects, especially in South India.
+
+          </div>
+
+          <button class="details-btn">Detailed View</button>
+
+        </div>
+
+      </div>
+
+      <!-- Row 3 -->
+
+      <div class="material-row">
+
+        <div class="material-icon hammer-icon"></div>
+
+        <div class="material-info">
+
+          <div class="material-name">Granite</div>
+
+          <div class="material-thumb">
+
+            <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+  
 
 <model-viewer
-  src="https://sketchfab.com/3d-models/weinsberg-granite-7a8ceade9d12446eba0b3c0c290551b6"
-  alt="3D Model"
-  shadow-intensity="1"
-  camera-controls
-  style="width: 200px; height: 200px; background: #ede3c6; border-radius: 8px;">
+
+  src="https://sketchfab.com/3d-models/weinsberg-granite-7a8ceade9d12446eba0b3c0c290551b6"
+
+  alt="3D Model"
+
+  shadow-intensity="1"
+
+  camera-controls
+
+  style="width: 200px; height: 200px; background: #ede3c6; border-radius: 8px;">
+
 </model-viewer>
-          </div>
-          <div class="material-def">
-            Favored for temple pillars and sculptures, especially in Tamil Nadu.
-          </div>
-          <button class="details-btn">Detailed View</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+          </div>
+
+          <div class="material-def">
+
+            Favored for temple pillars and sculptures, especially in Tamil Nadu.
+
+          </div>
+
+          <button class="details-btn">Detailed View</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
+  
+  
+  
 
+    <!-- Monument Explorer -->
 
-    <!-- Monument Explorer -->
-    <section id="monuments" class="monuments-section">
-        <div class="section-header">
-            <h2 class="section-title">3D Monument Gallery</h2>
-            <p class="section-subtitle">Explore architectural masterpieces with advanced lighting simulation</p>
-        </div>
-        
-        <div class="sun-controls">
-            <div class="sun-slider-container">
-                <label for="sun-time">Time of Day</label>
-                <input type="range" id="sun-time" class="sun-slider" min="0" max="24" value="12" step="0.5">
-                <div class="time-labels">
-                    <span>Dawn</span>
-                    <span>Noon</span>
-                    <span>Dusk</span>
-                    <span>Night</span>
-                </div>
-            </div>
-            <div class="lighting-info">
-                <div class="sun-position">
-                    <div class="sun-indicator"></div>
-                </div>
-                <div class="lighting-stats">
-                    <span class="light-intensity">Intensity: <span id="light-value">100%</span></span>
-                    <span class="shadow-length">Shadow: <span id="shadow-value">Short</span></span>
-                </div>
-            </div>
-        </div>
+    <section id="monuments" class="monuments-section">
 
-  <section id="monuments" class="monuments-section">
-         <div class="monuments-grid">
-    <h2 style="text-align:center; font-size: 28px; margin-top: 40px;">Interactive 3D Model Gallery</h2>
+        <div class="section-header">
 
-    <div class="monuments-grid" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; padding: 30px 0;">
+            <h2 class="section-title">3D Monument Gallery</h2>
 
-      <!-- Taj Mahal -->
-      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
-        <h3 style="text-align: center;">Taj Mahal</h3>
-        <iframe title="Taj Mahal" frameborder="0" allowfullscreen mozallowfullscreen="true"
-          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
-          web-share width="100%" height="300"
-          src="https://sketchfab.com/models/c8eb2e89098746898b94f0b556ecdefe/embed">
-        </iframe>
-      </div>
+            <p class="section-subtitle">Explore architectural masterpieces with advanced lighting simulation</p>
 
-      <!-- Charminar -->
-      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
-        <h3 style="text-align: center;">Charminar</h3>
-        <iframe title="Charminar" frameborder="0" allowfullscreen mozallowfullscreen="true"
-          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
-          web-share width="100%" height="300"
-          src="https://sketchfab.com/models/bb880d064036496ca14ebac08a243af0/embed">
-        </iframe>
-      </div>
+        </div>
 
-      <!-- Ellora Caves -->
-      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
-        <h3 style="text-align: center;">Ellora Caves</h3>
-        <iframe title="Ellora Caves" frameborder="0" allowfullscreen mozallowfullscreen="true"
-          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
-          web-share width="100%" height="300"
-          src="https://sketchfab.com/models/1a5ec1e212f9451e80dc051e97164d17/embed">
-        </iframe>
-      </div>
+        <div class="sun-controls">
 
-      <!-- Red Fort -->
-      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
-        <h3 style="text-align: center;">Red Fort</h3>
-        <iframe title="Red Fort" frameborder="0" allowfullscreen mozallowfullscreen="true"
-          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
-          web-share width="100%" height="300"
-          src="https://sketchfab.com/models/2ad9ae0a1b524a37a2c3ab245b0e5423/embed">
-        </iframe>
-      </div>
+            <div class="sun-slider-container">
 
-      <!-- Rajgad Fort -->
-      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
-        <h3 style="text-align: center;">Rajgad Fort</h3>
-        <iframe title="Rajgad Fort" frameborder="0" allowfullscreen mozallowfullscreen="true"
-          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
-          web-share width="100%" height="300"
-          src="https://sketchfab.com/models/ae06291e8d79463b950c0f71d28ad90f/embed">
-        </iframe>
-      </div>
+                <label for="sun-time">Time of Day</label>
 
-      <!-- Indian Fort -->
-      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
-        <h3 style="text-align: center;">Indian Fort</h3>
-        <iframe title="Indian Fort" frameborder="0" allowfullscreen mozallowfullscreen="true"
-          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
-          web-share width="100%" height="300"
-          src="https://sketchfab.com/models/be4432b8b18b451eb9081e959e348e6e/embed">
-        </iframe>
-      </div>
-      </div>
-    </div>
-        </div>
-    </section>
+                <input type="range" id="sun-time" class="sun-slider" min="0" max="24" value="12" step="0.5">
 
-    <!-- Interactive Games Section -->
-    <section id="games" class="games-section">
-        <div class="section-header">
-            <h2 class="section-title">Architecture Games</h2>
-            <p class="section-subtitle">Master the art of monument construction through immersive challenges</p>
-        </div>
+                <div class="time-labels">
 
-        <div class="games-grid">
-            <div class="game-card architect-game active-game">
-                <div class="game-preview">
-                    <div class="game-3d-scene">
-                        <div class="building-blocks">
-                            <div class="block block-stone"></div>
-                            <div class="block block-marble"></div>
-                            <div class="block block-granite"></div>
-                        </div>
-                        <div class="construction-grid"></div>
-                    </div>
-                </div>
-                <div class="game-info">
-                    <h3>Master Architect Challenge</h3>
-                    <p>Design and build monuments using authentic materials and engineering principles</p>
-                    <div class="game-features">
-                        <span class="feature">Physics Simulation</span>
-                        <span class="feature">Material Properties</span>
-                        <span class="feature">Structural Analysis</span>
-                    </div>
-                    <button class="btn btn--primary play-btn" data-game="architect">
-                        <span>Play Now</span>
-                    </button>
-                </div>
-            </div>
+                    <span>Dawn</span>
 
-            <div class="game-card timeline-game">
-                <div class="game-preview">
-                    <div class="game-3d-scene">
-                        <div class="time-portal">
-                            <div class="portal-rings">
-                                <div class="ring ring-1"></div>
-                                <div class="ring ring-2"></div>
-                                <div class="ring ring-3"></div>
-                            </div>
-                            <div class="historical-scenes">
-                                <div class="scene ancient"></div>
-                                <div class="scene medieval"></div>
-                                <div class="scene modern"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="game-info">
-                    <h3>Time Portal Quest</h3>
-                    <p>Navigate through centuries of Indian architecture and unlock dynastic secrets</p>
-                    <div class="game-features">
-                        <span class="feature">Historical Accuracy</span>
-                        <span class="feature">Dynasty Exploration</span>
-                        <span class="feature">Cultural Insights</span>
-                    </div>
-                    <button class="btn btn--primary play-btn" data-game="timeline">
-                        <span>Play Now</span>
-                    </button>
-                </div>
-            </div>
+                    <span>Noon</span>
 
-            <div class="game-card physics-game">
-                <div class="game-preview">
-                    <div class="game-3d-scene">
-                        <div class="physics-demo">
-                            <div class="stress-visualization">
-                                <div class="stress-lines"></div>
-                                <div class="force-arrows"></div>
-                            </div>
-                            <div class="structure-test">
-                                <div class="test-monument"></div>
-                                <div class="load-indicator"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="game-info">
-                    <h3>Engineering Simulator</h3>
-                    <p>Test monument stability under various conditions using advanced physics</p>
-                    <div class="game-features">
-                        <span class="feature">Stress Analysis</span>
-                        <span class="feature">Load Testing</span>
-                        <span class="feature">Material Science</span>
-                    </div>
-                    <button class="btn btn--primary play-btn" data-game="physics">
-                        <span>Play Now</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+                    <span>Dusk</span>
 
-        <!-- Active Game Interface -->
-        <div id="game-interface" class="game-interface hidden">
-            <div class="game-header">
-                <h3 id="game-title">Master Architect Challenge</h3>
-                <div class="game-progress">
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="game-progress-fill"></div>
-                    </div>
-                    <span class="progress-text" id="game-progress-text">Level 1 of 5</span>
-                </div>
-                <button class="btn btn--outline close-game" id="close-game">×</button>
-            </div>
-            
-            <div class="game-content">
-                <div class="game-viewport">
-                    <div class="construction-area">
-                        <div class="build-grid" id="build-grid"></div>
-                        <div class="placed-blocks" id="placed-blocks"></div>
-                    </div>
-                    <div class="game-controls">
-                        <div class="material-palette">
-                            <div class="material-option active" data-material="stone">
-                                <div class="material-preview stone-material"></div>
-                                <span>Red Sandstone</span>
-                            </div>
-                            <div class="material-option" data-material="marble">
-                                <div class="material-preview marble-material"></div>
-                                <span>White Marble</span>
-                            </div>
-                            <div class="material-option" data-material="granite">
-                                <div class="material-preview granite-material"></div>
-                                <span>Granite</span>
-                            </div>
-                        </div>
-                        <div class="build-tools">
-                            <button class="tool-btn active" data-tool="place">Place</button>
-                            <button class="tool-btn" data-tool="remove">Remove</button>
-                            <button class="tool-btn" data-tool="rotate">Rotate</button>
-                            <button class="tool-btn" data-tool="analyze">Analyze</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="game-sidebar">
-                    <div class="challenge-info">
-                        <h4>Current Challenge</h4>
-                        <p id="challenge-description">Build a stable foundation using red sandstone blocks. Ensure proper weight distribution.</p>
-                    </div>
-                    <div class="stability-meter">
-                        <h4>Structural Stability</h4>
-                        <div class="stability-gauge">
-                            <div class="gauge-fill" id="stability-fill"></div>
-                        </div>
-                        <span class="stability-text" id="stability-text">85% Stable</span>
-                    </div>
-                    <div class="game-actions">
-                        <button class="btn btn--primary" id="test-structure">Test Structure</button>
-                        <button class="btn btn--secondary" id="reset-level">Reset Level</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <span>Night</span>
+
+                </div>
+
+            </div>
+
+            <div class="lighting-info">
+
+                <div class="sun-position">
+
+                    <div class="sun-indicator"></div>
+
+                </div>
+
+                <div class="lighting-stats">
+
+                    <span class="light-intensity">Intensity: <span id="light-value">100%</span></span>
+
+                    <span class="shadow-length">Shadow: <span id="shadow-value">Short</span></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+  
+
+  <section id="monuments" class="monuments-section">
+
+         <div class="monuments-grid">
+
+    <h2 style="text-align:center; font-size: 28px; margin-top: 40px;">Interactive 3D Model Gallery</h2>
+
+  
+
+    <div class="monuments-grid" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; padding: 30px 0;">
+
+  
+
+      <!-- Taj Mahal -->
+
+      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
+
+        <h3 style="text-align: center;">Taj Mahal</h3>
+
+        <iframe title="Taj Mahal" frameborder="0" allowfullscreen mozallowfullscreen="true"
+
+          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+
+          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+
+          web-share width="100%" height="300"
+
+          src="https://sketchfab.com/models/c8eb2e89098746898b94f0b556ecdefe/embed">
+
+        </iframe>
+
+      </div>
+
+  
+
+      <!-- Charminar -->
+
+      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
+
+        <h3 style="text-align: center;">Charminar</h3>
+
+        <iframe title="Charminar" frameborder="0" allowfullscreen mozallowfullscreen="true"
+
+          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+
+          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+
+          web-share width="100%" height="300"
+
+          src="https://sketchfab.com/models/bb880d064036496ca14ebac08a243af0/embed">
+
+        </iframe>
+
+      </div>
+
+  
+
+      <!-- Ellora Caves -->
+
+      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
+
+        <h3 style="text-align: center;">Ellora Caves</h3>
+
+        <iframe title="Ellora Caves" frameborder="0" allowfullscreen mozallowfullscreen="true"
+
+          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+
+          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+
+          web-share width="100%" height="300"
+
+          src="https://sketchfab.com/models/1a5ec1e212f9451e80dc051e97164d17/embed">
+
+        </iframe>
+
+      </div>
+
+  
+
+      <!-- Red Fort -->
+
+      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
+
+        <h3 style="text-align: center;">Red Fort</h3>
+
+        <iframe title="Red Fort" frameborder="0" allowfullscreen mozallowfullscreen="true"
+
+          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+
+          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+
+          web-share width="100%" height="300"
+
+          src="https://sketchfab.com/models/2ad9ae0a1b524a37a2c3ab245b0e5423/embed">
+
+        </iframe>
+
+      </div>
+
+  
+
+      <!-- Rajgad Fort -->
+
+      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
+
+        <h3 style="text-align: center;">Rajgad Fort</h3>
+
+        <iframe title="Rajgad Fort" frameborder="0" allowfullscreen mozallowfullscreen="true"
+
+          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+
+          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+
+          web-share width="100%" height="300"
+
+          src="https://sketchfab.com/models/ae06291e8d79463b950c0f71d28ad90f/embed">
+
+        </iframe>
+
+      </div>
+
+  
+
+      <!-- Indian Fort -->
+
+      <div class="monument-card" style="flex: 1 1 320px; max-width: 400px;">
+
+        <h3 style="text-align: center;">Indian Fort</h3>
+
+        <iframe title="Indian Fort" frameborder="0" allowfullscreen mozallowfullscreen="true"
+
+          webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+
+          xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+
+          web-share width="100%" height="300"
+
+          src="https://sketchfab.com/models/be4432b8b18b451eb9081e959e348e6e/embed">
+
+        </iframe>
+
+      </div>
+
+      </div>
+
+    </div>
+
+        </div>
+
+    </section>
+
+  
+
+    <!-- Interactive Games Section -->
+
+    <section id="games" class="games-section">
+
+        <div class="section-header">
+
+            <h2 class="section-title">Architecture Games</h2>
+
+            <p class="section-subtitle">Master the art of monument construction through immersive challenges</p>
+
+        </div>
+
+  
+
+        <div class="games-grid">
+
+            <div class="game-card architect-game active-game">
+
+                <div class="game-preview">
+
+                    <div class="game-3d-scene">
+
+                        <div class="building-blocks">
+
+                            <div class="block block-stone"></div>
+
+                            <div class="block block-marble"></div>
+
+                            <div class="block block-granite"></div>
+
+                        </div>
+
+                        <div class="construction-grid"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <h3>Master Architect Challenge</h3>
+
+                    <p>Design and build monuments using authentic materials and engineering principles</p>
+
+                    <div class="game-features">
+
+                        <span class="feature">Physics Simulation</span>
+
+                        <span class="feature">Material Properties</span>
+
+                        <span class="feature">Structural Analysis</span>
+
+                    </div>
+
+                    <button class="btn btn--primary play-btn" data-game="architect">
+
+                        <span>Play Now</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+  
+
+            <div class="game-card timeline-game">
+
+                <div class="game-preview">
+
+                    <div class="game-3d-scene">
+
+                        <div class="time-portal">
+
+                            <div class="portal-rings">
+
+                                <div class="ring ring-1"></div>
+
+                                <div class="ring ring-2"></div>
+
+                                <div class="ring ring-3"></div>
+
+                            </div>
+
+                            <div class="historical-scenes">
+
+                                <div class="scene ancient"></div>
+
+                                <div class="scene medieval"></div>
+
+                                <div class="scene modern"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <h3>Time Portal Quest</h3>
+
+                    <p>Navigate through centuries of Indian architecture and unlock dynastic secrets</p>
+
+                    <div class="game-features">
+
+                        <span class="feature">Historical Accuracy</span>
+
+                        <span class="feature">Dynasty Exploration</span>
+
+                        <span class="feature">Cultural Insights</span>
+
+                    </div>
+
+                    <button class="btn btn--primary play-btn" data-game="timeline">
+
+                        <span>Play Now</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+  
+
+            <div class="game-card physics-game">
+
+                <div class="game-preview">
+
+                    <div class="game-3d-scene">
+
+                        <div class="physics-demo">
+
+                            <div class="stress-visualization">
+
+                                <div class="stress-lines"></div>
+
+                                <div class="force-arrows"></div>
+
+                            </div>
+
+                            <div class="structure-test">
+
+                                <div class="test-monument"></div>
+
+                                <div class="load-indicator"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <h3>Engineering Simulator</h3>
+
+                    <p>Test monument stability under various conditions using advanced physics</p>
+
+                    <div class="game-features">
+
+                        <span class="feature">Stress Analysis</span>
+
+                        <span class="feature">Load Testing</span>
+
+                        <span class="feature">Material Science</span>
+
+                    </div>
+
+                    <button class="btn btn--primary play-btn" data-game="physics">
+
+                        <span>Play Now</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+  
+
+        <!-- Active Game Interface -->
+
+        <div id="game-interface" class="game-interface hidden">
+
+            <div class="game-header">
+
+                <h3 id="game-title">Master Architect Challenge</h3>
+
+                <div class="game-progress">
+
+                    <div class="progress-bar">
+
+                        <div class="progress-fill" id="game-progress-fill"></div>
+
+                    </div>
+
+                    <span class="progress-text" id="game-progress-text">Level 1 of 5</span>
+
+                </div>
+
+                <button class="btn btn--outline close-game" id="close-game">×</button>
+
+            </div>
+
+            <div class="game-content">
+
+                <div class="game-viewport">
+
+                    <div class="construction-area">
+
+                        <div class="build-grid" id="build-grid"></div>
+
+                        <div class="placed-blocks" id="placed-blocks"></div>
+
+                    </div>
+
+                    <div class="game-controls">
+
+                        <div class="material-palette">
+
+                            <div class="material-option active" data-material="stone">
+
+                                <div class="material-preview stone-material"></div>
+
+                                <span>Red Sandstone</span>
+
+                            </div>
+
+                            <div class="material-option" data-material="marble">
+
+                                <div class="material-preview marble-material"></div>
+
+                                <span>White Marble</span>
+
+                            </div>
+
+                            <div class="material-option" data-material="granite">
+
+                                <div class="material-preview granite-material"></div>
+
+                                <span>Granite</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="build-tools">
+
+                            <button class="tool-btn active" data-tool="place">Place</button>
+
+                            <button class="tool-btn" data-tool="remove">Remove</button>
+
+                            <button class="tool-btn" data-tool="rotate">Rotate</button>
+
+                            <button class="tool-btn" data-tool="analyze">Analyze</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="game-sidebar">
+
+                    <div class="challenge-info">
+
+                        <h4>Current Challenge</h4>
+
+                        <p id="challenge-description">Build a stable foundation using red sandstone blocks. Ensure proper weight distribution.</p>
+
+                    </div>
+
+                    <div class="stability-meter">
+
+                        <h4>Structural Stability</h4>
+
+                        <div class="stability-gauge">
+
+                            <div class="gauge-fill" id="stability-fill"></div>
+
+                        </div>
+
+                        <span class="stability-text" id="stability-text">85% Stable</span>
+
+                    </div>
+
+                    <div class="game-actions">
+
+                        <button class="btn btn--primary" id="test-structure">Test Structure</button>
+
+                        <button class="btn btn--secondary" id="reset-level">Reset Level</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
 <section>
+
 <head>
 
+  
+  
 
- 
+  
 
-    <!-- Material Laboratory -->
-    <section id="laboratory" class="laboratory-section">
-        <div class="section-header">
-            <h2 class="section-title">Material Science Laboratory</h2>
-            <p class="section-subtitle">Explore the properties of ancient building materials</p>
-        </div>
+    <!-- Material Laboratory -->
 
-        <div class="lab-interface">
-            <div class="material-analysis">
-                <div class="material-selector">
-    <div class="material-sample active" data-material="red-sandstone">
-        <div class="sample-cube sandstone-cube"></div>
-        <span>Red Sandstone</span>
-    </div>
-    <div class="material-sample" data-material="white-marble">
-        <div class="sample-cube marble-cube"></div>
-        <span>White Marble</span>
-    </div>
-    <div class="material-sample" data-material="granite">
-        <div class="sample-cube granite-cube"></div>
-        <span>Granite</span>
-    </div>
-    <div class="material-sample" data-material="lime-mortar">
-        <div class="sample-cube lime-mortar-cube"></div>
-        <span>Lime Mortar</span>
-    </div>
-    <div class="material-sample" data-material="egg-white-lime">
-        <div class="sample-cube egg-white-lime-cube"></div>
-        <span>Egg White Lime</span>
-    </div>
-    <div class="material-sample" data-material="honey-lime">
-        <div class="sample-cube honey-lime-cube"></div>
-        <span>Honey Lime</span>
-    </div>
-    <div class="material-sample" data-material="coconut-fiber-lime">
-        <div class="sample-cube coconut-fiber-lime-cube"></div>
-        <span>Coconut Fiber Lime</span>
-    </div>
-    <div class="material-sample" data-material="teak-wood">
-        <div class="sample-cube teak-wood-cube"></div>
-        <span>Teak Wood</span>
-    </div>
+    <section id="laboratory" class="laboratory-section">
+
+        <div class="section-header">
+
+            <h2 class="section-title">Material Science Laboratory</h2>
+
+            <p class="section-subtitle">Explore the properties of ancient building materials</p>
+
+        </div>
+
+  
+
+        <div class="lab-interface">
+
+            <div class="material-analysis">
+
+                <div class="material-selector">
+
+    <div class="material-sample active" data-material="red-sandstone">
+
+        <div class="sample-cube sandstone-cube"></div>
+
+        <span>Red Sandstone</span>
+
+    </div>
+
+    <div class="material-sample" data-material="white-marble">
+
+        <div class="sample-cube marble-cube"></div>
+
+        <span>White Marble</span>
+
+    </div>
+
+    <div class="material-sample" data-material="granite">
+
+        <div class="sample-cube granite-cube"></div>
+
+        <span>Granite</span>
+
+    </div>
+
+    <div class="material-sample" data-material="lime-mortar">
+
+        <div class="sample-cube lime-mortar-cube"></div>
+
+        <span>Lime Mortar</span>
+
+    </div>
+
+    <div class="material-sample" data-material="egg-white-lime">
+
+        <div class="sample-cube egg-white-lime-cube"></div>
+
+        <span>Egg White Lime</span>
+
+    </div>
+
+    <div class="material-sample" data-material="honey-lime">
+
+        <div class="sample-cube honey-lime-cube"></div>
+
+        <span>Honey Lime</span>
+
+    </div>
+
+    <div class="material-sample" data-material="coconut-fiber-lime">
+
+        <div class="sample-cube coconut-fiber-lime-cube"></div>
+
+        <span>Coconut Fiber Lime</span>
+
+    </div>
+
+    <div class="material-sample" data-material="teak-wood">
+
+        <div class="sample-cube teak-wood-cube"></div>
+
+        <span>Teak Wood</span>
+
+    </div>
+
 </div>
 
-                <div class="analysis-display">
-                    <div class="material-3d-view">
-    <div class="rotating-sample">
-        <div class="sample-3d sandstone-3d active"></div>
-        <div class="sample-3d marble-3d"></div>
-        <div class="sample-3d granite-3d"></div>
-        <div class="sample-3d lime-mortar-3d"></div>
-        <div class="sample-3d egg-white-lime-3d"></div>
-        <div class="sample-3d honey-lime-3d"></div>
-        <div class="sample-3d coconut-fiber-lime-3d"></div>
-        <div class="sample-3d teak-wood-3d"></div>
-    </div>
-    
-    
-        <!-- Analysis buttons -->
-    </div>
+  
+
+                <div class="analysis-display">
+
+                    <div class="material-3d-view">
+
+    <div class="rotating-sample">
+
+        <div class="sample-3d sandstone-3d active"></div>
+
+        <div class="sample-3d marble-3d"></div>
+
+        <div class="sample-3d granite-3d"></div>
+
+        <div class="sample-3d lime-mortar-3d"></div>
+
+        <div class="sample-3d egg-white-lime-3d"></div>
+
+        <div class="sample-3d honey-lime-3d"></div>
+
+        <div class="sample-3d coconut-fiber-lime-3d"></div>
+
+        <div class="sample-3d teak-wood-3d"></div>
+
+    </div>
+
+        <!-- Analysis buttons -->
+
+    </div>
+
 </div>
-                    </div>
-                 <div class="analysis-tools">
-    <button class="analysis-btn" data-test="hardness">Hardness Test</button>
-    <button class="analysis-btn" data-test="density">Density Test</button>
-    <button class="analysis-btn" data-test="weathering">Weathering Test</button>
-    <button class="analysis-btn" data-test="microscope">Microscopy</button>
-    <button class="analysis-btn is-code-btn" onclick="runISCodeTest()">IS Code Test</button>
+
+                    </div>
+
+                 <div class="analysis-tools">
+
+    <button class="analysis-btn" data-test="hardness">Hardness Test</button>
+
+    <button class="analysis-btn" data-test="density">Density Test</button>
+
+    <button class="analysis-btn" data-test="weathering">Weathering Test</button>
+
+    <button class="analysis-btn" data-test="microscope">Microscopy</button>
+
+    <button class="analysis-btn is-code-btn" onclick="runISCodeTest()">IS Code Test</button>
+
 </div>
+
+  
 
 <div class="is-code-standards">
-    <h4>IS Code Standards</h4>
-    <div class="standards-info">
-        <div class="standard-item">
-            <span class="standard-label">IS 1121-1:</span>
-            <span class="standard-desc">Compressive Strength Test</span>
-        </div>
-        <div class="standard-item">
-            <span class="standard-label">IS 1121-2:</span>
-            <span class="standard-desc">Transverse Strength Test</span>
-        </div>
-        <div class="standard-item">
-            <span class="standard-label">IS 1121-3:</span>
-            <span class="standard-desc">Tensile Strength Test</span>
-        </div>
-        <div class="standard-item">
-            <span class="standard-label">IS 1124:</span>
-            <span class="standard-desc">Water Absorption Test</span>
-        </div>
-        <div class="standard-item">
-            <span class="standard-label">IS 9000-6:</span>
-            <span class="standard-desc">Environmental Testing</span>
-        </div>
-    </div>
+
+    <h4>IS Code Standards</h4>
+
+    <div class="standards-info">
+
+        <div class="standard-item">
+
+            <span class="standard-label">IS 1121-1:</span>
+
+            <span class="standard-desc">Compressive Strength Test</span>
+
+        </div>
+
+        <div class="standard-item">
+
+            <span class="standard-label">IS 1121-2:</span>
+
+            <span class="standard-desc">Transverse Strength Test</span>
+
+        </div>
+
+        <div class="standard-item">
+
+            <span class="standard-label">IS 1121-3:</span>
+
+            <span class="standard-desc">Tensile Strength Test</span>
+
+        </div>
+
+        <div class="standard-item">
+
+            <span class="standard-label">IS 1124:</span>
+
+            <span class="standard-desc">Water Absorption Test</span>
+
+        </div>
+
+        <div class="standard-item">
+
+            <span class="standard-label">IS 9000-6:</span>
+
+            <span class="standard-desc">Environmental Testing</span>
+
+        </div>
+
+    </div>
+
 </div>
 
-                        <div class="material-description">
-                            <h4>Properties & Uses</h4>
-                            <p id="material-description">Durable, weather-resistant, easy to carve. Iron oxide gives red color, excellent workability. Perfect for forts, palaces, and decorative elements.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="experiment-zone">
-                <h3>Virtual Testing Laboratory</h3>
-                <div class="test-environment">
-                    <div class="test-specimen">
-                        <div class="specimen-holder">
-                            <div class="test-sample" id="test-sample"></div>
-                        </div>
-                        <div class="test-apparatus">
-                            <div class="compression-tester"></div>
-                            <div class="weather-chamber"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="test-controls">
-                        <div class="test-parameters">
-                            <div class="parameter">
-                                <label>Load (MPa)</label>
-                                <input type="range" id="load-slider" min="0" max="100" value="0">
-                                <span id="load-value">0</span>
-                            </div>
-                            <div class="parameter">
-                                <label>Temperature (°C)</label>
-                                <input type="range" id="temp-slider" min="-20" max="60" value="25">
-                                <span id="temp-value">25</span>
-                            </div>
-                            <div class="parameter">
-                                <label>Humidity (%)</label>
-                                <input type="range" id="humidity-slider" min="0" max="100" value="50">
-                                <span id="humidity-value">50</span>
-                            </div>
-                        </div>
-                        
-                        <div class="test-results">
-                            <div class="result-display">
-                                <div class="stress-indicator">
-                                    <span class="indicator-label">Stress Level</span>
-                                    <div class="stress-gauge">
-                                        <div class="gauge-needle" id="stress-needle"></div>
-                                    </div>
-                                    <span class="stress-status" id="stress-status">Normal</span>
-                                </div>
-                            </div>
-                            <button class="btn btn--primary" id="run-test">Run Analysis</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  
 
-    <!-- Time Portal Section -->
-    <section id="timeline" class="timeline-section">
-        <div class="section-header">
-            <h2 class="section-title">Historical Time Portal</h2>
-            <p class="section-subtitle">Journey through architectural evolution across centuries</p>
-        </div>
+                        <div class="material-description">
 
-        <div class="timeline-interface">
-            <div class="time-navigator">
-                <div class="timeline-track">
-                    <div class="timeline-line"></div>
-                    <div class="time-periods">
-                        <div class="time-period active" data-period="ancient" data-year="300">
-                            <div class="period-marker"></div>
-                            <span class="period-label">Ancient<br>300-600 CE</span>
-                        </div>
-                        <div class="time-period" data-period="medieval" data-year="1000">
-                            <div class="period-marker"></div>
-                            <span class="period-label">Medieval<br>800-1200 CE</span>
-                        </div>
-                        <div class="time-period" data-period="sultanate" data-year="1300">
-                            <div class="period-marker"></div>
-                            <span class="period-label">Sultanate<br>1200-1500 CE</span>
-                        </div>
-                        <div class="time-period" data-period="mughal" data-year="1600">
-                            <div class="period-marker"></div>
-                            <span class="period-label">Mughal<br>1500-1800 CE</span>
-                        </div>
-                        <div class="time-period" data-period="colonial" data-year="1900">
-                            <div class="period-marker"></div>
-                            <span class="period-label">Colonial<br>1800-1947 CE</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <h4>Properties & Uses</h4>
 
-            <div class="time-portal-viewer">
-                <div class="portal-frame">
-                    <div class="portal-rings">
-                        <div class="ring ring-outer"></div>
-                        <div class="ring ring-middle"></div>
-                        <div class="ring ring-inner"></div>
-                    </div>
-                    
-                    <div class="historical-scene active" data-scene="ancient">
-                        <div class="scene-3d">
-                            <div class="ancient-temple">
-                                <div class="temple-base"></div>
-                                <div class="temple-pillars">
-                                    <div class="pillar pillar-1"></div>
-                                    <div class="pillar pillar-2"></div>
-                                    <div class="pillar pillar-3"></div>
-                                    <div class="pillar pillar-4"></div>
-                                </div>
-                                <div class="temple-roof"></div>
-                            </div>
-                        </div>
-                        <div class="scene-info">
-                            <h3>Ancient Temple Architecture</h3>
-                            <p>Intricate stone carvings and precise geometric designs</p>
-                        </div>
-                    </div>
-                    
-                    <div class="historical-scene" data-scene="mughal">
-                        <div class="scene-3d">
-                            <div class="mughal-palace">
-                                <div class="palace-dome"></div>
-                                <div class="palace-walls"></div>
-                                <div class="palace-minarets">
-                                    <div class="minaret minaret-left"></div>
-                                    <div class="minaret minaret-right"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="scene-info">
-                            <h3>Mughal Palace Complex</h3>
-                            <p>Fusion of Persian, Islamic and Indian architectural styles</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="period-details">
-                    <div class="dynasty-info active" data-dynasty="ancient">
-                        <h3>Ancient Period (300-600 CE)</h3>
-                        <div class="dynasty-features">
-                            <div class="feature-item">
-                                <strong>Materials:</strong> Stone, Granite, Sandstone
-                            </div>
-                            <div class="feature-item">
-                                <strong>Techniques:</strong> Precise cutting, Interlocking joints
-                            </div>
-                            <div class="feature-item">
-                                <strong>Innovations:</strong> Mathematical precision, Astronomical alignment
-                            </div>
-                        </div>
-                        <div class="architectural-evolution">
-                            <h4>Key Innovations</h4>
-                            <ul>
-                                <li>Advanced stone-cutting techniques</li>
-                                <li>Complex geometric patterns</li>
-                                <li>Earthquake-resistant construction</li>
-                                <li>Astronomical observatories</li>
-                            </ul>
-                        </div>
-                    </div>
-                   <div class="dynasty-info" data-dynasty="medieval">
-                    <h3>Medieval Indian Architecture (600-1200 CE)</h3>
-                    <div class="dynasty-features">
-                        <div class="feature-item">• Regional temple styles flourished</div>
-                        <div class="feature-item">• Monumental stone temple complexes</div>
-                        <div class="feature-item">• Distinctive Nagara, Dravida, and Vesara styles</div>
-                        <div class="feature-item">• Advanced sculptural ornamentation</div>
-                    </div>
-                    <div class="architectural-evolution">
-                        <h4>Key Innovations</h4>
-                        <ul>
-                            <li>Development of towering shikharas and vimanas</li>
-                            <li>Elaborate mandapa (pillared hall) construction</li>
-                            <li>Sophisticated drainage and ventilation systems</li>
-                            <li>Integration of astronomy in temple orientation</li>
-                        </ul>
-                    </div>
-                    <div class="floating-monument medieval-temple" data-monument="medieval-temple">
-                        <div class="monument-model temple-model">
-                            <div class="temple-base"></div>
-                            <div class="temple-shikhara"></div>
-                            <div class="temple-mandapa"></div>
-                        </div>
-                        <div class="monument-glow"></div>
-                        <div class="monument-label">Medieval Temple</div>
-                   </div>
-             
-                </div>
-            </div>
-        </div>
-    </section>
+                            <p id="material-description">Durable, weather-resistant, easy to carve. Iron oxide gives red color, excellent workability. Perfect for forts, palaces, and decorative elements.</p>
 
-    <!-- Achievement Gallery -->
-    <section id="achievements" class="achievements-section">
-        <div class="section-header">
-            <h2 class="section-title">Achievement Gallery</h2>
-            <p class="section-subtitle">Your journey through architectural mastery</p>
-        </div>
+                        </div>
 
-        <div class="achievements-grid">
-            <div class="achievement-card unlocked" data-achievement="explorer">
-                <div class="achievement-icon">
-                    <div class="trophy-3d">
-                        <div class="trophy-cup"></div>
-                        <div class="trophy-base"></div>
-                        <div class="achievement-glow"></div>
-                    </div>
-                </div>
-                <div class="achievement-info">
-                    <h3>Monument Explorer</h3>
-                    <p>Explored all major monuments</p>
-                    <div class="achievement-progress">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 100%"></div>
-                        </div>
-                        <span>3/3 Monuments</span>
-                    </div>
-                </div>
-            </div>
+                    </div>
 
-            <div class="achievement-card locked" data-achievement="architect">
-                <div class="achievement-icon">
-                    <div class="trophy-3d locked-trophy">
-                        <div class="trophy-cup"></div>
-                        <div class="trophy-base"></div>
-                        <div class="lock-overlay"></div>
-                    </div>
-                </div>
-                <div class="achievement-info">
-                    <h3>Master Architect</h3>
-                    <p>Complete all building challenges</p>
-                    <div class="achievement-progress">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 60%"></div>
-                        </div>
-                        <span>3/5 Challenges</span>
-                    </div>
-                </div>
-            </div>
+                </div>
 
-            <div class="achievement-card locked" data-achievement="scientist">
-                <div class="achievement-icon">
-                    <div class="trophy-3d locked-trophy">
-                        <div class="trophy-cup"></div>
-                        <div class="trophy-base"></div>
-                        <div class="lock-overlay"></div>
-                    </div>
-                </div>
-                <div class="achievement-info">
-                    <h3>Material Scientist</h3>
-                    <p>Master all material properties</p>
-                    <div class="achievement-progress">
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 30%"></div>
-                        </div>
-                        <span>1/3 Materials</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </div>
 
-    <!-- Audio Control Panel -->
-    <div id="audio-panel" class="audio-panel hidden">
-        <div class="audio-controls">
-            <div class="volume-control">
-                <label>Master Volume</label>
-                <input type="range" id="master-volume" min="0" max="100" value="70">
-            </div>
-            <div class="audio-options">
-                <div class="audio-option">
-                    <input type="checkbox" id="ambient-sounds" checked>
-                    <label for="ambient-sounds">Ambient Sounds</label>
-                </div>
-                <div class="audio-option">
-                    <input type="checkbox" id="ui-sounds" checked>
-                    <label for="ui-sounds">UI Sounds</label>
-                </div>
-                <div class="audio-option">
-                    <input type="checkbox" id="narration" checked>
-                    <label for="narration">Voice Narration</label>
-                </div>
-            </div>
-        </div>
-    </div>
+            <div class="experiment-zone">
+
+                <h3>Virtual Testing Laboratory</h3>
+
+                <div class="test-environment">
+
+                    <div class="test-specimen">
+
+                        <div class="specimen-holder">
+
+                            <div class="test-sample" id="test-sample"></div>
+
+                        </div>
+
+                        <div class="test-apparatus">
+
+                            <div class="compression-tester"></div>
+
+                            <div class="weather-chamber"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="test-controls">
+
+                        <div class="test-parameters">
+
+                            <div class="parameter">
+
+                                <label>Load (MPa)</label>
+
+                                <input type="range" id="load-slider" min="0" max="100" value="0">
+
+                                <span id="load-value">0</span>
+
+                            </div>
+
+                            <div class="parameter">
+
+                                <label>Temperature (°C)</label>
+
+                                <input type="range" id="temp-slider" min="-20" max="60" value="25">
+
+                                <span id="temp-value">25</span>
+
+                            </div>
+
+                            <div class="parameter">
+
+                                <label>Humidity (%)</label>
+
+                                <input type="range" id="humidity-slider" min="0" max="100" value="50">
+
+                                <span id="humidity-value">50</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="test-results">
+
+                            <div class="result-display">
+
+                                <div class="stress-indicator">
+
+                                    <span class="indicator-label">Stress Level</span>
+
+                                    <div class="stress-gauge">
+
+                                        <div class="gauge-needle" id="stress-needle"></div>
+
+                                    </div>
+
+                                    <span class="stress-status" id="stress-status">Normal</span>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn--primary" id="run-test">Run Analysis</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+  
+
+    <!-- Time Portal Section -->
+
+    <section id="timeline" class="timeline-section">
+
+        <div class="section-header">
+
+            <h2 class="section-title">Historical Time Portal</h2>
+
+            <p class="section-subtitle">Journey through architectural evolution across centuries</p>
+
+        </div>
+
+  
+
+        <div class="timeline-interface">
+
+            <div class="time-navigator">
+
+                <div class="timeline-track">
+
+                    <div class="timeline-line"></div>
+
+                    <div class="time-periods">
+
+                        <div class="time-period active" data-period="ancient" data-year="300">
+
+                            <div class="period-marker"></div>
+
+                            <span class="period-label">Ancient<br>300-600 CE</span>
+
+                        </div>
+
+                        <div class="time-period" data-period="medieval" data-year="1000">
+
+                            <div class="period-marker"></div>
+
+                            <span class="period-label">Medieval<br>800-1200 CE</span>
+
+                        </div>
+
+                        <div class="time-period" data-period="sultanate" data-year="1300">
+
+                            <div class="period-marker"></div>
+
+                            <span class="period-label">Sultanate<br>1200-1500 CE</span>
+
+                        </div>
+
+                        <div class="time-period" data-period="mughal" data-year="1600">
+
+                            <div class="period-marker"></div>
+
+                            <span class="period-label">Mughal<br>1500-1800 CE</span>
+
+                        </div>
+
+                        <div class="time-period" data-period="colonial" data-year="1900">
+
+                            <div class="period-marker"></div>
+
+                            <span class="period-label">Colonial<br>1800-1947 CE</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+  
+
+            <div class="time-portal-viewer">
+
+                <div class="portal-frame">
+
+                    <div class="portal-rings">
+
+                        <div class="ring ring-outer"></div>
+
+                        <div class="ring ring-middle"></div>
+
+                        <div class="ring ring-inner"></div>
+
+                    </div>
+
+                    <div class="historical-scene active" data-scene="ancient">
+
+                        <div class="scene-3d">
+
+                            <div class="ancient-temple">
+
+                                <div class="temple-base"></div>
+
+                                <div class="temple-pillars">
+
+                                    <div class="pillar pillar-1"></div>
+
+                                    <div class="pillar pillar-2"></div>
+
+                                    <div class="pillar pillar-3"></div>
+
+                                    <div class="pillar pillar-4"></div>
+
+                                </div>
+
+                                <div class="temple-roof"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="scene-info">
+
+                            <h3>Ancient Temple Architecture</h3>
+
+                            <p>Intricate stone carvings and precise geometric designs</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="historical-scene" data-scene="mughal">
+
+                        <div class="scene-3d">
+
+                            <div class="mughal-palace">
+
+                                <div class="palace-dome"></div>
+
+                                <div class="palace-walls"></div>
+
+                                <div class="palace-minarets">
+
+                                    <div class="minaret minaret-left"></div>
+
+                                    <div class="minaret minaret-right"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="scene-info">
+
+                            <h3>Mughal Palace Complex</h3>
+
+                            <p>Fusion of Persian, Islamic and Indian architectural styles</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="period-details">
+
+                    <div class="dynasty-info active" data-dynasty="ancient">
+
+                        <h3>Ancient Period (300-600 CE)</h3>
+
+                        <div class="dynasty-features">
+
+                            <div class="feature-item">
+
+                                <strong>Materials:</strong> Stone, Granite, Sandstone
+
+                            </div>
+
+                            <div class="feature-item">
+
+                                <strong>Techniques:</strong> Precise cutting, Interlocking joints
+
+                            </div>
+
+                            <div class="feature-item">
+
+                                <strong>Innovations:</strong> Mathematical precision, Astronomical alignment
+
+                            </div>
+
+                        </div>
+
+                        <div class="architectural-evolution">
+
+                            <h4>Key Innovations</h4>
+
+                            <ul>
+
+                                <li>Advanced stone-cutting techniques</li>
+
+                                <li>Complex geometric patterns</li>
+
+                                <li>Earthquake-resistant construction</li>
+
+                                <li>Astronomical observatories</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                   <div class="dynasty-info" data-dynasty="medieval">
+
+                    <h3>Medieval Indian Architecture (600-1200 CE)</h3>
+
+                    <div class="dynasty-features">
+
+                        <div class="feature-item">• Regional temple styles flourished</div>
+
+                        <div class="feature-item">• Monumental stone temple complexes</div>
+
+                        <div class="feature-item">• Distinctive Nagara, Dravida, and Vesara styles</div>
+
+                        <div class="feature-item">• Advanced sculptural ornamentation</div>
+
+                    </div>
+
+                    <div class="architectural-evolution">
+
+                        <h4>Key Innovations</h4>
+
+                        <ul>
+
+                            <li>Development of towering shikharas and vimanas</li>
+
+                            <li>Elaborate mandapa (pillared hall) construction</li>
+
+                            <li>Sophisticated drainage and ventilation systems</li>
+
+                            <li>Integration of astronomy in temple orientation</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="floating-monument medieval-temple" data-monument="medieval-temple">
+
+                        <div class="monument-model temple-model">
+
+                            <div class="temple-base"></div>
+
+                            <div class="temple-shikhara"></div>
+
+                            <div class="temple-mandapa"></div>
+
+                        </div>
+
+                        <div class="monument-glow"></div>
+
+                        <div class="monument-label">Medieval Temple</div>
+
+                   </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+  
+
+    <!-- Achievement Gallery -->
+
+    <section id="achievements" class="achievements-section">
+
+        <div class="section-header">
+
+            <h2 class="section-title">Achievement Gallery</h2>
+
+            <p class="section-subtitle">Your journey through architectural mastery</p>
+
+        </div>
+
+  
+
+        <div class="achievements-grid">
+
+            <div class="achievement-card unlocked" data-achievement="explorer">
+
+                <div class="achievement-icon">
+
+                    <div class="trophy-3d">
+
+                        <div class="trophy-cup"></div>
+
+                        <div class="trophy-base"></div>
+
+                        <div class="achievement-glow"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="achievement-info">
+
+                    <h3>Monument Explorer</h3>
+
+                    <p>Explored all major monuments</p>
+
+                    <div class="achievement-progress">
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill" style="width: 100%"></div>
+
+                        </div>
+
+                        <span>3/3 Monuments</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+  
+
+            <div class="achievement-card locked" data-achievement="architect">
+
+                <div class="achievement-icon">
+
+                    <div class="trophy-3d locked-trophy">
+
+                        <div class="trophy-cup"></div>
+
+                        <div class="trophy-base"></div>
+
+                        <div class="lock-overlay"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="achievement-info">
+
+                    <h3>Master Architect</h3>
+
+                    <p>Complete all building challenges</p>
+
+                    <div class="achievement-progress">
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill" style="width: 60%"></div>
+
+                        </div>
+
+                        <span>3/5 Challenges</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+  
+
+            <div class="achievement-card locked" data-achievement="scientist">
+
+                <div class="achievement-icon">
+
+                    <div class="trophy-3d locked-trophy">
+
+                        <div class="trophy-cup"></div>
+
+                        <div class="trophy-base"></div>
+
+                        <div class="lock-overlay"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="achievement-info">
+
+                    <h3>Material Scientist</h3>
+
+                    <p>Master all material properties</p>
+
+                    <div class="achievement-progress">
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill" style="width: 30%"></div>
+
+                        </div>
+
+                        <span>1/3 Materials</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+  
+
+    <!-- Audio Control Panel -->
+
+    <div id="audio-panel" class="audio-panel hidden">
+
+        <div class="audio-controls">
+
+            <div class="volume-control">
+
+                <label>Master Volume</label>
+
+                <input type="range" id="master-volume" min="0" max="100" value="70">
+
+            </div>
+
+            <div class="audio-options">
+
+                <div class="audio-option">
+
+                    <input type="checkbox" id="ambient-sounds" checked>
+
+                    <label for="ambient-sounds">Ambient Sounds</label>
+
+                </div>
+
+                <div class="audio-option">
+
+                    <input type="checkbox" id="ui-sounds" checked>
+
+                    <label for="ui-sounds">UI Sounds</label>
+
+                </div>
+
+                <div class="audio-option">
+
+                    <input type="checkbox" id="narration" checked>
+
+                    <label for="narration">Voice Narration</label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 <!-- Newsletter Subscription Section -->
+
 <section id="newsletter" class="newsletter-section">
-    <div class="newsletter-background">
-        <div class="newsletter-particles"></div>
-        <div class="gradient-orb newsletter-orb-1"></div>
-        <div class="gradient-orb newsletter-orb-2"></div>
-        <div class="gradient-orb newsletter-orb-3"></div>
-    </div>
-    
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title gradient-text" data-lang="newsletter_title">
-                <span class="title-line line-1">Join the Heritage</span>
-                <span class="title-line line-2">Explorer Community</span>
-            </h2>
-            <p class="section-subtitle" data-lang="newsletter_subtitle">
-                Subscribe to receive exclusive updates on new monuments, virtual tours, and archaeological discoveries from across India's rich cultural heritage.
-            </p>
-        </div>
-        
-        <div class="newsletter-container">
-            <div class="newsletter-form-wrapper">
-                <div class="form-monument-scene">
-                    <div class="subscription-monument">
-                        <div class="monument-3d subscription-taj">
-                            <div class="dome-main subscription-dome"></div>
-                            <div class="dome-base-3d subscription-base"></div>
-                            <div class="minarets subscription-minarets">
-                                <div class="minaret minaret-1"></div>
-                                <div class="minaret minaret-2"></div>
-                                <div class="minaret minaret-3"></div>
-                                <div class="minaret minaret-4"></div>
-                            </div>
-                            <div class="monument-glow subscription-glow"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <form id="newsletter-form" class="newsletter-form">
-                    <div class="form-group newsletter-input-group">
-                        <div class="input-container">
-                            <input 
-                                type="email" 
-                                id="subscriber-email" 
-                                class="newsletter-input" 
-                                placeholder=" " 
-                                required
-                                data-lang-placeholder="email_placeholder"
-                            />
-                            <label for="subscriber-email" class="newsletter-label" data-lang="email_label">
-                                Your Email Address
-                            </label>
-                            <div class="input-glow"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group newsletter-preferences">
-                        <h4 data-lang="preferences_title">Subscription Preferences</h4>
-                        <div class="preference-options">
-                            <label class="preference-option">
-                                <input type="checkbox" value="monuments" checked>
-                                <span class="checkmark"></span>
-                                <span data-lang="pref_monuments">New Monument Discoveries</span>
-                            </label>
-                            <label class="preference-option">
-                                <input type="checkbox" value="tours">
-                                <span class="checkmark"></span>
-                                <span data-lang="pref_tours">Virtual Tours & Events</span>
-                            </label>
-                            <label class="preference-option">
-                                <input type="checkbox" value="archaeology">
-                                <span class="checkmark"></span>
-                                <span data-lang="pref_archaeology">Archaeological Updates</span>
-                            </label>
-                            <label class="preference-option">
-                                <input type="checkbox" value="cultural">
-                                <span class="checkmark"></span>
-                                <span data-lang="pref_cultural">Cultural Heritage News</span>
-                            </label>
-                        </div>
-                    </div>
-                    
-                    <!-- Replace your existing newsletter button with this enhanced version -->
+
+    <div class="newsletter-background">
+
+        <div class="newsletter-particles"></div>
+
+        <div class="gradient-orb newsletter-orb-1"></div>
+
+        <div class="gradient-orb newsletter-orb-2"></div>
+
+        <div class="gradient-orb newsletter-orb-3"></div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2 class="section-title gradient-text" data-lang="newsletter_title">
+
+                <span class="title-line line-1">Join the Heritage</span>
+
+                <span class="title-line line-2">Explorer Community</span>
+
+            </h2>
+
+            <p class="section-subtitle" data-lang="newsletter_subtitle">
+
+                Subscribe to receive exclusive updates on new monuments, virtual tours, and archaeological discoveries from across India's rich cultural heritage.
+
+            </p>
+
+        </div>
+
+        <div class="newsletter-container">
+
+            <div class="newsletter-form-wrapper">
+
+                <div class="form-monument-scene">
+
+                    <div class="subscription-monument">
+
+                        <div class="monument-3d subscription-taj">
+
+                            <div class="dome-main subscription-dome"></div>
+
+                            <div class="dome-base-3d subscription-base"></div>
+
+                            <div class="minarets subscription-minarets">
+
+                                <div class="minaret minaret-1"></div>
+
+                                <div class="minaret minaret-2"></div>
+
+                                <div class="minaret minaret-3"></div>
+
+                                <div class="minaret minaret-4"></div>
+
+                            </div>
+
+                            <div class="monument-glow subscription-glow"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <form id="newsletter-form" class="newsletter-form">
+
+                    <div class="form-group newsletter-input-group">
+
+                        <div class="input-container">
+
+                            <input
+
+                                type="email"
+
+                                id="subscriber-email"
+
+                                class="newsletter-input"
+
+                                placeholder=" "
+
+                                required
+
+                                data-lang-placeholder="email_placeholder"
+
+                            />
+
+                            <label for="subscriber-email" class="newsletter-label" data-lang="email_label">
+
+                                Your Email Address
+
+                            </label>
+
+                            <div class="input-glow"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group newsletter-preferences">
+
+                        <h4 data-lang="preferences_title">Subscription Preferences</h4>
+
+                        <div class="preference-options">
+
+                            <label class="preference-option">
+
+                                <input type="checkbox" value="monuments" checked>
+
+                                <span class="checkmark"></span>
+
+                                <span data-lang="pref_monuments">New Monument Discoveries</span>
+
+                            </label>
+
+                            <label class="preference-option">
+
+                                <input type="checkbox" value="tours">
+
+                                <span class="checkmark"></span>
+
+                                <span data-lang="pref_tours">Virtual Tours & Events</span>
+
+                            </label>
+
+                            <label class="preference-option">
+
+                                <input type="checkbox" value="archaeology">
+
+                                <span class="checkmark"></span>
+
+                                <span data-lang="pref_archaeology">Archaeological Updates</span>
+
+                            </label>
+
+                            <label class="preference-option">
+
+                                <input type="checkbox" value="cultural">
+
+                                <span class="checkmark"></span>
+
+                                <span data-lang="pref_cultural">Cultural Heritage News</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Replace your existing newsletter button with this enhanced version -->
+
 <button type="submit" class="newsletter-btn btn--primary enhanced-heritage-btn">
-    <div class="btn-icon-container">
-        <div class="heritage-newsletter-icon">
-            <div class="monument-outline"></div>
-            <div class="scroll-element"></div>
-            <div class="notification-dot"></div>
-        </div>
-    </div>
-    <span class="btn-text" data-lang="subscribe_btn">Subscribe to Heritage Updates</span>
-    <div class="btn-particles"></div>
-    <div class="btn-shimmer"></div>
+
+    <div class="btn-icon-container">
+
+        <div class="heritage-newsletter-icon">
+
+            <div class="monument-outline"></div>
+
+            <div class="scroll-element"></div>
+
+            <div class="notification-dot"></div>
+
+        </div>
+
+    </div>
+
+    <span class="btn-text" data-lang="subscribe_btn">Subscribe to Heritage Updates</span>
+
+    <div class="btn-particles"></div>
+
+    <div class="btn-shimmer"></div>
+
 </button>
+
 <svg class="heritage-newsletter-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <!-- Monument base -->
-    <path d="M3 18h18v2H3v-2z" fill="currentColor"/>
-    <!-- Monument pillars -->
-    <path d="M5 16h2v-8H5v8zm4 0h2v-8H9v8zm4 0h2v-8h-2v8zm4 0h2v-8h-2v8z" fill="currentColor"/>
-    <!-- Monument roof -->
-    <path d="M2 8l10-4 10 4v2H2V8z" fill="currentColor"/>
-    <!-- Newsletter scroll -->
-    <path d="M14 12h8v8h-8v-8z" stroke="currentColor" stroke-width="1.5" fill="none" rx="1"/>
-    <path d="M16 14h4m-4 2h4m-4 2h2" stroke="currentColor" stroke-width="1"/>
-    <!-- Notification indicator -->
-    <circle cx="21" cy="13" r="2" fill="#FFD700" stroke="currentColor"/>
+
+    <!-- Monument base -->
+
+    <path d="M3 18h18v2H3v-2z" fill="currentColor"/>
+
+    <!-- Monument pillars -->
+
+    <path d="M5 16h2v-8H5v8zm4 0h2v-8H9v8zm4 0h2v-8h-2v8zm4 0h2v-8h-2v8z" fill="currentColor"/>
+
+    <!-- Monument roof -->
+
+    <path d="M2 8l10-4 10 4v2H2V8z" fill="currentColor"/>
+
+    <!-- Newsletter scroll -->
+
+    <path d="M14 12h8v8h-8v-8z" stroke="currentColor" stroke-width="1.5" fill="none" rx="1"/>
+
+    <path d="M16 14h4m-4 2h4m-4 2h2" stroke="currentColor" stroke-width="1"/>
+
+    <!-- Notification indicator -->
+
+    <circle cx="21" cy="13" r="2" fill="#FFD700" stroke="currentColor"/>
+
 </svg>
-        
-                    <p class="newsletter-privacy" data-lang="privacy_note">
-                        We respect your privacy. Unsubscribe at any time. No spam, just heritage.
-                    </p>
-                </form>
-            </div>
-            
-            <div class="newsletter-stats">
-                <div class="stat-card">
-                    <div class="stat-number" data-count="15000">0</div>
-                    <div class="stat-label" data-lang="stat_subscribers">Heritage Explorers</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-count="250">0</div>
-                    <div class="stat-label" data-lang="stat_monuments">Monuments Covered</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-count="50">0</div>
-                    <div class="stat-label" data-lang="stat_tours">Virtual Tours</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="success-modal" id="subscription-success">
-            <div class="success-content">
-                <div class="success-monument">
-                    <div class="success-taj-3d">
-                        <div class="success-dome"></div>
-                        <div class="success-base"></div>
-                    </div>
-                </div>
-                <h3 data-lang="success_title">Welcome to the Heritage Family!</h3>
-                <p data-lang="success_message">
-                    Thank you for subscribing! You'll receive your first heritage update within 24 hours.
-                </p>
-                <button class="success-close" data-lang="success_close">Explore More Monuments</button>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Team Credits Section - Add this to your existing HTML file -->
-<section id="credits" class="credits-section">
-    <div class="section-header">
-        <h2 class="section-title">Our Team</h2>
-        <p class="section-subtitle">This Monument Explorer website was created by a dedicated team of Civil Engineering students under the guidance of Prof. Mahendra Gattu.</p>
-    </div>
-    
-    <div class="team-container">
-        <div class="team-member">
-            <div class="image-container">
-                <img src="rahul_tm1.jpg" alt="Geddam Rahul">
-            </div>
-            <div class="member-details">
-                <h3 class="member-name">Geddam Rahul</h3>
-                <p class="member-role">B.Tech in Civil Engineering</p>
-                <p class="member-institute">NIT Calicut</p>
-            </div>
-        </div>
-        
-        <div class="team-member">
-            <div class="image-container">
-                <img src="Archit_tm.jpg" alt="Archit Kumar">
-            </div>
-            <div class="member-details">
-                <h3 class="member-name">Archit Kumar</h3>
-                <p class="member-role">B.Tech in Civil Engineering</p>
-                <p class="member-institute">CUJ</p>
-            </div>
-        </div>
-        
-        <div class="team-member">
-            <div class="image-container">
-                <img src="Lokesh_tm.jpg" alt="Lokesh Varma">
-            </div>
-            <div class="member-details">
-                <h3 class="member-name">Lokesh Varma</h3>
-                <p class="member-role">B.Tech in Civil Engineering</p>
-                <p class="member-institute">NIT Andhra</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="professor-section">
-        <h3 class="professor-title">Guided and Supervised by</h3>
-        <div class="professor-card">
-            <div class="professor-image">
-                <a href="https://www.nitrkl.ac.in/FacultyStaff/FacultyProfile/gattum">
-                <img src="https://www.nitrkl.ac.in/docs/Faculty/Photo/1151245.jpg" alt="Prof. Mahendra Gattu">
-                </a>
-            </div>
-            <div class="professor-details">
-                <h3 class="professor-name">Prof. Mahendra Gattu</h3>
-                <p class="professor-role">Guide & Supervisor</p>
-            </div>
-        </div>
-    </div>
+
+                    <p class="newsletter-privacy" data-lang="privacy_note">
+
+                        We respect your privacy. Unsubscribe at any time. No spam, just heritage.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+            <div class="newsletter-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-number" data-count="15000">0</div>
+
+                    <div class="stat-label" data-lang="stat_subscribers">Heritage Explorers</div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-number" data-count="250">0</div>
+
+                    <div class="stat-label" data-lang="stat_monuments">Monuments Covered</div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-number" data-count="50">0</div>
+
+                    <div class="stat-label" data-lang="stat_tours">Virtual Tours</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="success-modal" id="subscription-success">
+
+            <div class="success-content">
+
+                <div class="success-monument">
+
+                    <div class="success-taj-3d">
+
+                        <div class="success-dome"></div>
+
+                        <div class="success-base"></div>
+
+                    </div>
+
+                </div>
+
+                <h3 data-lang="success_title">Welcome to the Heritage Family!</h3>
+
+                <p data-lang="success_message">
+
+                    Thank you for subscribing! You'll receive your first heritage update within 24 hours.
+
+                </p>
+
+                <button class="success-close" data-lang="success_close">Explore More Monuments</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-    <script src="script.js"></script>
-    <script src="INDIA_.js"></script>
+<!-- Team Credits Section - Add this to your existing HTML file -->
+
+<section id="credits" class="credits-section">
+
+    <div class="section-header">
+
+        <h2 class="section-title">Our Team</h2>
+
+        <p class="section-subtitle">This Monument Explorer website was created by a dedicated team of Civil Engineering students under the guidance of Prof. Mahendra Gattu.</p>
+
+    </div>
+
+    <div class="team-container">
+
+        <div class="team-member">
+
+            <div class="image-container">
+
+                <img src="rahul_tm1.jpg" alt="Geddam Rahul">
+
+            </div>
+
+            <div class="member-details">
+
+                <h3 class="member-name">Geddam Rahul</h3>
+
+                <p class="member-role">B.Tech in Civil Engineering</p>
+
+                <p class="member-institute">NIT Calicut</p>
+
+            </div>
+
+        </div>
+
+        <div class="team-member">
+
+            <div class="image-container">
+
+                <img src="Archit_tm.jpg" alt="Archit Kumar">
+
+            </div>
+
+            <div class="member-details">
+
+                <h3 class="member-name">Archit Kumar</h3>
+
+                <p class="member-role">B.Tech in Civil Engineering</p>
+
+                <p class="member-institute">CUJ</p>
+
+            </div>
+
+        </div>
+
+        <div class="team-member">
+
+            <div class="image-container">
+
+                <img src="Lokesh_tm.jpg" alt="Lokesh Varma">
+
+            </div>
+
+            <div class="member-details">
+
+                <h3 class="member-name">Lokesh Varma</h3>
+
+                <p class="member-role">B.Tech in Civil Engineering</p>
+
+                <p class="member-institute">NIT Andhra</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="professor-section">
+
+        <h3 class="professor-title">Guided and Supervised by</h3>
+
+        <div class="professor-card">
+
+            <div class="professor-image">
+
+                <a href="https://www.nitrkl.ac.in/FacultyStaff/FacultyProfile/gattum">
+
+                <img src="https://www.nitrkl.ac.in/docs/Faculty/Photo/1151245.jpg" alt="Prof. Mahendra Gattu">
+
+                </a>
+
+            </div>
+
+            <div class="professor-details">
+
+                <h3 class="professor-name">Prof. Mahendra Gattu</h3>
+
+                <p class="professor-role">Guide & Supervisor</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  
+
+    <script src="app3.js"></script>
+
+    <script src="INDIA_.js"></script>
+
 </body>
+
 </html>
