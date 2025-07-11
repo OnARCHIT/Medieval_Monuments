@@ -1,0 +1,17 @@
+<!--
+╔════════════════════════════════════════════════════════════════════════════╗
+║  Copyright (c) 2025 THE INDIAN KNOWLEDGE SYSTEM (IKS), Ministry of Edu.   ║
+║  IKS BG SAMWAHANA KARYAKARAM-5 PROPOSAL BODY                              ║
+║                                                                            ║
+║  Authors / Contributors:                                                   ║
+║   1. Rahul Geddam                                                          ║
+║   2. Archit Kumar (Central University of Jharkhand)                        ║
+║   3. Tirumalla Lokesh Varma (NIT Andhra Pradesh)                           ║
+║                                                                            ║
+║  Under the guidance of:                                                   ║
+║   Asst. Prof. Mahendra Gattu, Dept. of Civil Engineering, NIT Rourkela    ║
+║                                                                            ║
+║  Attribution is appreciated. You may use, modify, or share this code      ║
+║  for educational and non-commercial purposes with credit to the authors.  ║
+╚════════════════════════════════════════════════════════════════════════════╝
+-->
