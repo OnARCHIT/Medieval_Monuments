@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chamba Temples – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chamba Temples</h1>
+    <div class="tags">
+      <span class="tag">#chamba</span>
+      <span class="tag">#himachalpahari</span>
+      <span class="tag">#stonearchitecture</span>
+      <span class="tag">#nagarastyle</span>
+      <span class="tag">#shikhara</span>
+      <span class="tag">#medievaltemples</span>
+    </div>
+    <div class="section">
+      <h2>Location & Dynasty</h2>
+      <p><strong>Location:</strong> Chamba town, Chamba District, Himachal Pradesh<br>
+      <strong>Dynasty:</strong> Primarily Raja Sahil Varman (10th century) onwards<br>
+      <strong>Deity:</strong> Predominantly Shiva and Vishnu temples</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>The Chamba Valley became a hub of temple architecture from the 10th century under the Varman dynasty.</li>
+        <li>Chamba was a significant Hindu religious center and seat of art and culture.</li>
+        <li>Temples like Lakshmi Narayan Group, Chamunda Devi, Hariraya, and Brahma Temple are among the finest.</li>
+        <li>Region remained relatively unaffected by major invasions, allowing temples to be preserved.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Follows North Indian Nagara style with curvilinear shikharas (towers).</li>
+        <li>Use of carved stone, wood, and slate for roofing.</li>
+        <li>Intricate stonework with devotional iconography on doorways and pillars.</li>
+        <li>Layout often includes garbhagriha (sanctum), mandapa (hall), and pradakshina patha (circumambulatory path).</li>
+        <li>Decorative wooden chhatris and arches in some shrines show local innovation.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Chamba grey stone (a type of schist) used for main structures.</li>
+        <li>Deodar wood for roof supports, doors, and decorative elements.</li>
+        <li>Slate tiles for sloped roofs due to snow.</li>
+        <li>Dry stone masonry or lime mortar in later periods.</li>
+        <li>Elevated plinths to guard against water and snow.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Chamba Stone</td>
+          <td>Durable, fine-grained, carvable</td>
+        </tr>
+        <tr>
+          <td>Deodar Wood</td>
+          <td>Insect-resistant, strong, elastic</td>
+        </tr>
+        <tr>
+          <td>Slate</td>
+          <td>Waterproof, insulating, ideal for steep roofing</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>Abundant local stone and deodar forests reduced cost and effort.</li>
+        <li>Stone and slate were ideal for cold and wet climate.</li>
+        <li>Traditional materials known for longevity and resilience.</li>
+        <li>Ease of carving enabled iconographic storytelling on temples.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>Shikhara towers distributed weight downwards via thick stone walls.</li>
+        <li>Wooden brackets and beams provided flexibility during seismic activity.</li>
+        <li>Roofs sloped to drain snow and rain.</li>
+        <li>Raised platforms offered protection from snow/waterlogging.</li>
+        <li>Mandapas used corbelled roofing techniques.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Combined use of flexible wood and heavy stone created seismic resilience.</li>
+        <li>Roof design minimized snow accumulation stress.</li>
+        <li>Compact layout and deep foundations increased stability on hilly terrain.</li>
+        <li>Periodic renovations by local communities have preserved structures.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Emphasis on sacred geometry and Vastu principles.</li>
+        <li>Selection of climatically appropriate and symbolic materials.</li>
+        <li>Temples built as cultural anchors, centers of festivals, and community worship.</li>
+        <li>Aimed to combine aesthetics, ritual function, and environmental adaptation.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Chamba Temples (Traditional)</th>
+          <th>RCC Buildings</th>
+        </tr>
+        <tr>
+          <td>Thermal Control</td>
+          <td>Natural (stone and slate)</td>
+          <td>Artificial (HVAC)</td>
+        </tr>
+        <tr>
+          <td>Earthquake Resistance</td>
+          <td>Moderate (wood + stone)</td>
+          <td>Variable (design-specific)</td>
+        </tr>
+        <tr>
+          <td>Durability</td>
+          <td>Very high (centuries)</td>
+          <td>~50–100 years</td>
+        </tr>
+        <tr>
+          <td>Craftsmanship</td>
+          <td>Intricate manual stone carving</td>
+          <td>Mass-produced components</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Oldest continuously worshipped Lakshmi Narayan Temple Complex (10th century).</li>
+        <li>Blend of Kashmiri, Himachali, and Nagara styles.</li>
+        <li>Rich use of Himachali wood carving traditions in conjunction with stone.</li>
+        <li>Cultural longevity—still an active religious and festival site.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Chamba_Lakshmi_Narayan_Temple_Himachal.jpg" alt="Chamba Temples, Himachal Pradesh">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 3.0</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dimasa Ruins – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dimasa Ruins</h1>
+    <div class="tags">
+      <span class="tag">#megalith</span>
+      <span class="tag">#dimasa</span>
+      <span class="tag">#kachari</span>
+      <span class="tag">#nagaland</span>
+      <span class="tag">#stonearchitecture</span>
+      <span class="tag">#medievalindia</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Dimapur, Nagaland<br>
+      <strong>Dynasty/Period:</strong> Dimasa Kachari Kingdom (10th–13th century CE)</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Belonged to the Dimasa Kachari Kingdom, one of the oldest tribal kingdoms in Northeast India.</li>
+        <li>Dimapur served as the capital until the 13th century.</li>
+        <li>The site contains remnants of a palace complex, ritual structures, and defensive architecture.</li>
+        <li>The ruins are among the few surviving stone monuments in Nagaland, reflecting pre-Ahom traditions.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Mostly consists of stone monoliths, pillars, foundations, and platforms.</li>
+        <li>Layout likely part of a palatial enclosure with ritualistic elements.</li>
+        <li>Monoliths vary in shape, size, and carvings, some believed to be phallic symbols or ancestral markers.</li>
+        <li>Aligned in rows or semi-circular formations.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Built using locally quarried sandstone and limestone.</li>
+        <li>Stones are unmortared, fitted using dry masonry techniques.</li>
+        <li>Carved in situ or transported short distances via labor-intensive methods.</li>
+        <li>Foundations are shallow but wide, leveraging the stone's weight.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Combined spiritual symbolism with spatial order—architecture as cultural narrative.</li>
+        <li>Ritual placement of stones for ancestral worship, clan identity, and territorial marking.</li>
+        <li>No artificial structures—built environment was an extension of nature and belief.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Dimasa Ruins (Traditional)</th>
+          <th>Modern RCC Structures</th>
+        </tr>
+        <tr>
+          <td>Construction Material</td>
+          <td>Natural stone (dry)</td>
+          <td>Concrete and steel</td>
+        </tr>
+        <tr>
+          <td>Construction Technique</td>
+          <td>Manual placement, dry fitting</td>
+          <td>Engineered formwork and curing</td>
+        </tr>
+        <tr>
+          <td>Functionality</td>
+          <td>Ritual, ancestral, civic</td>
+          <td>Mostly utilitarian</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Rare megalithic culture in Northeast India with ritualistic and civic overlap.</li>
+        <li>Unique phallic and geometric monoliths, unlike mainstream temple architecture.</li>
+        <li>Reflects Dimasa worldview—earth and stone as sacred mediums of identity.</li>
+        <li>Part of living heritage for the Dimasa people.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dimasa_Ruins.jpg/800px-Dimasa_Ruins.jpg" alt="Dimasa Ruins, Nagaland">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

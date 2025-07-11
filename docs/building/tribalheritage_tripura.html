@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deotamura Rock Carvings – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Deotamura Rock Carvings</h1>
+    <div class="tags">
+      <span class="tag">#rockcut</span>
+      <span class="tag">#tribalheritage</span>
+      <span class="tag">#tripura</span>
+      <span class="tag">#folkdeities</span>
+      <span class="tag">#basrelief</span>
+      <span class="tag">#stonecarvings</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> South Tripura district, banks of Gomati River near Udaipur<br>
+      <strong>Tribe/Culture:</strong> Hindu-Buddhist folk traditions (Tripuri influence)<br>
+      <strong>Era:</strong> Estimated between 15th–16th century CE</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Known locally as Chabimura, these carvings span a vertical cliff face overlooking the Gomati River.</li>
+        <li>Believed to have been commissioned by local kings or tribal chieftains blending Hinduism and indigenous animism.</li>
+        <li>Reflects a folk religious synthesis, with figures of deities such as Durga, Vishnu, Shiva, Ganesha, and others.</li>
+        <li>The site is both a religious center and natural sanctuary, regarded sacred by local communities.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Comprises rock-cut bas-reliefs etched directly onto steep sandstone cliffs.</li>
+        <li>Largest carving is of Durga in Mahishasuramardini pose—measuring over 20 feet high.</li>
+        <li>Sculptures arranged along nearly 300-meter stretch on river-facing rock face.</li>
+        <li>No artificial structures—pure rock canvas, blending nature and belief.</li>
+        <li>Use of natural topography to enhance grandeur and visibility from the river.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Material: Sedimentary sandstone cliff</li>
+        <li>Tools likely included iron chisels and hammers, possibly fire-softening of rock surface.</li>
+        <li>Sculptors accessed the cliff via bamboo scaffolding or boats.</li>
+        <li>No binding material used—monolithic carvings directly etched into the mountain.</li>
+        <li>Carvings integrated with rock faults and water drainage to prevent erosion.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Carving deities into rock was seen as an act of devotion and permanence.</li>
+        <li>Nature wasn’t altered—honored and used as part of sacred space.</li>
+        <li>Location chosen for its spiritual energy and ritual accessibility by river.</li>
+        <li>Belief in living landscape—where gods dwell in mountains and rivers.</li>
+        <li>Fusion of folk beliefs and mainstream Hindu iconography.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Deotamura Rock Carvings</th>
+          <th>RCC Temple/Monument</th>
+        </tr>
+        <tr>
+          <td>Construction Method</td>
+          <td>Subtractive, hand-carved</td>
+          <td>Additive, cast and assembled</td>
+        </tr>
+        <tr>
+          <td>Material Impact</td>
+          <td>Low—natural rockface</td>
+          <td>High—cement, steel, quarrying</td>
+        </tr>
+        <tr>
+          <td>Durability</td>
+          <td>High (if preserved)</td>
+          <td>High, but depends on upkeep</td>
+        </tr>
+        <tr>
+          <td>Maintenance</td>
+          <td>Minimal (occasional clearing)</td>
+          <td>Regular cleaning/restoration</td>
+        </tr>
+        <tr>
+          <td>Environmental Fit</td>
+          <td>Blends with surroundings</td>
+          <td>Often modifies environment</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Rock-face temple with no built structure—nature as canvas.</li>
+        <li>Features one of the largest Durga reliefs in Eastern India.</li>
+        <li>Sacred river approach—pilgrims travel via boat, enhancing ritual experience.</li>
+        <li>Combines animistic traditions and classical iconography.</li>
+        <li>Remains a living heritage site visited during festivals like Durga Puja.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Deotamura_Rock_Carvings.jpg/800px-Deotamura_Rock_Carvings.jpg" alt="Deotamura Rock Carvings, Tripura">
+    <p style="font-size:0.9rem; color:#888;">Image Credit: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

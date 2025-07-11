@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pamban Bridge (Old & New) – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #093e7c;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #2a7bb4;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pamban Bridge (Old & New)</h1>
+    <div class="tags">
+      <span class="tag">#bridge</span>
+      <span class="tag">#railway</span>
+      <span class="tag">#sea</span>
+      <span class="tag">#civilengineering</span>
+      <span class="tag">#pamban</span>
+    </div>
+
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Connects Mandapam (mainland) to Rameswaram Island<br>
+      <strong>Built:</strong> 1911–1914 (original), 2020–2024 (new)<br>
+      <strong>Type:</strong> Railway sea bridge</p>
+    </div>
+
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li><strong>1914 Bridge:</strong> First sea bridge in India with manually operated Scherzer rolling lift span.</li>
+        <li>Survived the 1964 cyclone; decommissioned in 2022.</li>
+        <li><strong>2024 Bridge:</strong> India’s first vertical lift railway bridge; inaugurated April 2025.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Architecture & Civil Engineering</h2>
+      <ul>
+        <li><strong>Original:</strong> 2.06 km, 143 piers, steel on concrete, 19m elevation, manual lift span.</li>
+        <li><strong>New:</strong> 2.07 km, vertical lift, double track, 22m clearance, corrosion-resistant coatings.</li>
+        <li>Designed for climate resilience and minimal maintenance.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Builders' Thought Process</h2>
+      <ul>
+        <li>1914: Connected pilgrims and trade with Rameswaram; built to endure marine environment.</li>
+        <li>2024: Emphasized modernization, durability, high-speed rail, and automation.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr><th>Feature</th><th>1914 Bridge</th><th>2024 Bridge</th></tr>
+        <tr><td>Design</td><td>Bascule (manual)</td><td>Vertical lift (auto)</td></tr>
+        <tr><td>Track</td><td>Single</td><td>Double, electrified</td></tr>
+        <tr><td>Clearance</td><td>19m</td><td>22m</td></tr>
+        <tr><td>Service Life</td><td>100+ years (with repairs)</td><td>100 years (low maintenance)</td></tr>
+        <tr><td>Corrosion Control</td><td>Painted steel</td><td>Multi-layer protection</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>India’s first sea bridge and only surface link to Rameswaram until 1988.</li>
+        <li>Survived 1964 cyclone; iconic in culture and films.</li>
+        <li>New bridge symbolizes India’s infrastructure innovation.</li>
+      </ul>
+    </div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Pamban_bridge_old.jpg" alt="Old Pamban Bridge">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/New_Pamban_Bridge_2024.jpg" alt="New Pamban Bridge">
+    <p style="font-size:0.9rem; color:#888;">Images: Wikimedia Commons, CC BY-SA</p>
+  </div>
+</body>
+</html>

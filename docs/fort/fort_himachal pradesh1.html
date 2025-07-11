@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kangra Fort – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kangra Fort</h1>
+    <div class="tags">
+      <span class="tag">#fort</span>
+      <span class="tag">#stonearchitecture</span>
+      <span class="tag">#himachal</span>
+      <span class="tag">#trigarta</span>
+      <span class="tag">#mughal</span>
+      <span class="tag">#hillfort</span>
+      <span class="tag">#defensiveengineering</span>
+    </div>
+    <div class="section">
+      <h2>Location & Dynasty</h2>
+      <p><strong>Location:</strong> Kangra, Himachal Pradesh<br>
+      <strong>Dynasty:</strong> Trigarta Kingdom, later ruled by Mughals, Sikhs, and British<br>
+      <strong>Era:</strong> Ancient origins, main structure 11th–17th centuries</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>One of the oldest and largest forts in India, referenced in the Mahabharata and Alexander's campaigns.</li>
+        <li>Initially built by the Katoch dynasty of Trigarta.</li>
+        <li>Conquered by Mahmud of Ghazni (1009 CE), later fortified by Mughals, Sikhs, and British.</li>
+        <li>Repeatedly attacked due to its wealth and strategic location above the Banganga and Manjhi Rivers.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Constructed on a steep hill—protective natural terrain.</li>
+        <li>Includes multiple gates, watchtowers, temples, and ramparts.</li>
+        <li>Features Darwazas like Ranjit Singh Gate, Jahangiri Gate, and Andheri Darwaza.</li>
+        <li>Contains Laxmi Narayan and Ambika Devi temples within the complex.</li>
+        <li>Stepped access path and layered wall system for defense.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Sandstone and rubble masonry were primarily used.</li>
+        <li>Dry stone walls in older sections; later parts used lime mortar.</li>
+        <li>Use of gravity walls and buttresses for reinforcement.</li>
+        <li>Zig-zag pathways designed to slow invaders.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Sandstone</td>
+          <td>Durable, easy to shape, good compressive strength</td>
+        </tr>
+        <tr>
+          <td>Rubble Stone</td>
+          <td>Strong base, used in bulk for mass and resistance</td>
+        </tr>
+        <tr>
+          <td>Lime Mortar</td>
+          <td>Flexible, allows breathability and longevity</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>Locally sourced sandstone reduced transport efforts.</li>
+        <li>Rubble masonry ideal for thick, strong fort walls.</li>
+        <li>Lime mortar allowed movement in earthquake-prone regions.</li>
+        <li>Terrain integration demanded heavy and durable materials.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>Tapering walls wider at the base for load distribution.</li>
+        <li>Bastions and slits for archers and defenders.</li>
+        <li>Terraced levels accommodated uneven rocky hill surface.</li>
+        <li>Moats and deep ravines for natural defense.</li>
+        <li>Multi-gate system to exhaust and confuse invaders.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Thick walls (up to 4 meters) ensured resistance to siege weaponry.</li>
+        <li>Multiple entry barriers prevented direct access.</li>
+        <li>Position on elevated terrain gave advantage in battle.</li>
+        <li>Survived many sieges, though partially damaged by 1905 earthquake.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Designed as a defensive citadel for the kingdom’s capital.</li>
+        <li>Hilltop location chosen for panoramic visibility and military command.</li>
+        <li>Blend of secular and sacred architecture (temples within fort).</li>
+        <li>Symbol of political strength and regional control.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Kangra Fort (Traditional)</th>
+          <th>RCC Fort (Hypothetical Modern)</th>
+        </tr>
+        <tr>
+          <td>Wall Design</td>
+          <td>Thick, layered masonry</td>
+          <td>Reinforced concrete panels</td>
+        </tr>
+        <tr>
+          <td>Defensive Features</td>
+          <td>Slit windows, multiple gates</td>
+          <td>CCTV, electronic surveillance</td>
+        </tr>
+        <tr>
+          <td>Earthquake Resistance</td>
+          <td>Moderate (lime mortar, flexible)</td>
+          <td>High (seismic RCC design)</td>
+        </tr>
+        <tr>
+          <td>Material Sustainability</td>
+          <td>High (natural stone)</td>
+          <td>Low (high energy cement/steel)</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Historical continuity from ancient India to colonial era.</li>
+        <li>Houses multiple cultural layers—Hindu temples, Mughal inscriptions, Sikh gates.</li>
+        <li>Strategic design integrating natural ravines as moats.</li>
+        <li>A major tourist and archaeological site today under ASI protection.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Kangra_Fort_Himachal.jpg" alt="Kangra Fort, Himachal Pradesh">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

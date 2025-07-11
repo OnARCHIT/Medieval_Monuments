@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keshava Temple, Somnathpur – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    .section:nth-of-type(7) { animation-delay: 1.6s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.7s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.8s both;
+    }
+    p {
+      margin-bottom: 16px;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Keshava Temple, Somnathpur</h1>
+    <div class="tags">
+      <span class="tag">#temple</span>
+      <span class="tag">#karnataka</span>
+      <span class="tag">#somnathpur</span>
+      <span class="tag">#hoysala</span>
+      <span class="tag">#civilengineering</span>
+    </div>
+    <div class="section">
+      <h2>Location & Era</h2>
+      <p>
+        <strong>Location:</strong> Somnathpur, Mandya District<br>
+        <strong>Built:</strong> 1268 CE (Hoysala Empire)<br>
+        <strong>Denomination:</strong> Vaishnava (Vishnu)
+      </p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Built by Somanatha Dandanayaka, a general of Hoysala King Narasimha III.</li>
+        <li>Masterpiece of Hoysala architecture.</li>
+        <li>Dedicated to Lord Keshava (Vishnu), known for its symmetry and carvings.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Hoysala style, star-shaped plan, intricate carvings.</li>
+        <li>Three shrines (trikuta), 64 cells with carvings, scenes from epics.</li>
+        <li>Materials: Soapstone (chloritic schist), lime mortar.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li><strong>Foundation:</strong> Elevated platform (jagati) for drainage and grandeur.</li>
+        <li><strong>Walls:</strong> Soapstone blocks, intricate carvings.</li>
+        <li><strong>Roof:</strong> Stone slabs, pillared halls for support.</li>
+        <li><strong>Water Management:</strong> Temple tank for ritual bathing.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Artistic expression: Designed to showcase Hoysala artistry.</li>
+        <li>Religious symbolism: Star-shaped plan for cosmic alignment.</li>
+        <li>Community focus: Large halls for gatherings and festivals.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional (Stone)</th>
+          <th>Modern RCC/Steel</th>
+        </tr>
+        <tr>
+          <td>Durability</td>
+          <td>750+ years</td>
+          <td>80–120 years</td>
+        </tr>
+        <tr>
+          <td>Maintenance</td>
+          <td>Moderate</td>
+          <td>Frequent</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Three shrines (trikuta).</li>
+        <li>64 cells with intricate carvings.</li>
+        <li>UNESCO World Heritage tentative list.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Keshava_Temple_Somnathpur.jpg" alt="Keshava Temple, Somnathpur" />
+    <p style="font-size:0.9rem; color:#888;">Photo by Dineshkannambadi, Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

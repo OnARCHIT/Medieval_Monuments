@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brihadeeswarar Temple – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Brihadeeswarar Temple, Thanjavur</h1>
+    <div class="tags">
+      <span class="tag">#temple</span>
+      <span class="tag">#chola</span>
+      <span class="tag">#granite</span>
+      <span class="tag">#civilengineering</span>
+      <span class="tag">#UNESCO</span>
+    </div>
+
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Thanjavur<br>
+      <strong>Builder:</strong> Raja Raja Chola I<br>
+      <strong>Dynasty:</strong> Chola<br>
+      <strong>Built:</strong> 1010 CE</p>
+    </div>
+
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Built as the Chola Empire’s spiritual and administrative hub.</li>
+        <li>Symbolizes imperial power and cosmic order.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>66m vimana (tower), 80-ton granite capstone, monolithic Nandi statue.</li>
+        <li>Pillared mandapams, walled enclosure, and detailed frescoes.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>130,000 tons of granite, quarried over 50 km away.</li>
+        <li>Lime mortar with palm sugar – flexible and self-healing.</li>
+        <li>4m-deep sand foundation for seismic resistance.</li>
+        <li>Stormwater drainage and moat fed by Vadavar river.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Granite for permanence and spiritual symbolism.</li>
+        <li>Lime mortar for resilience and longevity.</li>
+        <li>Designed for solar alignment – sanctum lights up on the king’s birthday.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional (Granite/Lime)</th>
+          <th>Modern RCC</th>
+        </tr>
+        <tr>
+          <td>Durability</td>
+          <td>1,000+ years</td>
+          <td>100–150 years</td>
+        </tr>
+        <tr>
+          <td>Carbon Footprint</td>
+          <td>Negative (lime absorbs CO₂)</td>
+          <td>High (cement emits)</td>
+        </tr>
+        <tr>
+          <td>Maintenance</td>
+          <td>Minimal</td>
+          <td>Frequent</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Solar alignment, whispering galleries, acoustic resonance.</li>
+      </ul>
+    </div>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Brihadisvara_Temple_Gopuram.jpg" alt="Brihadeeswarar Temple">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Brihadisvara_Temple_Capstone.jpg" alt="Granite Capstone">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Nandi_Brihadisvara_Temple.jpg" alt="Nandi Statue">
+    <p style="font-size:0.9rem; color:#888;">Images: Wikimedia Commons, CC BY-SA</p>
+  </div>
+</body>
+</html>

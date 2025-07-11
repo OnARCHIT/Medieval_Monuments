@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akhnoor Fort – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Akhnoor Fort</h1>
+    <div class="tags">
+      <span class="tag">#dograarchitecture</span>
+      <span class="tag">#riverfort</span>
+      <span class="tag">#brickstructure</span>
+      <span class="tag">#akhnoor</span>
+      <span class="tag">#heritagefort</span>
+    </div>
+    <div class="section">
+      <h2>Location & Patron</h2>
+      <p><strong>Location:</strong> Akhnoor, Jammu District, Jammu & Kashmir<br>
+      <strong>Dynasty/Patron:</strong> Raja Tegh Singh (early 19th century), Dogra rulers<br>
+      <strong>Function:</strong> Fortified palace and strategic garrison on the Chenab River</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Built in the early 19th century on the ruins of an older fortification by the Dogra king Raja Tegh Singh.</li>
+        <li>Served both as a military fort and a palace, overseeing the trade and military routes along the Chenab River.</li>
+        <li>Later used by the Sikh and British forces during regional administrative periods.</li>
+        <li>Lies near the ancient Harappan archaeological site of Manda, linking it to earlier cultural layers.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Features two-storeyed palace structures, watchtowers, and ramparts.</li>
+        <li>Semi-circular bastions and fortified walls with embrasures for cannons and firearms.</li>
+        <li>Distinctive brick construction, with arched windows and high parapets.</li>
+        <li>Fort layout oriented towards the river for natural defense and visibility.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Constructed using burnt bricks set in lime mortar.</li>
+        <li>Defensive bastions and walls are reinforced with lime concrete core.</li>
+        <li>Flooring includes stone slabs and plastered lime surfaces.</li>
+        <li>River-facing sections designed to withstand moisture and erosion.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Materials Properties</h2>
+      <table>
+        <tr>
+          <th>Material</th>
+          <th>Properties</th>
+        </tr>
+        <tr>
+          <td>Burnt Brick</td>
+          <td>Durable, load-bearing, thermally insulative</td>
+        </tr>
+        <tr>
+          <td>Lime Mortar</td>
+          <td>Breathable, binds well with brick, resists moisture moderately</td>
+        </tr>
+        <tr>
+          <td>Lime Concrete</td>
+          <td>High compressive strength, locally made, durable under weathering</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Reason for Material Selection</h2>
+      <ul>
+        <li>Burnt bricks were accessible locally and well-suited to riverine climate.</li>
+        <li>Lime mortar allowed breathability and flexibility under thermal variations.</li>
+        <li>The materials ensured longevity and resistance to humidity near Chenab.</li>
+        <li>Easy maintenance and compatibility with traditional construction knowledge.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Structural Design and Engineering</h2>
+      <ul>
+        <li>High walls and thick bastions provided defense against artillery.</li>
+        <li>Arched doorways and windows reduced stress on wall frames.</li>
+        <li>Multi-layered floors enabled administrative, residential, and defense functions.</li>
+        <li>Watchtowers strategically placed for panoramic surveillance of the river valley.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Stability Features</h2>
+      <ul>
+        <li>Heavy masonry mass provided thermal insulation and structural inertia.</li>
+        <li>Lime concrete and brick composite allowed flexibility against minor seismic shocks.</li>
+        <li>Sloped walls and circular bastions reduced wind and artillery impact.</li>
+        <li>River-facing parts elevated slightly to prevent flooding.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Emphasis on strategic visibility and defense while maintaining palace features.</li>
+        <li>Aimed to secure Dogra administrative control while symbolizing authority.</li>
+        <li>Use of traditional materials shows continuity with regional architectural practices.</li>
+        <li>Harmonized fortified design with palatial elegance.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional (Akhnoor Fort)</th>
+          <th>Modern RCC Structure</th>
+        </tr>
+        <tr>
+          <td>Defense Functionality</td>
+          <td>Yes, with bastions and loops</td>
+          <td>Not typical in civic buildings</td>
+        </tr>
+        <tr>
+          <td>Material Flexibility</td>
+          <td>Lime mortar adaptable</td>
+          <td>Rigid under dynamic loads</td>
+        </tr>
+        <tr>
+          <td>Environmental Suitability</td>
+          <td>Breathable, suited to riverbanks</td>
+          <td>Moisture-proofing required</td>
+        </tr>
+        <tr>
+          <td>Lifespan</td>
+          <td>Centuries with maintenance</td>
+          <td>50–100 years typically</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Only fort in Jammu with dual identity—palace and fortification.</li>
+        <li>Proximity to Harappan ruins (Manda) makes it archaeologically significant.</li>
+        <li>Blend of Dogra, Sikh, and colonial layers in architectural features.</li>
+        <li>Scenic location by Chenab River, used as both natural defense and trade artery.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Akhnoor_Fort_Jammu.jpg" alt="Akhnoor Fort, Jammu">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

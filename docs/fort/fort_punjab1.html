@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gobindgarh Fort Interactive Animated Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f4f4f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.14);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #2a4d69;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #4b86b4;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-child(1) { animation-delay: 0.4s; }
+    .section:nth-child(2) { animation-delay: 0.6s; }
+    .section:nth-child(3) { animation-delay: 0.8s; }
+    .section:nth-child(4) { animation-delay: 1.0s; }
+    .section:nth-child(5) { animation-delay: 1.2s; }
+    .section:nth-child(6) { animation-delay: 1.4s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gobindgarh Fort</h1>
+    <div class="tags">
+      <span class="tag">#fort</span>
+      <span class="tag">#punjab</span>
+      <span class="tag">#brick</span>
+      <span class="tag">#militaryarchitecture</span>
+      <span class="tag">#civilengineering</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Amritsar, Punjab<br>
+      <strong>Dynasty/Period:</strong> Built in 1760s by Bhangi Misl; fortified by Maharaja Ranjit Singh (early 19th century)</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Constructed by Bhangi Misl chieftains in the 18th century.</li>
+        <li>Reinforced by Maharaja Ranjit Singh as a military stronghold in the early 1800s.</li>
+        <li>Used by the British as a garrison.</li>
+        <li>Recently restored and opened as a museum and heritage site.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Square layout with high bastioned walls and a moat.</li>
+        <li>Features Darbar Hall, Toshakhana (treasury), and ramparts with watch towers.</li>
+        <li>Mix of Rajput, Sikh, and colonial military architecture.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Built with Lakhori bricks and lime mortar.</li>
+        <li>Fortified with bastions, embankments, and moats.</li>
+        <li>Arched gateways and barrel vaults for structural strength.</li>
+        <li>Drainage systems to divert rainwater from the walls.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Small Lakhori bricks for tight bonding and faster construction.</li>
+        <li>Lime mortar for flexibility and breathability in Punjab’s climate.</li>
+        <li>Defensive design: thick walls, parapets, limited entrances.</li>
+        <li>Strategic location for defense of Amritsar and protection of the treasury.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional</th>
+          <th>Modern RCC</th>
+        </tr>
+        <tr>
+          <td>Wall Construction</td>
+          <td>Brick masonry with lime mortar</td>
+          <td>Reinforced concrete panels</td>
+        </tr>
+        <tr>
+          <td>Defensive Design</td>
+          <td>Thick bastioned walls and moat</td>
+          <td>Surveillance and steel barriers</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>Houses the Toshakhana, once home to the Kohinoor diamond.</li>
+        <li>One of the few Sikh-era military forts still intact.</li>
+        <li>Blend of traditional and colonial military elements.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Gobindgarh_Fort_Amritsar.jpg" alt="Gobindgarh Fort">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>

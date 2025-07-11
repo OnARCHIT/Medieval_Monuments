@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kareng Ghar – Interactive Animated Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #f6f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #232323;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(60,60,90,0.12);
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    h1, h2 {
+      margin: 0 0 18px 0;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #7c3e09;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.7s 0.1s both;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: #b47b2a;
+      margin-top: 32px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .tags {
+      margin-bottom: 14px;
+      animation: fadeInUp 0.7s 0.3s both;
+    }
+    .tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      padding: 4px 12px;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #90caf9;
+    }
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.7s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: disc inside;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeInUp 0.7s 1.5s both;
+    }
+    th, td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+    }
+    th {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 10px;
+      margin: 18px 0;
+      display: block;
+      animation: fadeInUp 0.7s 1.6s both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kareng Ghar</h1>
+    <div class="tags">
+      <span class="tag">#ahom</span>
+      <span class="tag">#palace</span>
+      <span class="tag">#brickarchitecture</span>
+      <span class="tag">#assam</span>
+      <span class="tag">#militaryarchitecture</span>
+    </div>
+    <div class="section">
+      <h2>Location & Period</h2>
+      <p><strong>Location:</strong> Garhgaon, near Sivasagar, Assam<br>
+      <strong>Dynasty/Period:</strong> Ahom Dynasty, built originally in the 17th century, rebuilt in 1752 CE by King Rajeswar Singha</p>
+    </div>
+    <div class="section">
+      <h2>History</h2>
+      <ul>
+        <li>Originally constructed by Ahom king Suklenmung in the mid-16th century.</li>
+        <li>Destroyed and reconstructed in 1752 CE by King Rajeswar Singha using bricks.</li>
+        <li>Served as the principal royal palace before the capital shifted to Rangpur (Sivasagar).</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Architecture</h2>
+      <ul>
+        <li>Multi-storeyed structure with arched doorways, vaulted halls, secret chambers, and watch towers.</li>
+        <li>Consists of four levels, including rooms for administration, court, and royal living.</li>
+        <li>Thick brick walls and decorative niches reflect Ahom adaptations of Mughal architecture.</li>
+        <li>Integrated into the Garhgaon Fort complex, surrounded by a 5 km-long wall and moat.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Civil Engineering & Materials</h2>
+      <ul>
+        <li>Constructed using burnt bricks bound with traditional Ahom mortar (lime, molasses, and sometimes egg whites).</li>
+        <li>Large vaulted roofs and corbelled arches provide structural integrity.</li>
+        <li>Use of natural ventilation and thermal mass in thick brick walls for climate control.</li>
+        <li>Moisture control and water-resistant construction essential due to Assam’s high rainfall.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Builders’ Thought Process</h2>
+      <ul>
+        <li>Shift from timber to brick for fire resistance and longevity.</li>
+        <li>Chose height and internal compartmentalization for administration, security, and climate comfort.</li>
+        <li>Strategic location in the plains of Assam ensured proximity to resources and central control.</li>
+        <li>Focused on fortification, multi-use royal functionality, and regional aesthetics.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Modern Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Kareng Ghar (Traditional)</th>
+          <th>Modern RCC Structures</th>
+        </tr>
+        <tr>
+          <td>Structural Material</td>
+          <td>Brick + lime-molasses mortar</td>
+          <td>RCC + steel reinforcement</td>
+        </tr>
+        <tr>
+          <td>Design Intent</td>
+          <td>Defensive + administrative</td>
+          <td>Utility-driven or aesthetic</td>
+        </tr>
+        <tr>
+          <td>Structural System</td>
+          <td>Load-bearing walls and arches</td>
+          <td>Frame structures</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Unique Features</h2>
+      <ul>
+        <li>A rare example of a multi-storeyed palace-fort in eastern India.</li>
+        <li>Blends residential, administrative, and defensive functions in a single structure.</li>
+        <li>Survives as a testament to the Ahom Empire’s architectural evolution from bamboo to brick.</li>
+        <li>One of the oldest and largest brick palaces in Assam still standing.</li>
+      </ul>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kareng_Ghar.jpg/800px-Kareng_Ghar.jpg" alt="Kareng Ghar, Assam">
+    <p style="font-size:0.9rem; color:#888;">Image Source: Wikimedia Commons, CC BY-SA 4.0</p>
+  </div>
+</body>
+</html>
