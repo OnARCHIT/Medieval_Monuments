@@ -1,0 +1,294 @@
+body {
+  background: transparent; /* or rgba(0,0,0,0) if inside another container */
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+#map-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden; /* Hides scrollbars for SVG map only */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map-container svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+/* Optional: Hide scrollbars visually in all browsers */
+#map-container {
+  scrollbar-width: none; /* Firefox */
+}
+#map-container::-webkit-scrollbar {
+  display: none;         /* Chrome, Safari, Opera */
+}
+
+
+
+#popup-menu {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.15); /* translucent white */
+  border-radius: 20px;
+  padding: 24px 32px;
+  color: #1a202c; /* Dark text for light background */
+  /* ...other styles... */
+
+
+
+  min-width: 280px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Remove centering transform, position will be set dynamically */
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+@media (prefers-color-scheme: dark) {
+  #popup-menu {
+    background: rgba(28,32,36,0.98); /* Dark mode background */
+    color: #f3f4f6; /* Light text for dark background */
+    border: 1px solid rgba(255,255,255,0.18); /* Optional: lighter border in dark */
+  }
+}
+
+#popup-menu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#popup-menu h2 {
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  font-size: 1.4em;
+  text-align: center;
+  color: #ffd700;
+}
+
+#popup-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#popup-menu li {
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: color 0.2s ease, transform 0.3s ease;
+}
+
+#popup-menu li:hover {
+  color: #fff;
+  transform: scale(1.05) translateX(6px);
+}
+
+
+
+
+.sublist {
+  margin-left: 18px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(10px);
+  pointer-events: none;
+  font-size: 1em;
+  color: var(--sublist-color);
+}
+
+.sublist.active {
+  max-height: 400px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+.sublist li {
+  font-size: 1em;
+
+  margin: 6px 0;
+  transition: color 0.2s, transform 0.3s;
+}
+
+.sublist li:hover {
+  color: #ffbe78; /* Orange for hover, also high contrast */
+  transform: scale(1.05) translateX(6px);
+   color: var(--sublist-hover);
+}
+ 
+
+
+
+
+/* 3D effect on map region hover (Tamil Nadu, Bihar, etc.) */
+#INTN.state,
+#INTN.Tamil\ Nadu,
+#INBR.state,
+#INBR.Bihar,
+#INAN.state,
+#TNAN.Andaman\and\Nicobar,
+#INTG.state,
+#INTG.Telangana,
+#INAP.state,
+#INAP.Andhra\Pradesh,
+#INAR.state,
+#INAR.Arunachal\Pradesh,
+#INTAS.state,
+#INAS.Assam,
+#INCT.state,
+#INCT.Chhattisgarh,
+#INCH.state,
+#INCH.Chandigarh,
+#INDH.state,
+#INDH.Dādra\and\Nagar\Haveli\and\Damān\and\Diu,
+#INDL.state,
+#INDL.Delhi,
+#INGA.state,
+#INGA.Goa,
+#INGJ.state,
+#INGJ.Gujarat,
+#INHR.state,
+#INHR.Haryana,
+#INHP.state,
+#INHP.Himachal\Pradesh,
+#INJH.state,
+#INJH.Jharkhand,
+#INKA.state,
+#INKA.Karnataka,
+#INKL.state,
+#INKL.Kerala,
+#INMP.state,
+#INMP.Madhya\Pradesh,
+#INMH.state,
+#INMH.Maharashtra,
+#INMN.state,
+#INMN.Manipur,
+#INML.state,
+#INML.Meghalaya,
+#INTG.state,
+#INMZ.Mizoram,
+#INNL.state,
+#INNL.Nagaland,
+#INOR.state,
+#INOR.Odisha,
+#INPB.state,
+#INPB.Punjab,
+#INPY.state,
+#INPY.Puducherry,
+#INRJ.state,
+#INRJ.Rajasthan,
+#INTG.state,
+#INSK.Sikkim,
+#INTR.state,
+#INTR.Tripura,
+#INUT.state,
+#INUT.Uttaranchal,
+#INUP.state,
+#INUP.Uttar\Pradesh,
+#INWB.state,
+#INWB.West\Bengal,
+#INLD.state,
+#INLD.Lakshadweep,
+#INLA.state,
+#INLA.Ladakh,
+#INJK.state,
+#INJK.Jammu\and\Kashmir
+
+
+{
+ transition: filter 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+#INTN.state:hover,
+#INTN.Tamil\ Nadu:hover,
+#INBR.state:hover,
+#INBR.Bihar:hover
+#INAN.state:hover,
+#TNAN.Andaman\and\Nicobar:hover,
+#INTG.state:hover,
+#INTG.Telangana:hover,
+#INAP.state:hover,
+#INAP.Andhra\Pradesh:hover,
+#INAR.state:hover,
+#INAR.Arunachal\Pradesh:hover,
+#INTAS.state:hover,
+#INAS.Assam:hover,
+#INCT.state:hover,
+#INCT.Chhattisgarh:hover,
+#INCH.state:hover,
+#INCH.Chandigarh:hover,
+#INDH.state:hover,
+#INDH.Dādra\and\Nagar\Haveli\and\Damān\and\Diu:hover,
+#INDL.state:hover,
+#INDL.Delhi:hover,
+#INGA.state:hover,
+#INGA.Goa:hover,
+#INGJ.state:hover,
+#INGJ.Gujarat:hover,
+#INHR.state:hover,
+#INHR.Haryana:hover,
+#INHP.state:hover,
+#INHP.Himachal\Pradesh:hover,
+#INJH.state:hover,
+#INJH.Jharkhand:hover,
+#INKA.state:hover,
+#INKA.Karnataka:hover,
+#INKL.state:hover,
+#INKL.Kerala:hover,
+#INMP.state:hover,
+#INMP.Madhya\Pradesh:hover,
+#INMH.state:hover,
+#INMH.Maharashtra:hover,
+#INMN.state:hover,
+#INMN.Manipur:hover,
+#INML.state:hover,
+#INML.Meghalaya:hover,
+#INTG.state:hover,
+#INMZ.Mizoram:hover,
+#INNL.state:hover,
+#INNL.Nagaland:hover,
+#INOR.state:hover,
+#INOR.Odisha:hover,
+#INPB.state:hover,
+#INPB.Punjab:hover,
+#INPY.state:hover,
+#INPY.Puducherry:hover,
+#INRJ.state:hover,
+#INRJ.Rajasthan:hover,
+#INTG.state:hover,
+#INSK.Sikkim:hover,
+#INTR.state:hover,
+#INTR.Tripura:hover,
+#INUT.state:hover,
+#INUT.Uttaranchal:hover,
+#INUP.state:hover,
+#INUP.Uttar\Pradesh:hover,
+#INWB.state:hover,
+#INWB.West\Bengal:hover,
+#INLD.state:hover,
+#INLD.Lakshadweep:hover,
+#INLA.state:hover,
+#INLA.Ladakh:hover,
+#INJK.state:hover,
+#INJK.Jammu\and\Kashmir:hover {
+  filter: drop-shadow(0 0 16px #dc6300) brightness(1.2);
+  transform: scale(1.03) perspective(600px) rotateX(4deg) rotateZ(-2deg);
+}
