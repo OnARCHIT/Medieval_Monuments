@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uttar pradesh Heritage Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="state.css">
+</head>
+<body>
+  <!-- Dark theme background overlay -->
+  <div class="dark-bg"></div>
+  <section class="heritage-section">
+    <div class="container">
+      <h1 class="main-title">Uttar pradesh Heritage Explorer</h1>
+      <div id="heritage-list" class="heritage-grid"></div>
+    </div>
+  </section>
+  <script src="INDIA_.js"></script>
+  <script>
+    // Use region ID 'INup'
+    document.addEventListener("DOMContentLoaded", function() {
+      const data = regionData.INUP;
+      const container = document.getElementById("heritage-list");
+      container.innerHTML = "";
+      data.forEach(function(item) {
+        // Create label
+        const labelDiv = document.createElement("div");
+        labelDiv.className = "label-item";
+
+        // Add image
+        const img = document.createElement("img");
+        img.src = item.img;
+        img.alt = item.label + " image";
+        img.className = "label-img";
+        labelDiv.appendChild(img);
+
+        // Add label text
+        const span = document.createElement("span");
+        span.textContent = item.label;
+        labelDiv.appendChild(span);
+
+        // Create sublist
+        const sublist = document.createElement("div");
+        sublist.className = "sublist";
+        item.sublist.forEach(function(sub) {
+          const subItem = document.createElement("div");
+          subItem.className = "sublist-item";
+          subItem.textContent = sub.name;
+          subItem.title = sub.file;
+          subItem.onclick = function() {
+            window.open(sub.file, "_blank");
+          };
+          sublist.appendChild(subItem);
+        });
+
+        // Expand/collapse logic
+        labelDiv.addEventListener("click", function() {
+          // Collapse other open sublists
+          document.querySelectorAll(".label-item.active").forEach(function(el) {
+            if (el !== labelDiv) el.classList.remove("active");
+          });
+          document.querySelectorAll(".sublist.active").forEach(function(el) {
+            if (el !== sublist) el.classList.remove("active");
+          });
+          // Toggle current
+          labelDiv.classList.toggle("active");
+          sublist.classList.toggle("active");
+        });
+
+        container.appendChild(labelDiv);
+        container.appendChild(sublist);
+      });
+    });
+  </script>
+</body>
+</html>
