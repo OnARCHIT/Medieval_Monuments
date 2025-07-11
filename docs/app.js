@@ -1,3 +1,7 @@
+//--********* Copyright (c) 2025 THE INDIAN KNOWLEDGE SYSTEM OF MINISTRY OF EDUCATION ***************************************
+//************* IKS BG SAMWAHANA KARYAKARAM-5 PROPOSALBODY ************
+//************* Attribution is appreciated to 1)Rahul Geddam 2)Archit Kumar 3)Lokesh Varma *******************************************-->
+//***********************Under guidance of Asst. Prof. Mahendra Gattu (NIT, Raurkel, Oddisa)*******************************************-->
 // Monument Explorer - Advanced JavaScript with 3D effects, animations and interactions - FIXED VERSION
 
 // Wait for DOM to be fully loaded
